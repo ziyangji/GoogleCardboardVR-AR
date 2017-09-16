@@ -7,7 +7,7 @@ We will record several videos to introduce RPI and Troy with VR technology. The 
 
 ## Team Leader
 
-Prof. Mukkai Krishnamoorthy
+Prof. Mukkai Krishnamoorthy: Github: mskmoorthy
 
 ## Team Member
 
@@ -17,12 +17,12 @@ Ziniu Yu: yuz3@rpi.edu Github: ZiniuYu
 
 Ziyang Ji: jiz@rpi.edu Github:
 
-Shoshana Malfatto: malfas@rpi.edu Github:
+Shoshana Malfatto: malfas@rpi.edu Github: shanalily
 
 Hanyuan (Cornelius) Xiao: xiaoh2@rpi.edu Github:
 
-Xiuqi (Michael) Li: lix23@rpi.edu Github:
+Xiuqi (Michael) Li: lix23@rpi.edu Github: RioMichael
 
-Junhao (Harry) Xu: xuj10@rpi.edu Github:
+Junhao (Harry) Xu: xuj10@rpi.edu Github: HarryXu12138
 
-Carlos Power: powerc2@rpi.edu Github:
+Carlos Power: powerc2@rpi.edu Github: redysp
