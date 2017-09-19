@@ -19,7 +19,7 @@ Ziyang Ji: jiz@rpi.edu Github:
 
 Shoshana Malfatto: malfas@rpi.edu Github: shanalily
 
-Hanyuan (Cornelius) Xiao: xiaoh2@rpi.edu Github:
+Hanyuan (Cornelius) Xiao: xiaoh2@rpi.edu Github: CorneliusHsiao
 
 Xiuqi (Michael) Li: lix23@rpi.edu Github: RioMichael
 
