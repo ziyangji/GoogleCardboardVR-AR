@@ -15,7 +15,7 @@ Yanjun Li: liy40@rpi.edu Github: yanjun1017
 
 Ziniu Yu: yuz3@rpi.edu Github: ZiniuYu
 
-Ziyang Ji: jiz@rpi.edu Github:
+Ziyang Ji: jiz@rpi.edu Github: ziyangji
 
 Shoshana Malfatto: malfas@rpi.edu Github: shanalily
 
