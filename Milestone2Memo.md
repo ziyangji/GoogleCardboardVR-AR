@@ -16,3 +16,4 @@ Insta360 Pro Spherical VR 360 8K Camera (Black)|Insta360|3499|B&H|* Capture 360 
 #### Softwares
 * Unity
 * iMovie
+* VideoStitch Studio
