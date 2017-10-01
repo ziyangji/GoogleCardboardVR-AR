@@ -1,5 +1,4 @@
 # Google Cardboard AR/VR Project Milestone 2 Memo
-Team Members: Hanyuan (Cornelius) Xiao, 
 
 ## VR Video for RPI
 ### Benchmarking
