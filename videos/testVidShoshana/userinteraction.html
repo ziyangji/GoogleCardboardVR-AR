@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Test</title>
+		<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+		<script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+		<!-- <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script> -->
+		<script>
+			AFRAME.registerComponent('set-image', {
+				schema: {
+					on: {type: 'string'},
+					target: {type: 'selector'},
+					src: {type: 'string'},
+					dur: {type: 'number', default: 300}
+				},
+				init: function() {
+					var data = this.data;
+					var el = this.el;
+					this.setupFadeAnimation();
+					el.addEventListener(data.on, function() {
+						data.target.emit('set-image-fade');
+						setTimeout(function() {
+							data.target.setAttribute('material', 'src', data.src);
+						}, data.dur);
+					});
+				},
+				setupFadeAnimation: function() {
+					var data = this.data;
+				    var targetEl = this.data.target;
+
+				    // Only set up once.
+				    if (targetEl.dataset.setImageFadeSetup) { return; }
+				    targetEl.dataset.setImageFadeSetup = true;
+
+				    // Create animation.
+				    targetEl.setAttribute('animation__fade', {
+				      property: 'material.color',
+				      startEvents: 'set-image-fade',
+				      dir: 'alternate',
+				      dur: data.dur,
+				      from: '#FFF',
+				      to: '#000'
+				    });
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<img id="union" src="triangles.jpg">
+			    <img id="union-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+			    <img id="empac" src="camping.JPG">
+			    <img id="empac-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+			    <img id="approach" src="2017_6_15_berry_farm.jpg">
+			    <img id="approach-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+
+			    <script id="plane" type="text/html">
+				<a-entity class="link"
+					geometry="primitive: plane; height: 1; width: 1"
+					material="shader: flat; src: ${thumb}"
+					event-set__1="_event: mousedown; scale: 1 1 1"
+			        event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+			        event-set__4="_event: mouseleave; scale: 1 1 1"
+			        set-image="on: click; target: #image-360; src: ${src}"></a-entity>
+				</script>
+			</a-assets>
+
+			<a-sky id="image-360" src="#union" data-set-image-fade-setup="true"></a-sky>
+			<!-- <a-entity position="0 1 -5" geometry="primitive: sphere; radius: 0.5" material="color: #FFFFAA; opacity: 1.0" event-set__enter="_event: mouseenter; color: #8FF7FF" event-set__leave="_event: mouseleave; color: #4CC3D9"> -->
+
+			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
+				<a-entity template="src: #plane" data-src="#union" data-thumb="#union-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="empac" data-thumb="#empac-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="approach" data-thumb="#approach-thumb"></a-entity>
+			</a-entity>
+
+			<a-camera>
+				<a-cursor id="cursor">
+					   <a-animation begin="click" easing="ease-in" attribute="scale"
+	                   		fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+	      			   <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+	                   		from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+				</a-cursor>
+			</a-camera>
+		</a-scene>
+	</body>
+</html>
