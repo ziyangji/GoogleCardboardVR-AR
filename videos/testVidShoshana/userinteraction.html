@@ -1,3 +1,5 @@
+<!-- Based off of code from https://aframe-gallery.glitch.me/ -->
+<!-- Not working yet - only the button for "union" works, the others bring you to black sky -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -52,6 +54,7 @@
 	<body>
 		<a-scene>
 			<a-assets>
+				<!-- Images for sky and buttons - switch these out when we have pictures -->
 				<img id="union" src="triangles.jpg">
 			    <img id="union-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
 			    <img id="empac" src="camping.JPG">
@@ -59,6 +62,7 @@
 			    <img id="approach" src="2017_6_15_berry_farm.jpg">
 			    <img id="approach-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
 
+			    <!-- Button template -->
 			    <script id="plane" type="text/html">
 				<a-entity class="link"
 					geometry="primitive: plane; height: 1; width: 1"
@@ -72,8 +76,8 @@
 			</a-assets>
 
 			<a-sky id="image-360" src="#union" data-set-image-fade-setup="true"></a-sky>
-			<!-- <a-entity position="0 1 -5" geometry="primitive: sphere; radius: 0.5" material="color: #FFFFAA; opacity: 1.0" event-set__enter="_event: mouseenter; color: #8FF7FF" event-set__leave="_event: mouseleave; color: #4CC3D9"> -->
 
+			<!-- Buttons -->
 			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
 				<a-entity template="src: #plane" data-src="#union" data-thumb="#union-thumb"></a-entity>
 				<a-entity template="src: #plane" data-src="empac" data-thumb="#empac-thumb"></a-entity>
