@@ -15,11 +15,11 @@ Yanjun Li: liy40@rpi.edu Github: yanjun1017
 
 Ziniu Yu: yuz3@rpi.edu Github: ZiniuYu
 
-Ziyang Ji: jiz@rpi.edu Github:
+Ziyang Ji: jiz@rpi.edu Github: ziyangji
 
 Shoshana Malfatto: malfas@rpi.edu Github: shanalily
 
-Hanyuan (Cornelius) Xiao: xiaoh2@rpi.edu Github:
+Hanyuan (Cornelius) Xiao: xiaoh2@rpi.edu Github: CorneliusHsiao
 
 Xiuqi (Michael) Li: lix23@rpi.edu Github: RioMichael
 
