@@ -41,18 +41,16 @@
 
 			function calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map) {
 				directionsService.route({
-					// origin: "Rensselaer Union, Troy, NY",
 					origin: document.getElementById('start').value,
-					// destination: "Academy Hall, Troy, NY",
 					destination: document.getElementById('end').value,
-					// do I need waypoints for the path?
 					travelMode: 'WALKING'
 				}, function(response, status) {
 					if (status == 'OK') {
-						directionsDisplay.setDirections(response); // I don't think this is what I want to do... I'll need to take a look at what's in response and use that info to do something
 						// response if the directions result
 						console.log(response)
-						console.log(response.routes[0].legs.overviewpath);
+						for (var i = 0; i < response.routes[0].overview_path.length; ++i) {
+							console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
+						}
 					} else {
 						window.alert('Directions request failed due to ' + status);
 					}
