@@ -1,0 +1,14 @@
+// locs
+{
+	"nodes": [
+		// there will be a node for every picture we take, with
+		// latitude and longitude as x and y
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" },
+		{ "x": 0, "y": 0, "src": ".jpg" }
+	]
+}

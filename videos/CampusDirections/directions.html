@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
+		<script>
+			// https://maps.googleapis.com/maps/api/directions/json?origin=Boston,MA&destination=Concord,MA&waypoints=Charlestown,MA|via:Lexington,MA&key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg
+			// users click on two parts of a map of RPI campus (first click is start, second is destination)
+			// returns name of location, or maybe latitude and longitude
+			// use that with Google directions api to get "steps" to destination
+			// find closest points in map.json to the lat/long of steps, set up order
+			// now you can move through images until you get to the location
+
+			// this is function that needs a ton of work... I don't know if this is similar at all to what I need
+			function initMap() {
+				var markerArray = [];
+
+				var directionsService = new google.maps.DirectionsService;
+
+				var map = new google.maps.Map("", {
+					// zoom:
+					// center: {lat:, lng:}
+				});
+
+				// probably won't need this...
+				var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+
+				var stepDisplay = new google.maps.InfoWindow;
+
+				calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map);
+
+				var onChangeHandler = function() {
+					calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
+				}
+
+				// get start destination
+
+				// get end destination
+			}
+
+			function calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map) {
+				directionsService.route({
+					origin: "Rensselaer Union, Troy, NY",
+					destination: "Academy Hall, Troy, NY",
+					// do I need waypoints for the path?
+					travelMode: 'WALKING'
+				}, function(response, status) {
+					if (status == 'OK') {
+						directionsDisplay.setDirections(response); // I don't think this is what I want to do... I'll need to take a look at what's in response and use that info to do something
+						// response if the directions result
+						console.log(response)
+					} else {
+						window.alert('Directions request failed due to ' + status);
+					}
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM&callback=initMap"></script>
+	</head>
+	<body>
+		<!-- Might want to make a list of locations, to start with. I can try adding a map interface later -->
+		<select id="start">
+			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
+			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
+			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
+			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
+		</select>
+	</body>
+</html>
