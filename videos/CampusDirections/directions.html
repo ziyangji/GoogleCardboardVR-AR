@@ -29,18 +29,22 @@
 				calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map);
 
 				var onChangeHandler = function() {
-					calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
+					calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map);
 				}
 
 				// get start destination
+				document.getElementById('start').addEventListener('change', onChangeHandler);
+				document.getElementById('end').addEventListener('change', onChangeHandler);
 
 				// get end destination
 			}
 
 			function calculateAndDisplayRoute(directionsService, directionsDisplay, markerArray, stepDisplay, map) {
 				directionsService.route({
-					origin: "Rensselaer Union, Troy, NY",
-					destination: "Academy Hall, Troy, NY",
+					// origin: "Rensselaer Union, Troy, NY",
+					origin: document.getElementById('start').value,
+					// destination: "Academy Hall, Troy, NY",
+					destination: document.getElementById('end').value,
 					// do I need waypoints for the path?
 					travelMode: 'WALKING'
 				}, function(response, status) {
@@ -48,6 +52,7 @@
 						directionsDisplay.setDirections(response); // I don't think this is what I want to do... I'll need to take a look at what's in response and use that info to do something
 						// response if the directions result
 						console.log(response)
+						console.log(response.routes[0].legs.overviewpath);
 					} else {
 						window.alert('Directions request failed due to ' + status);
 					}
@@ -59,6 +64,12 @@
 	<body>
 		<!-- Might want to make a list of locations, to start with. I can try adding a map interface later -->
 		<select id="start">
+			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
+			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
+			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
+			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
+		</select>
+		<select id="end">
 			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
 			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
 			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
