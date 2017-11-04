@@ -47,14 +47,17 @@ function findPath(locations, path) {
 	for (var i = 0; i < path.length; ++i) {
 		// find the closest location
 		for (var j = 0; j < locations.length; ++j) {
-			console.log("hi");
-			// if the difference between x and y on path and x and y at location are small enough,
-			// add to array
-			// might need to check there aren't duplicates (not sure to do it here or at end)
-			if (Math.abs(path[i].x - locations[j].x) < 0.001 && Math.abs(path[i].y - locations[j].y) < 0.001) {
-				images.push(location[j].building);
+			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
+			if (Math.abs(path[i].lat() - locations[j].x) < 0.001 && Math.abs(path[i].lng() - locations[j].y) < 0.001) {
+				if (!images.includes(locations[j].building)) {
+					images.push(locations[j].building);
+				}
 			}
 		}
 	}
-	console.log(images);
+	// test output
+	console.log("Images:");
+	for (var i = 0; i < images.length; ++i) {
+		console.log(images[i]);
+	}
 }
