@@ -1,21 +1,14 @@
 var locations = [];
-
-// $("#mybody").hide();
 $.ajax({
 	type: "GET",
 	url: "map.json",
 	dataType: "json",
 	success: function(data){
 		mybody = mySite(data);
-		// added by Shoshana, didn't see mySite function when I wrote this
-		// var start = document.getElementById("start");
-		// for (var i = 0; i < data.buildings.length; ++i) {
-		// 	console.log(data.buildings[i].building);
-		// 	start += "<option value=" + data.buildings[i].address + ">" + data.buildings[i].building + "</option>";
-		// }
 		locations = data.buildings;
 	}, 
 	error: function(msg){
+		// error checking 
 		// console.log();
 		alert("Please Reload!");
 	}
@@ -25,8 +18,10 @@ function mySite(data){
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
 	for (var i = 0; i < 6; i ++){
+		// create new options and attach them to the "start" and "end" selectors
 		var option1 = document.createElement("option");
-		var option2 = document.createElement("option");
+		var option2 = document.createElement("option");		
+		// parse the data read from data and store them into variables
 		var building = data.buildings[i].building;
 		var x = data.buildings[i].x;
 		var y = data.buildings[i].y;
