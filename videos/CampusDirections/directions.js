@@ -8,11 +8,12 @@ $.ajax({
 	success: function(data){
 		mybody = mySite(data);
 		// added by Shoshana, didn't see mySite function when I wrote this
-		var start = document.getElementById("start");
-		for (var i = 0; i < data.buildings.length; ++i) {
-			console.log(data.buildings[i].building);
-			start += "<option value=" + data.buildings[i].address + ">" + data.buildings[i].building + "</option>";
-		}
+		// var start = document.getElementById("start");
+		// for (var i = 0; i < data.buildings.length; ++i) {
+		// 	console.log(data.buildings[i].building);
+		// 	start += "<option value=" + data.buildings[i].address + ">" + data.buildings[i].building + "</option>";
+		// }
+		locations = data.buildings;
 	}, 
 	error: function(msg){
 		// console.log();
@@ -44,9 +45,14 @@ function findPath(locations, path) {
 	for (var i = 0; i < path.length; ++i) {
 		// find the closest location
 		for (var j = 0; j < locations.length; ++j) {
+			console.log("hi");
 			// if the difference between x and y on path and x and y at location are small enough,
 			// add to array
 			// might need to check there aren't duplicates (not sure to do it here or at end)
+			if (Math.abs(path[i].x - locations[j].x) < 0.001 && Math.abs(path[i].y - locations[j].y) < 0.001) {
+				images.push(location[j].building);
+			}
 		}
 	}
+	console.log(images);
 }
