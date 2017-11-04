@@ -36,6 +36,8 @@ function mySite(data){
 		option2.text = building;
 		select1.add(option1, i+1);
 		select2.add(option2, i+1);
+		option1.value = address;
+		option2.value = address;
 	}
 }
 
