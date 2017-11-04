@@ -14,20 +14,6 @@ $.ajax({
 });
 function mySite(data){
 
-	// var start1 = document.getElementByID("start");
-	// var option = document.createElement("option");
-	// var end1 = document.getElementByID("end");
-	// for (i = 0; i < 6; i ++){
-		// var building = data.buildings[i].building;
-		// var x = data.buildings[i].x;
-		// var y = data.buildings[i].y;
-		// var address = data.buildings[i].address;
-		// var img = data.buildings[i].src;
-
-	// 	option.text = building;
-	// 	start1.add(option, x[i]);
-	// 	end1.add(option, x[i]);
-	// }
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
 	for (var i = 0; i < 6; i ++){

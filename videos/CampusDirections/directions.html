@@ -3,6 +3,7 @@
 	<head>
 		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
 		<title> Google CardBoard AR/VR </title>
+		<link rel="stylesheet" type="text/css" href="directions.css">
 	</head>
 	<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="300" height="50"></a>
 	</br>
@@ -20,12 +21,20 @@
 			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
 			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
 		</select> -->
-		<select id="start">
-			<option> - </option>
-		</select>
-		<select id="end">
-			<option> - </option>
-		</select>
+		</br>
+		<div>
+			<select id="start">
+			<option> Origin </option>
+			<option> ------- </option>
+			</select>
+		</div>
+		<div>
+			<select id="end">
+			<option> Destination </option>
+			<option> ------- </option>
+			</select>
+		</div>
+		</br>
 		<button> submit </button> 
 	</body>
 	<script>

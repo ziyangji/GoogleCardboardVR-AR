@@ -1,0 +1,19 @@
+button {
+    background-color:  darkgrey;
+    color: white;
+    margin: 10 auto;
+    float: right;
+    display: block;
+    margin-right: 530px;
+    clear: left;
+}
+select{
+	text-align: center;
+	width: auto;
+	display: block;
+	/*margin: 0 auto;*/
+	vertical-align: middle;
+	margin-left: 70px;
+	margin-top: 10px;
+	/*margin: 0 auto;*/
+}
