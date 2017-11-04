@@ -2,7 +2,33 @@
 <html>
 	<head>
 		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
-		<script>
+		<title> Google CardBoard AR/VR </title>
+	</head>
+	<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="300" height="50"></a>
+	</br>
+	<body id="mybody">
+		<!-- Might want to make a list of locations, to start with. I can try adding a map interface later -->
+		<!-- <select id="start">
+			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
+			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
+			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
+			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
+		</select>
+		<select id="end">
+			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
+			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
+			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
+			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
+		</select> -->
+		<select id="start">
+			<option> - </option>
+		</select>
+		<select id="end">
+			<option> - </option>
+		</select>
+		<button> submit </button> 
+	</body>
+	<script>
 			// https://maps.googleapis.com/maps/api/directions/json?origin=Boston,MA&destination=Concord,MA&waypoints=Charlestown,MA|via:Lexington,MA&key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg
 			// users click on two parts of a map of RPI campus (first click is start, second is destination)
 			// returns name of location, or maybe latitude and longitude
@@ -57,21 +83,13 @@
 				});
 			}
 		</script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM&callback=initMap"></script>
-	</head>
-	<body>
-		<!-- Might want to make a list of locations, to start with. I can try adding a map interface later -->
-		<select id="start">
-			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
-			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
-			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
-			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
-		</select>
-		<select id="end">
-			<option value="15th St, Troy, NY 12180">Rensselaer Union</option>
-			<option value="Academy Hall, Troy, NY 12180">Academy Hall</option>
-			<option value="EMPAC, 8th St, Troy, NY 12180">EMPAC</option>
-			<option value="110 8th St, Troy, NY 12180">Sage Laboratory</option>
-		</select>
-	</body>
+		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM&callback=initMap"></script> -->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="directions.js" type="text/javascript"></script>
 </html>
+
+
+
+
+
+

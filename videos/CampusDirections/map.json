@@ -1,14 +1,45 @@
-// locs
 {
-	"nodes": [
-		// there will be a node for every picture we take, with
-		// latitude and longitude as x and y
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" },
-		{ "x": 0, "y": 0, "src": ".jpg" }
+	"buildings": [{
+			"building": "Rensselaer Union",
+			"x": "42.730012",
+			"y": "-73.676666",
+			"address": "15th St, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "Academy Hall",
+			"x": "42.727589",
+			"y": "-73.678690",
+			"address": "Academy Hall, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "EMPAC",
+			"x": "42.729003",
+			"y": "-73.684208",
+			"address": "EMPAC, 8th St, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "Sage Laboratory",
+			"x": "42.731027",
+			"y": "-73.681545",
+			"address": "Russell Sage Laboratory, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "East Campus Athletic Village",
+			"x": "42.733158",
+			"y": "-73.667646",
+			"address": "East Campus Athletic Village, Peoples Dr, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "Darrin Communications Center",
+			"x": "42.731732",
+			"y": "-73.6750440",
+			"address": "Darrin Communications Center, 15th St, Troy, NY 12180",
+			"src": ".jpg"
+		}
 	]
 }
