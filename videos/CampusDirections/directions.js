@@ -5,7 +5,7 @@ $.ajax({
 	dataType: "json",
 	success: function(data){
 		mybody = mySite(data);
-		locations = data.buildings;
+		locations = data.locations;
 	}, 
 	error: function(msg){
 		// error checking 
@@ -22,11 +22,11 @@ function mySite(data){
 		var option1 = document.createElement("option");
 		var option2 = document.createElement("option");		
 		// parse the data read from data and store them into variables
-		var building = data.buildings[i].building;
-		var x = data.buildings[i].x;
-		var y = data.buildings[i].y;
-		var address = data.buildings[i].address;
-		var img = data.buildings[i].src;
+		var building = data.locations[i].building;
+		var x = data.locations[i].x;
+		var y = data.locations[i].y;
+		var address = data.locations[i].address;
+		var img = data.locations[i].src;
 		option1.text = building;
 		option2.text = building;
 		select1.add(option1, i+1);
@@ -45,7 +45,7 @@ function findPath(locations, path) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
 			if (Math.abs(path[i].lat() - locations[j].x) < 0.001 && Math.abs(path[i].lng() - locations[j].y) < 0.001) {
 				if (!images.includes(locations[j].building)) {
-					images.push(locations[j].building);
+					images.push(locations[j].building); // this should be src, when we get that information
 				}
 			}
 		}
