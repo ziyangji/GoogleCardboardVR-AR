@@ -1,11 +1,5 @@
 {
-	"buildings": [{
-			"building": "Rensselaer Union",
-			"x": "42.730012",
-			"y": "-73.676666",
-			"address": "15th St, Troy, NY 12180",
-			"src": ".jpg"
-		},
+	"buildings": [
 		{
 			"building": "Academy Hall",
 			"x": "42.727589",
@@ -21,6 +15,13 @@
 			"src": ".jpg"
 		},
 		{
+			"building": "Rensselaer Union",
+			"x": "42.730012",
+			"y": "-73.676666",
+			"address": "15th St, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
 			"building": "Sage Laboratory",
 			"x": "42.731027",
 			"y": "-73.681545",
@@ -28,17 +29,17 @@
 			"src": ".jpg"
 		},
 		{
-			"building": "East Campus Athletic Village",
-			"x": "42.733158",
-			"y": "-73.667646",
-			"address": "East Campus Athletic Village, Peoples Dr, Troy, NY 12180",
-			"src": ".jpg"
-		},
-		{
 			"building": "Darrin Communications Center",
 			"x": "42.731732",
 			"y": "-73.6750440",
 			"address": "Darrin Communications Center, 15th St, Troy, NY 12180",
+			"src": ".jpg"
+		},
+		{
+			"building": "East Campus Athletic Village",
+			"x": "42.733158",
+			"y": "-73.667646",
+			"address": "East Campus Athletic Village, Peoples Dr, Troy, NY 12180",
 			"src": ".jpg"
 		}
 	]

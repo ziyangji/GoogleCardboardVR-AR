@@ -55,4 +55,12 @@ function findPath(locations, path) {
 	for (var i = 0; i < images.length; ++i) {
 		console.log(images[i]);
 	}
+	showPath(images);
+}
+
+
+function showPath(images) {
+	// aframe js stuff can go here
+	// need the src for each building
+	// need to queue images and allow user to click through them
 }
