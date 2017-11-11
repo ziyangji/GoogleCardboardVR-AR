@@ -13,6 +13,7 @@ $.ajax({
 		alert("Please Reload!");
 	}
 });
+
 function mySite(data){
 
 	var select1 = document.getElementById("start");
