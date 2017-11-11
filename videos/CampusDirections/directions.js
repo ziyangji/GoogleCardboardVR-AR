@@ -46,9 +46,9 @@ function findPath(locations, path) {
 		// find the closest location
 		for (var j = 0; j < locations.length; ++j) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
-			if (Math.abs(path[i].lat() - locations[j].x) < 0.001 && Math.abs(path[i].lng() - locations[j].y) < 0.001) {
-				if (!images.includes(locations[j].building)) {
-					images.push(locations[j].building); // this should be src, when we get that information
+			if (Math.abs(path[i].lat() - locations[j].x) < 0.0008 && Math.abs(path[i].lng() - locations[j].y) < 0.0008) {
+				if (!images.includes(locations[j].nodeNum)) {
+					images.push(locations[j].nodeNum); // this should be src, when we get that information
 				}
 			}
 		}
