@@ -17,22 +17,24 @@ function mySite(data){
 
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
-	for (var i = 0; i < 6; i ++){
-		// create new options and attach them to the "start" and "end" selectors
-		var option1 = document.createElement("option");
-		var option2 = document.createElement("option");		
-		// parse the data read from data and store them into variables
-		var building = data.locations[i].building;
-		var x = data.locations[i].x;
-		var y = data.locations[i].y;
-		var address = data.locations[i].address;
-		var img = data.locations[i].src;
-		option1.text = building;
-		option2.text = building;
-		select1.add(option1, i+1);
-		select2.add(option2, i+1);
-		option1.value = address;
-		option2.value = address;
+	for (var i = 0; i < data.locations.length; i ++){
+		if (data.locations[i].building != "") {
+			// create new options and attach them to the "start" and "end" selectors
+			var option1 = document.createElement("option");
+			var option2 = document.createElement("option");		
+			// parse the data read from data and store them into variables
+			var building = data.locations[i].building;
+			var x = data.locations[i].x;
+			var y = data.locations[i].y;
+			var address = data.locations[i].address;
+			var img = data.locations[i].src;
+			option1.text = building;
+			option2.text = building;
+			select1.add(option1, i+1);
+			select2.add(option2, i+1);
+			option1.value = address;
+			option2.value = address;
+		}
 	}
 }
 
