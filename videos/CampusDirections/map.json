@@ -5,7 +5,7 @@
 			"x": "42.7293",
 			"y": "-73.6798",
 			"address": "Darrin Communications Center, Troy, NY 12180",
-			"src": ".jpg",
+			"src": "../../pictures/nearempacequirectangular.jpg",
 			"nodeNum": "1"
 		},
 		{
@@ -13,7 +13,7 @@
 			"x": "42.7305",
 			"y": "-73.6818",
 			"address": "15t St, Troy, NY 12180",
-			"src": ".jpg",
+			"src": "../../pictures/nearempacequirectangular.jpg",
 			"nodeNum": "2"
 		},
 		{
@@ -21,7 +21,7 @@
 			"x": "42.7307",
 			"y": "-73.6816",
 			"address": "15t St, Troy, NY 12180",
-			"src": ".jpg",
+			"src": "../../pictures/86field.jpg",
 			"nodeNum": "3"
 		},
 		{
@@ -29,7 +29,7 @@
 			"x": "42.7305",
 			"y": "-73.6783",
 			"address": "Quad, Troy, NY 12180",
-			"src": ".jpg",
+			"src": "../../pictures/quadequirectangular.jpg",
 			"nodeNum": "4"
 		},
 		{

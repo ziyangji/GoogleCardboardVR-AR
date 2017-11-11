@@ -3,14 +3,48 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>Show Path</title>
+	    <style>
+	    	body {
+	    		display: none;
+	    	}
+	    </style>
 	    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	    <script>
-	    	var imagePath = [48, 6, 33];
+	    	var imagePath = ["../../pictures/nearempacequirectangular.jpg", "../../pictures/86field.jpg", "../../pictures/quadequirectangular.jpg"];
+
+	    	var locations = [];
+
+			pushToAssets();
+
+			function pushToAssets() {
+				var assets = document.getElementById("assets");
+				for (var i = 0; i < imagePath.length; ++i) {
+					var newAsset = "<img id=\"image" + i + "\" src=\"" + imagePath[i] + "\">";
+					assets += newAsset;
+					console.log(newAsset);
+				}
+			}
+
+			window.onload = function() {
+				document.getElementById("hide").style.display = "block";
+			}
 	    </script>
 	</head>
 	<body>
 		<a-scene>
-			
+			<a-assets id="assets">
+				<!-- images (added in js) -->
+				<script id="button" type="text/html">
+				<!-- button template, might not need if there's only one button? -->
+		    	<a-entity class="link"
+		    		set-image="on: click; target: #loc; src: ${src}"></a-entity>
+		    	</script>
+			</a-assets>
+			<div style="display: none" id="hide">
+				<!-- I want this to load after js has loaded since id doesn't exist yet otherwise -->
+				<a-sky id="loc" src="#image0"></a-sky>
+			</div>
 		</a-scene>
 	</body>
 </html>
