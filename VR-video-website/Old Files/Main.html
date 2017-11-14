@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./Main_files/material.pink-orange.min.css">
+  <script src="./Main_files/material.min.js"></script>
+  <link rel="stylesheet" href="./Main_files/Material_Icons.css">
+  <link type="text/css" rel="stylesheet" href="./Main_files/css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('./Main_files/EMPAC_NW_Face.JPG') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Google Cardboard VR (RCOS)</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="http://www.rpi.edu/">RPI Main page</a>
+        <a class="mdl-navigation__link" href="./Main.html">Our Main page</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Videos</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="./Demo_video.html">Video 1</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
