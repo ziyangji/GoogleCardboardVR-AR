@@ -12,31 +12,23 @@
 
 	    	window.onload = function() {
 	    		pushToAssets();
-	    	}
 
-			function pushToAssets() {
-				var assets = document.querySelector('a-assets');
-				console.log(document.getElementById('scene'));
-				console.log(assets);
-				for (var i = 0; i < imagePath.length; ++i) {
-					var image = document.createElement('a-image');
-					image.setAttribute('src', imagePath[i]);
-					image.setAttribute('id', "image" + i);
-					assets.appendChild(image);
-					console.log(image);
+	    		function pushToAssets() {
+					var assets = document.querySelector('a-assets');
+					console.log(document.getElementById('scene'));
+					console.log(assets);
+					for (var i = 0; i < imagePath.length; ++i) {
+						var image = document.createElement('a-image');
+						image.setAttribute('src', imagePath[i]);
+						image.setAttribute('id', "image" + i);
+						assets.appendChild(image);
+						console.log(image);
+					}
+
+					var test = document.querySelector('a-assets');
+					console.log(test.querySelector('#image0'));
 				}
-
-				var test = document.querySelector('a-assets');
-				console.log(test.querySelector('#image0'));
-			}
-
-			// AFRAME.registerComponent('a-assets', {
-			// 	schema: {type: 'string'},
-			// 	init: function() {
-			// 		var something = this.data;
-			// 		console.log(something);
-			// 	}
-			// });
+	    	}
 	    </script>
 	</head>
 	<body>
