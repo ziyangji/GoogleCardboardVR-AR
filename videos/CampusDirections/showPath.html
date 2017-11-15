@@ -15,7 +15,6 @@
 
 	    		function pushToAssets() {
 					var assets = document.querySelector('a-assets');
-					console.log(document.getElementById('scene'));
 					console.log(assets);
 					for (var i = 0; i < imagePath.length; ++i) {
 						var image = document.createElement('a-image');
@@ -25,6 +24,12 @@
 						console.log(image);
 					}
 
+					var sky = document.createElement('a-sky');
+					sky.setAttribute('src', '#image0');
+					var world = document.querySelector('a-scene');
+					world.appendChild(sky);
+
+					// test
 					var test = document.querySelector('a-assets');
 					console.log(test.querySelector('#image0'));
 				}
@@ -32,7 +37,6 @@
 	    </script>
 	</head>
 	<body>
-		<div id="scene"></div>
 		<a-scene>
 			<a-assets id="assets">
 				<!-- images (added in js) -->
@@ -42,10 +46,10 @@
 		    		set-image="on: click; target: #loc; src: ${src}"></a-entity>
 		    	</script>
 			</a-assets>
-			<div>
+			<!-- <div id="world"> -->
 				<!-- I want this to load after js has loaded since id doesn't exist yet otherwise -->
-				<!-- <a-sky id="loc" src="#image0"></a-sky> -->
-			</div>
+				<!-- <a-sky id="loc" src="../../pictures/nearempacequirectangular.jpg" data-set-image-fade-setup="true"></a-sky> -->
+			<!-- </div> -->
 		</a-scene>
 	</body>
 </html>
