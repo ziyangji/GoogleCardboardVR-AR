@@ -3,38 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>Show Path</title>
-	    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-	    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	    <script>
-	    	var imagePath = ["../../pictures/nearempacequirectangular.jpg", "../../pictures/86field.jpg", "../../pictures/quadequirectangular.jpg"];
-
-	    	var locations = [];
-
-	    	window.onload = function() {
-	    		pushToAssets();
-
-	    		function pushToAssets() {
-					var assets = document.querySelector('a-assets');
-					console.log(assets);
-					for (var i = 0; i < imagePath.length; ++i) {
-						var image = document.createElement('a-image');
-						image.setAttribute('src', imagePath[i]);
-						image.setAttribute('id', "image" + i);
-						assets.appendChild(image);
-						console.log(image);
-					}
-
-					var sky = document.createElement('a-sky');
-					sky.setAttribute('src', '#image0');
-					var world = document.querySelector('a-scene');
-					world.appendChild(sky);
-
-					// test
-					var test = document.querySelector('a-assets');
-					console.log(test.querySelector('#image0'));
-				}
-	    	}
-	    </script>
 	</head>
 	<body>
 		<a-scene>
@@ -42,8 +10,7 @@
 				<!-- images (added in js) -->
 				<script id="button" type="text/html">
 				<!-- button template, might not need if there's only one button? -->
-		    	<a-entity class="link"
-		    		set-image="on: click; target: #loc; src: ${src}"></a-entity>
+		    		<a-entity class="link" set-image="on: click; target: #loc; src: ${src}"></a-entity>
 		    	</script>
 			</a-assets>
 			<!-- <div id="world"> -->
@@ -52,4 +19,8 @@
 			<!-- </div> -->
 		</a-scene>
 	</body>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="showPath.js"></script>
+	<script src="set-image.js"></script>
 </html>
