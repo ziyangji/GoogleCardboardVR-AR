@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Test</title>
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="aframe.js"></script>
     <script src="aframe-animation-component.min.js"></script>
     <script src="aframe-event-set-component.min.js"></script>
@@ -17,16 +18,6 @@
       <a-assets>
         <img id="1" crossorigin="anonymous" src="">
         <img id="1-thumb" crossorigin="anonymous" src="pictures/1.jpg">
-        <img id="2" crossorigin="anonymous" src="">
-        <img id="2-thumb" crossorigin="anonymous" src="pictures/2.jpg">
-        <img id="3" crossorigin="anonymous" src="">
-        <img id="3-thumb" crossorigin="anonymous" src="pictures/3.jpg">
-        <img id="4" crossorigin="anonymous" src="">
-        <img id="4-thumb" crossorigin="anonymous" src="pictures/4.jpg">
-        <img id="5" crossorigin="anonymous" src="">
-        <img id="5-thumb" crossorigin="anonymous" src="pictures/5.jpg">
-        <img id="6" crossorigin="anonymous" src="">
-        <img id="6-thumb" crossorigin="anonymous" src="pictures/6.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
         <!-- Image link template to be reused. -->
@@ -49,26 +40,6 @@
       <!-- Image links. -->
       <a-entity id="1-position" layout="type: line; margin: 1.5" position="20 20 20">
         <a-entity template="src: #link" data-src="#1" data-thumb="#1-thumb"></a-entity>
-      </a-entity>
-
-      <a-entity id="2-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#2" data-thumb="#2-thumb"></a-entity>
-      </a-entity>
-
-      <a-entity id="3-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#3" data-thumb="#3-thumb"></a-entity>
-      </a-entity>
-
-      <a-entity id="4-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#4" data-thumb="#4-thumb"></a-entity>
-      </a-entity>
-
-      <a-entity id="5-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#5" data-thumb="#5-thumb"></a-entity>
-      </a-entity>
-
-      <a-entity id="6-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#6" data-thumb="#6-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->

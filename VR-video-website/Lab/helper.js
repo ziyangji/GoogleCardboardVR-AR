@@ -20,13 +20,12 @@ class Node {
 	constructor(id, picture_address) {
 		this.id_ = id;
 		this.picture_ = picture_address;
-		this.button1_ = new Button();
-		this.button2_ = new Button();
-		this.button3_ = new Button();
-		this.button4_ = new Button();
-		this.button5_ = new Button();
-		this.button6_ = new Button();
-	}	
+        this.buttons = [];
+	}
+
+    addButton(button) {
+        this.buttons.push(button);
+    }
 }
 
 var nodes = [];
@@ -35,6 +34,8 @@ function findNode(id) {
 	for (var i = 0; i < nodes.length; ++i) if (id == nodes[i].id_) return nodes[i];
 	return null;
 }
+
+function addButton
 
 function initializeNodes() {
 	nodes.push(new Node("Sage", "pictures/test1.JPG"));
