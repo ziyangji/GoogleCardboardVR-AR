@@ -1,0 +1,105 @@
+<!-- Based off of code from https://aframe-gallery.glitch.me/ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Test</title>
+		<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+		<script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+		<script>
+			AFRAME.registerComponent('set-image', {
+				schema: {
+					on: {type: 'string'},
+					target: {type: 'selector'},
+					src: {type: 'string'},
+					dur: {type: 'number', default: 300}
+				},
+				init: function() {
+					var data = this.data;
+					var el = this.el;
+					this.setupFadeAnimation();
+					el.addEventListener(data.on, function() {
+						data.target.emit('set-image-fade');
+						setTimeout(function() {
+							data.target.setAttribute('material', 'src', data.src);
+						}, data.dur);
+					});
+				},
+				setupFadeAnimation: function() {
+					var data = this.data;
+				    var targetEl = this.data.target;
+
+				    // Only set up once.
+				    if (targetEl.dataset.setImageFadeSetup) { return; }
+				    targetEl.dataset.setImageFadeSetup = true;
+
+				    // Create animation.
+				    targetEl.setAttribute('animation__fade', {
+				      property: 'material.color',
+				      startEvents: 'set-image-fade',
+				      dir: 'alternate',
+				      dur: data.dur,
+				      from: '#FFF',
+				      to: '#000'
+				    });
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<!-- Images for sky and buttons - switch these out when we have pictures -->
+				<img id="union" src="skies/mcneil_room.jpg">
+			    <img id="union-thumb" src="thumbnails/union_thumb.png">
+			    <img id="empac" src="skies/empac_lobby.jpg">
+			    <img id="empac-thumb" src="thumbnails/empac_lobby_thumb.png">
+			    <img id="approach" src="skies/near_empac.jpg">
+			    <img id="approach-thumb" src="thumbnails/campus_thumb.png">
+			    <img id="quad" src="skies/quad.jpg">
+			    <img id="quad-thumb" src="thumbnails/quad_thumb.png">
+			    <img id="rcos" src="skies/rcos.jpg">
+			    <img id="rcos-thumb" src="thumbnails/rcos_thumb.png"> 
+
+			    <!-- Button template -->
+			    <script id="plane" type="text/html">
+				<a-entity class="link"
+					geometry="primitive: plane; height: 1; width: 1"
+					material="shader: flat; src: ${thumb}"
+					event-set__1="_event: mousedown; scale: 1 1 1"
+			        event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+			        event-set__4="_event: mouseleave; scale: 1 1 1"
+			        set-image="on: click; target: #image-360; src: ${src}"></a-entity>
+				</script>
+			</a-assets>
+
+			<a-sky id="image-360" src="#union" rotation="0 -95 0" data-set-image-fade-setup="true"></a-sky>
+
+			<!-- Text. I need to play around with how this is used
+			<a-text value="Welcome to the Rensselaer Union!" color="#E02020" position="-2 2 -3"></a-text>
+			<a-text value="The Rensselaer Union was founded in 1890" position="0 1 -3" width="3"></a-text>
+
+			<!-- Buttons -->
+			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
+				<a-entity template="src: #plane" data-src="#union" data-thumb="#union-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="#empac" data-thumb="#empac-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="#approach" data-thumb="#approach-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="#quad" data-thumb="#quad-thumb"></a-entity>
+				<a-entity template="src: #plane" data-src="#rcos" data-thumb="#rcos-thumb"></a-entity>
+			</a-entity>
+
+			<a-camera>
+				<a-cursor id="cursor">
+					   <a-animation begin="click" easing="ease-in" attribute="scale"
+	                   		fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+	      			   <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+	                   		from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+				</a-cursor>
+			</a-camera>
+		</a-scene>
+	</body>
+</html>
