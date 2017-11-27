@@ -20,6 +20,7 @@ class Button {
     }
 }
 
+// Represent one scene
 class Node {
     constructor(id, picture_address) {
         this.id_ = id;
