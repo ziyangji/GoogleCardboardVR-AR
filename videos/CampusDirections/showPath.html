@@ -25,10 +25,10 @@
 			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
 			        event-set__4="_event: mouseleave; scale: 1 1 1"
 		    		set-image="on: click; target: #loc; src: ${src}"></a-entity>
-		    		<!-- material="shader: flat; src: ${thumb}" -->
 		    	</script>
 			</a-assets>
 			<!-- sky (in js file) -->
+			<!-- <a-entity link="href: localhost:8000/directions.html; title: Home"></a-entity> -->
 			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
 				<!-- button using template, created in js file -->
 			</a-entity>
@@ -41,10 +41,11 @@
 	                   		from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
 				</a-cursor>
 			</a-camera>
+
+			<a-text value="" location="0 0 -2" color="#000000"></a-text>
 		</a-scene>
 	</body>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="showPath.js"></script>
-	<!-- <script src="set-image.js"></script> -->
 </html>
  

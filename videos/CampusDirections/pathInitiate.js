@@ -12,15 +12,7 @@ function initMap() {
 	var onChangeHandler = function() {
 		calculateAndDisplayRoute(directionsService, markerArray);
 	}
-
-	// I think having on event listener for both start and stop is more similar to
-	// what we may want in the final program since the fewer buttons we have to press
-	// when using the google cardboard headset, the better - Shoshana 
-	// // get start destination
-	// document.getElementById('start').addEventListener('change', onChangeHandler);
-	// // get end destination
-	// document.getElementById('end').addEventListener('change', onChangeHandler);
-
+	
 	$("#submitPath").on("click", function(e) {
 		calculateAndDisplayRoute(directionsService, markerArray);
 	});

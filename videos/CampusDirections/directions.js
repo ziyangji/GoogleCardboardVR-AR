@@ -9,7 +9,6 @@ $.ajax({
 	}, 
 	error: function(msg){
 		// error checking 
-		// console.log();
 		alert("Please Reload!");
 	}
 });
@@ -28,7 +27,7 @@ function mySite(data){
 			var x = data.locations[i].x;
 			var y = data.locations[i].y;
 			var address = data.locations[i].address;
-			var img = data.locations[i].src;
+			var img = data.locations[i].url;
 			option1.text = building;
 			option2.text = building;
 			select1.add(option1, i+1);
@@ -47,8 +46,8 @@ function findPath(locations, path) {
 		for (var j = 0; j < locations.length; ++j) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
 			if (Math.abs(path[i].lat() - locations[j].x) < 0.0008 && Math.abs(path[i].lng() - locations[j].y) < 0.0008) {
-				if (!images.includes(locations[j].nodeNum)) {
-					images.push(locations[j].nodeNum); // this should be src, when we get that information
+				if (!images.includes(locations[j].url)) {
+					images.push(locations[j].url); // this should be url, when we get that information
 				}
 			}
 		}
@@ -66,4 +65,11 @@ function showPath(images) {
 	// aframe js stuff can go here
 	// need the src for each building
 	// need to queue images and allow user to click through them
+
+	var url = "localhost:8000/videos/CampusDirections/showPath.html";
+	window.open(url, '_self');
+
+	// window.location.href = "localhost:8000/videos/CampusDirections/showPath.html";
+
+	// window.location.replace("localhost:8000/showPath.html");
 }
