@@ -2,9 +2,17 @@
 <html>
 	<head>
 		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
 		<title> Google CardBoard AR/VR </title>
 		<link rel="stylesheet" type="text/css" href="directions.css">
 	</head>
+	<style type="text/css">
+		#map {
+			height: 500px;
+			width: 500px;
+		}
+	</style>
 	<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="300" height="50"></a>
 	</br>
 	<body id="mybody">
@@ -24,6 +32,9 @@
 		</br>
 		<!-- TODO: function()-->
 		<button id="submitPath" value="submit">submit</button>
+		<div id="right-panel">
+		<br/><br/>
+		<div id="map"></div>
 	</body>
 	<script type="text/javascript" src="pathInitiate.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
