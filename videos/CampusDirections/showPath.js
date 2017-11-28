@@ -2,20 +2,14 @@
 // Can we link the directions.html file to this file
 // By doing this, I mean to have the directions.html file write to a json file 
 // we can get the data from the json file instead of doing this
-// var imagePath = ["../../pictures/nearempacequirectangular.jpg", "../../pictures/86field.jpg", "../../pictures/quadequirectangular.jpg", "../../pictures/empacequirectangular.jpg"];
-var imagePath = [
-	"https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/7.jpg",
-	"https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/13.jpg",
-	"https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/24.jpg",
-	"https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/45.jpg"
-];
+var imagePath = [];
 
 var locs = [];
 
 window.onload = function() {
-	// $.getScript('directions.js', function() {
-		// locs = images;
-	// });
+	// it might be better to write to JSON file, which would be easier w/ node.js
+	var imageData = window.localStorage.getItem('images');
+	var imagePath = JSON.parse(imageData);
 
 	var imageCounter = 1;
 
@@ -46,7 +40,6 @@ window.onload = function() {
 	}
 
 	function addButton() {
-		// var link = document.getElementById('links');
 		var link = document.querySelector('a-entity');
 		var button = document.createElement('a-entity');
 		button.setAttribute('template', 'src: #button');
@@ -87,7 +80,7 @@ window.onload = function() {
 						destinationButton.setAttribute('location', '0 0 -2');
 						scene.appendChild(destinationButton);
 
-						// 	window.location.replace("localhost:8000/directions.html");
+						// location.href = 'directions.html';
 					} else {
 						data.target.setAttribute('material', 'src', data.src);
 

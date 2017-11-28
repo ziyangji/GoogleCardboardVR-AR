@@ -45,7 +45,7 @@ function findPath(locations, path) {
 		// find the closest location
 		for (var j = 0; j < locations.length; ++j) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
-			if (Math.abs(path[i].lat() - locations[j].x) < 0.0008 && Math.abs(path[i].lng() - locations[j].y) < 0.0008) {
+			if (Math.abs(path[i].lat() - locations[j].x) < 0.0001 && Math.abs(path[i].lng() - locations[j].y) < 0.0001) {
 				if (!images.includes(locations[j].url)) {
 					images.push(locations[j].url); // this should be url, when we get that information
 				}
@@ -62,14 +62,10 @@ function findPath(locations, path) {
 
 
 function showPath(images) {
-	// aframe js stuff can go here
-	// need the src for each building
-	// need to queue images and allow user to click through them
-
-	var url = "localhost:8000/videos/CampusDirections/showPath.html";
-	window.open(url, '_self');
-
-	// window.location.href = "localhost:8000/videos/CampusDirections/showPath.html";
-
-	// window.location.replace("localhost:8000/showPath.html");
+	var imageData = JSON.stringify(images);
+	// sessionStorage.setItem('images', images);
+	// it might be better to write to JSON file, which would be easier w/ node.js
+	window.localStorage.setItem('images', imageData);
+	console.log(sessionStorage.getItem('images'));
+	location.href='showPath.html'; 
 }
