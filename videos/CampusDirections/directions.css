@@ -1,12 +1,15 @@
-button {
+button#submitPath {
+    background-color:  darkgrey;
+    color: white;
+    margin-left: 200px;
+}
+button#submit2 {
     background-color:  darkgrey;
     color: white;
     margin: 10 auto;
-    float: right;
-    display: block;
-    margin-right: 530px;
-    clear: left;
+    margin-left: 20px;
 }
+
 select{
 	text-align: center;
 	width: auto;
@@ -14,6 +17,11 @@ select{
 	/*margin: 0 auto;*/
 	vertical-align: middle;
 	margin-left: 70px;
+    /*margin-right: 20px;*/
 	margin-top: 10px;
 	/*margin: 0 auto;*/
+}
+
+label{
+    margin-left: 20px;
 }

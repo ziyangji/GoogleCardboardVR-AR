@@ -35,8 +35,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 			for (var i = 0; i < response.routes[0].overview_path.length; ++i) {
 				console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
 			}
-			directionsDisplay.setDirections(response);
-			// findPath(locations, response.routes[0].overview_path);
+			// use following line for Google View
+			// directionsDisplay.setDirections(response);
+			findPath(locations, response.routes[0].overview_path);
 		} else {
 			window.alert('Directions request failed due to ' + status);
 		}

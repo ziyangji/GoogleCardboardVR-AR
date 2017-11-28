@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
+		<title> Google CardBoard AR/VR </title>
+		<link rel="stylesheet" type="text/css" href="directions.css">
+	</head>
+	<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="300" height="50"></a>
+	</br>
+	<body id="mybody">
+		</br>
+		<div>
+			<!-- Origin: -->
+			<label for "start"> Origin </label>
+			<select id="start" name="start" style = "margin-left: 20px">
+			</select>
+		</div>
+		<div>
+			<!-- Destination: -->
+			<label for "end"> Destination </label>
+			<select id="end" name="end" style = "margin-left: 20px">
+			</select>
+		</div>
+		</br>
+		<!-- TODO: function()-->
+		<button id="submitPath" value="submit">submit</button>
+	</body>
+	<script type="text/javascript" src="pathInitiate.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="directions.js" type="text/javascript"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM&callback=initMap"></script>
+</html>
