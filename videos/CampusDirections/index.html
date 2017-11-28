@@ -4,29 +4,43 @@
 		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
 		<title> Google CardBoard AR/VR </title>
 		<link rel="stylesheet" type="text/css" href="directions.css">
+		<style> 
+			a {display:inline-block; margin-right:15px;}
+			a#first {margin-left: 45px;}
+		</style>
 	</head>
-	<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="300" height="50"></a>
-	</br>
 	<body id="mybody">
-		</br>
-		<div>
-			<!-- Origin: -->
-			<label for "start"> Origin </label>
-			<select id="start" name="start" style = "margin-left: 20px">
-			</select>
-		</div>
-		<div>
-			<!-- Destination: -->
-			<label for "end"> Destination </label>
-			<select id="end" name="end" style = "margin-left: 20px">
-			</select>
-		</div>
-		</br>
-		<!-- TODO: function()-->
-		<button id="submitPath" value="submit">submit</button>
+		<hr>
+		<a id="site" href="#"><img id="rpi" src="rpilogo.png" width="400" height="70"></a>
+		<a id="first" href="https://rcos.io"> RCOS </a>
+		<a href="http://www.rpi.edu"> RPI Main Page </a>
+		<a href="https://github.com/ZiniuYu/GoogleCardboardVR-AR"> Our GitHub Repo </a>
+		<hr>
+		<mybody>
+			<h2> GoogleCardboard VR/AR </h2>
+			<p> This is a RCOS project to utilize Google Cardboard to contribute to <a href="https://aframe.io/"> aframe</a> </p>
+			<div>
+					<!-- Origin: -->
+				<label for "start"> <b>Origin</b> </label>
+				<select id="start" name="start" style = "margin-left: 20px">
+				</select>
+			</div>
+			</br>
+			<div>
+				<!-- Destination: -->
+				<label for "end"> <b>Destination</b> </label>
+				<select id="end" name="end" style = "margin-left: 20px">
+				</select>
+			</div>
+			</br>
+			<!-- TODO: function()-->
+			<button id="submitPath" value="submit"> AR view </button>
+			<button id="submit2" value="submit2"> Google view </button>
+		</mybody>
 	</body>
+	
 	<script type="text/javascript" src="pathInitiate.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="directions.js" type="text/javascript"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM&callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg&callback=initMap"></script>
 </html>
