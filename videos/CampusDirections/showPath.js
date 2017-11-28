@@ -71,16 +71,13 @@ window.onload = function() {
 						destinationText.setAttribute('color', '#CC1122');
 						scene.appendChild(destinationText);
 
-						// var destinationButton = document.createElement('a-entity');
-						// this isn't working, link doesn't show up for some reason
-						var destinationButton = document.createElement('a-link');
-						destinationButton.setAttribute('href', 'localhost:8000/videos/CampusDirections');
-						destinationButton.setAttribute('color', '#FF0000');
-						destinationButton.setAttribute('title', 'home');
-						destinationButton.setAttribute('location', '0 0 -2');
+						var destinationButton = document.createElement('a-entity');
+						destinationButton.setAttribute('template', 'src: #textButton');
+						destinationButton.setAttribute('id', 'home');
+						destinationButton.setAttribute('data-src', '#thumbnail');
+						destinationButton.setAttribute('position', '0 1 -4');
 						scene.appendChild(destinationButton);
 
-						// location.href = 'directions.html';
 					} else {
 						data.target.setAttribute('material', 'src', data.src);
 
@@ -118,6 +115,25 @@ window.onload = function() {
 		      from: '#FFF',
 		      to: '#000'
 		    });
+		}
+	});
+
+	// very much not finished
+	AFRAME.registerComponent('set-page', {
+		schema: {
+			on: {type: 'string'},
+			target: {type: 'selector'},
+			src: {type: 'string'},
+			dur: {type: 'number', default: 300}
+		},
+		init: function() {
+			var data = this.data;
+			var el = this.el;
+			el.addEventListener(data.on, function() {
+				setTimeout(function() {
+					location.href = 'index.html';
+				}, data.dur);
+			});
 		}
 	});
 
