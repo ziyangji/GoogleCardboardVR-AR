@@ -17,14 +17,6 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/2.jpg"
 		},
 		{
-			"building": "",
-			"x": "42.730982",
-			"y": "-73.681579",
-			"address": "15t St, Troy, NY 12180",
-			"nodeNum": "3",
-			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/3.jpg"
-		},
-		{
 			"building": "Quad",
 			"x": "42.730501",
 			"y": "-73.678056",
@@ -41,7 +33,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/5.jpg"
 		},
 		{
-			"building": "Ricketts",
+			"building": "Ricketts Building",
 			"x": "42.730731",
 			"y": "-73.679784",
 			"address": "Ricketts Building, Troy, NY 12180",
@@ -49,7 +41,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/6.jpg"
 		},
 		{
-			"building": "Quad",
+			"building": "Quad Hall",
 			"x": "42.730129",
 			"y": "-73.677750",
 			"address": "Quad, Troy, NY 12180",
@@ -106,8 +98,8 @@
 		},
 		{
 			"building": "???",
-			"x": "42.7289",
-			"y": "-73.6799",
+			"x": "42.728609",
+			"y": "-73.679085",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "14",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/14.jpg"
@@ -119,14 +111,6 @@
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "15",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/15.jpg"
-		},
-		{
-			"building": "???",
-			"x": "42.7308",
-			"y": "-73.6817",
-			"address": "15t St, Troy, NY 12180",
-			"nodeNum": "16",
-			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/16.jpg"
 		},
 		{
 			"building": "",
@@ -154,78 +138,70 @@
 		},
 		{
 			"building": "",
-			"x": "42.7309",
-			"y": "-73.6822",
+			"x": "42.730782",
+			"y": "-73.682255",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "20",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/20.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7315",
-			"y": "-73.6825",
+			"x": "42.731483",
+			"y": "-73.682683",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "21",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/21.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7295",
-			"y": "-73.6795",
-			"address": "15t St, Troy, NY 12180",
-			"nodeNum": "22",
-			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/22.jpg"
-		},
-		{
-			"building": "",
-			"x": "42.7298",
-			"y": "-73.6808",
+			"x": "42.729805",
+			"y": "-73.681397",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "23",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/23.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7294",
-			"y": "-73.6782",
+			"x": "42.730629",
+			"y": "-73.681115",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "24",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/24.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7313",
-			"y": "-73.6824",
+			"x": "42.731271",
+			"y": "-73.682464",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "25",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/25.jpg"
 		},
 		{
 			"building": "Jonsson-Rowland Science Center",
-			"x": "42.7289",
-			"y": "-73.6802",
+			"x": "42.728879",
+			"y": "-73.680108",
 			"address": "Jonsson-Rowland Science Center, Troy, NY 12180",
 			"nodeNum": "26",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/26.jpg"
 		},
 		{
 			"building": "Amos Eaton Hall",
-			"x": "42.7301",
-			"y": "-73.6821",
+			"x": "42.730148",
+			"y": "-73.682194",
 			"address": "Amos Eaton Hall, Troy, NY 12180",
 			"nodeNum": "27",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/27.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7298",
-			"y": "-73.6797",
+			"x": "42.729705",
+			"y": "-73.679747",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "28",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/28.jpg"
 		},
 		{
-			"building": "",
+			"building": "???",
 			"x": "42.7286",
 			"y": "-73.6786",
 			"address": "15t St, Troy, NY 12180",
@@ -234,200 +210,192 @@
 		},
 		{
 			"building": "",
-			"x": "42.7299",
-			"y": "-73.6825",
+			"x": "42.729873",
+			"y": "-73.682694",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "30",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/30.jpg"
 		},
 		{
 			"building": "Greene Building",
-			"x": "42.7303",
-			"y": "-73.6812",
+			"x": "42.730152",
+			"y": "-73.681179",
 			"address": "Greene Bldg, Troy, NY 12180",
 			"nodeNum": "31",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/31.jpg"
 		},
 		{
 			"building": "President's Parking Place",
-			"x": "42.731",
-			"y": "-73.6809",
+			"x": "42.730936",
+			"y": "-73.680886",
 			"address": "Troy Building, Troy, NY 12180",
 			"nodeNum": "32",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/32.jpg"
 		},
 		{
 			"building": "Troy Building",
-			"x": "42.7309",
-			"y": "-73.6805",
+			"x": "42.730852",
+			"y": "-73.680558",
 			"address": "Troy Building, Troy, NY 12180",
 			"nodeNum": "33",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/33.jpg"
 		},
 		{
-			"building": "",
-			"x": "42.7298",
-			"y": "-73.6788",
+			"building": "CII Entrance",
+			"x": "42.729650",
+			"y": "-73.678936",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "34",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/34.jpg"
 		},
 		{
-			"building": "Carnegie",
-			"x": "42.7304",
-			"y": "-73.6835",
+			"building": "",
+			"x": "42.730674",
+			"y": "-73.683443",
 			"address": "Carnegie Building, Troy, NY 12180",
 			"nodeNum": "35",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/35.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7308",
-			"y": "-73.6823",
+			"x": "42.730728",
+			"y": "-73.682168",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "36",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/36.jpg"
 		},
 		{
 			"building": "Rensselaer Lally School of Management",
-			"x": "42.7302",
-			"y": "-73.6817",
+			"x": "42.730194",
+			"y": "-73.681866",
 			"address": "Rensselaer Lally School of Management, Troy, NY 12180",
 			"nodeNum": "37",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/37.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7302",
-			"y": "-73.6781",
+			"x": "42.730219",
+			"y": "-73.678155",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "38",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/38.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7301",
-			"y": "-73.6815",
+			"x": "42.730188",
+			"y": "-73.681559",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "39",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/39.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7298",
-			"y": "-73.6817",
+			"x": "42.729959",
+			"y": "-73.682207",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "40",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/40.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7302",
-			"y": "-73.6829",
+			"x": "42.730186",
+			"y": "-73.682851",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "41",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/41.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7287",
-			"y": "-73.6791",
+			"x": "42.728625",
+			"y": "-73.679544",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "42",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/42.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7302",
-			"y": "-73.6777",
+			"x": "42.730097",
+			"y": "-73.677508",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "43",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/43.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7301",
-			"y": "-73.6821",
+			"x": "42.729962",
+			"y": "-73.682230",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "44",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/44.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.729",
-			"y": "-73.6781",
+			"x": "42.728887",
+			"y": "-73.678129",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "45",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/45.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7305",
-			"y": "-73.6789",
+			"x": "42.730550",
+			"y": "-73.679018",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "46",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/46.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7296",
-			"y": "-73.6798",
+			"x": "42.729581",
+			"y": "-73.679540",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "47",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/47.jpg"
 		},
 		{
 			"building": "RPI Playhouse",
-			"x": "42.7292",
-			"y": "-73.678",
+			"x": "42.729162",
+			"y": "-73.677935",
 			"address": "RPI Playhouse, Troy, NY 12180",
 			"nodeNum": "48",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/48.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7308",
-			"y": "-73.6792",
+			"x": "42.730607",
+			"y": "-73.679365",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "49",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/49.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7296",
-			"y": "-73.68",
-			"address": "15t St, Troy, NY 12180",
-			"nodeNum": "50",
-			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/50.jpg"
-		},
-		{
-			"building": "",
-			"x": "42.7297",
-			"y": "-73.6786",
+			"x": "42.729745",
+			"y": "-73.678535",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "51",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/51.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7298",
-			"y": "-73.6788",
+			"x": "42.729758",
+			"y": "-73.678800",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "52",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/52.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7293",
-			"y": "-73.6801",
+			"x": "42.729092",
+			"y": "-73.680047",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "53",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/53.jpg"
 		},
 		{
 			"building": "",
-			"x": "42.7302",
-			"y": "-73.678",
+			"x": "42.730140",
+			"y": "-73.677801",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "54",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/54.jpg"
@@ -442,8 +410,8 @@
 		},
 		{
 			"building": "Pittsburgh Building",
-			"x": "42.731",
-			"y": "-73.6834",
+			"x": "42.730949",
+			"y": "-73.683374",
 			"address": "Pittsburgh Bldg, Troy, NY 12180",
 			"nodeNum": "56",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/56.jpg"
