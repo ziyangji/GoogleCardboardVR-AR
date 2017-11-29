@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="Main_files/materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<!-- Dropdown Structure -->
+<ul id="Videos" class="dropdown-content">
+    <li><a href="https://www.youtube.com/watch?v=OsOcbkqYh8s">First Video</a></li>
+    <li><a href="videos/CampusDirections/index.html">Second Video</a></li>
+    <li><a href="Video 3/index.html">Third Video</a></li>
+    <li class="divider"></li>
+</ul>
+<nav class="red">
+    <div class="nav-wrapper">
+        <a href="Main.html" class="brand-logo center">Google Cardboard VR (RCOS)</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" data-activates="Videos">Videos<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center white-text">About Us</h1>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+
+<footer class="page-footer red">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">RCOS Google Cardboard Team</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Other links</h5>
+                <ul>
+                    <li><a class="white-text text-lighten-3" href="https://rcos.io/">RCOS</a></li>
+                    <li><a class="white-text text-lighten-3" href="http://www.rpi.edu">RPI Homepage</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            RCOS 2017
+        </div>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="Main_files/materialize/js/materialize.min.js"></script>
+<script src="Main_files/js/init.js"></script>
+<script src="Main_files/js/jquery.pano.js"></script>
+<script>
+    /* jshint jquery: true */
+    jQuery(document).ready(function($){
+        $("#myPano").pano({
+            img: "./sphere.jpg"
+        });
+        pano.moveLeft();
+        pano.stopMoving();
+        pano.moveRight();
+        pano.stopMoving();
+    });
+</script>
+</body>
