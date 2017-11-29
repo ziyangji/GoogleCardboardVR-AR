@@ -11,19 +11,18 @@ function initMap() {
 		zoom: 15,
 		center: {lat: 42.7285, lng: -73.677}
 	});
-	console.log(map);
 	directionsDisplay.setMap(map);
-
-	var onChangeHandler = function() {
-		calculateAndDisplayRoute(directionsService, directionsDisplay);
-	}
 	
 	$("#submitPath").on("click", function(e) {
-		calculateAndDisplayRoute(directionsService, directionsDisplay);
+		calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+	});
+
+	$("#submit2").on("click", function(e) {
+		calculateAndDisplayRoute(directionsService, directionsDisplay, false);
 	});
 }
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
 	directionsService.route({
 		origin: document.getElementById('start').value,
 		destination: document.getElementById('end').value,
@@ -36,8 +35,12 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 				console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
 			}
 			// use following line for Google View
-			// directionsDisplay.setDirections(response);
-			findPath(locations, response.routes[0].overview_path);
+			if (vr) {
+				findPath(locations, response.routes[0].overview_path);
+			} else {
+				directionsDisplay.setDirections(response);
+				console.log('google view');
+			}
 		} else {
 			window.alert('Directions request failed due to ' + status);
 		}
