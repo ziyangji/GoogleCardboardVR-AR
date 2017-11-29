@@ -47,6 +47,22 @@ window.onload = function() {
 		link.appendChild(button);
 	}
 
+	function reachedEnd() {
+		var scene = document.querySelector('a-scene');
+		var destinationText = document.createElement('a-text');
+		destinationText.setAttribute('value', 'You have reached the end!');
+		destinationText.setAttribute('position', '-1.3 2 -3');
+		destinationText.setAttribute('color', '#CC1122');
+		scene.appendChild(destinationText);
+
+		var destinationButton = document.createElement('a-entity');
+		destinationButton.setAttribute('template', 'src: #textButton');
+		destinationButton.setAttribute('id', 'home');
+		destinationButton.setAttribute('data-src', '#thumbnail');
+		destinationButton.setAttribute('position', '0 1 -4');
+		scene.appendChild(destinationButton);
+	}
+
 	// based on aframe tutorial
 	AFRAME.registerComponent('set-image', {
 		schema: {
@@ -63,24 +79,7 @@ window.onload = function() {
 				data.target.emit('set-image-fade');
 				setTimeout(function() {
 					if (imageCounter >= imagePath.length) {
-						// append text element?
-						var scene = document.querySelector('a-scene');
-						var destinationText = document.createElement('a-text');
-						destinationText.setAttribute('value', 'You have reached the end!');
-						destinationText.setAttribute('position', '-1.3 2 -3');
-						destinationText.setAttribute('color', '#CC1122');
-						scene.appendChild(destinationText);
-
-						// var destinationButton = document.createElement('a-entity');
-						// this isn't working, link doesn't show up for some reason
-						var destinationButton = document.createElement('a-link');
-						destinationButton.setAttribute('href', 'localhost:8000/videos/CampusDirections');
-						destinationButton.setAttribute('color', '#FF0000');
-						destinationButton.setAttribute('title', 'home');
-						destinationButton.setAttribute('location', '0 0 -2');
-						scene.appendChild(destinationButton);
-
-						// location.href = 'directions.html';
+						reachedEnd();
 					} else {
 						data.target.setAttribute('material', 'src', data.src);
 
@@ -118,6 +117,24 @@ window.onload = function() {
 		      from: '#FFF',
 		      to: '#000'
 		    });
+		}
+	});
+
+	AFRAME.registerComponent('set-page', {
+		schema: {
+			on: {type: 'string'},
+			target: {type: 'selector'},
+			src: {type: 'string'},
+			dur: {type: 'number', default: 300}
+		},
+		init: function() {
+			var data = this.data;
+			var el = this.el;
+			el.addEventListener(data.on, function() {
+				setTimeout(function() {
+					location.href = 'index.html';
+				}, data.dur);
+			});
 		}
 	});
 
