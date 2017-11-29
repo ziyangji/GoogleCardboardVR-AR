@@ -50,7 +50,7 @@ window.onload = function() {
 	function reachedEnd() {
 		var scene = document.querySelector('a-scene');
 		var destinationText = document.createElement('a-text');
-		destinationText.setAttribute('value', 'You have reached the end!');
+		destinationText.setAttribute('value', 'YOU HAVE REACHED THE END!');
 		destinationText.setAttribute('position', '-1.3 2 -3');
 		destinationText.setAttribute('color', '#CC1122');
 		scene.appendChild(destinationText);

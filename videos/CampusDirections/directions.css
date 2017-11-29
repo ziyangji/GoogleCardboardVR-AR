@@ -1,4 +1,6 @@
-
+body{
+    font-family: Arial;
+}
 button#submitPath {
     background-color:  #cc0000;
     color: white;
@@ -12,6 +14,17 @@ button#submit2 {
     margin-left: 20px;
     border-style: 1px solid white;
 }
+.btn {
+    font-size: 15px;
+    font-family: Arial;
+    border: none;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+.btn:hover {
+    background-color: #101010;
+    color: white;
+}
 /*body{ font-family: Tahoma; }*/
 select{
 	/*text-align: center;*/
@@ -24,6 +37,10 @@ select{
 	margin-top: 10px;
     margin-left: 40px;
 	/*margin: 0 auto;*/
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    -webkit-border-radius: 7px;
 }
 
 input#map1 {

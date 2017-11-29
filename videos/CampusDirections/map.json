@@ -105,7 +105,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/13.jpg"
 		},
 		{
-			"building": "???",
+			"building": "",
 			"x": "42.7289",
 			"y": "-73.6799",
 			"address": "15t St, Troy, NY 12180",
@@ -121,7 +121,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/15.jpg"
 		},
 		{
-			"building": "???",
+			"building": "",
 			"x": "42.7308",
 			"y": "-73.6817",
 			"address": "15t St, Troy, NY 12180",
