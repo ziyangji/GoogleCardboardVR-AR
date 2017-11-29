@@ -17,7 +17,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/2.jpg"
 		},
 		{
-			"building": "Quad",
+			"building": "",
 			"x": "42.730501",
 			"y": "-73.678056",
 			"address": "Quad, Troy, NY 12180",
@@ -129,7 +129,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/18.jpg"
 		},
 		{
-			"building": "Carnegie",
+			"building": "Carnegie Building",
 			"x": "42.730580",
 			"y": "-73.682871",
 			"address": "Carnegie Building, Troy, NY 12180",
