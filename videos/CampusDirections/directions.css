@@ -43,7 +43,7 @@ select{
     -webkit-border-radius: 7px;
 }
 
-input#map1 {
+button#map1 {
     border-style: 2px solid white;
     color: white;
     padding: 10px 20px;

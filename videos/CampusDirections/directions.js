@@ -14,7 +14,6 @@ $.ajax({
 });
 
 function mySite(data){
-
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
 	var added = new Set();
@@ -38,7 +37,6 @@ function mySite(data){
 			added.add(data.locations[i].building);
 		}
 	}
-	console.log(added);
 }
 
 function findPath(locations, path) {

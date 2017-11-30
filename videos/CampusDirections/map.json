@@ -137,7 +137,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/18.jpg"
 		},
 		{
-			"building": "Carnegie",
+			"building": "Carnegie Building",
 			"x": "42.730580",
 			"y": "-73.682871",
 			"address": "Carnegie Building, Troy, NY 12180",
@@ -210,8 +210,13 @@
 		},
 		{
 			"building": "",
+<<<<<<< HEAD
 			"x": "42.7286",
 			"y": "-73.6786",
+=======
+			"x": "42.728594",
+			"y": "-73.678926",
+>>>>>>> 6cd3cf454256948181fe4adc492ad1c4a6652541
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "29",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/29.jpg"
@@ -249,7 +254,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/33.jpg"
 		},
 		{
-			"building": "CII Entrance",
+			"building": "",
 			"x": "42.729650",
 			"y": "-73.678936",
 			"address": "15t St, Troy, NY 12180",
@@ -410,8 +415,8 @@
 		},
 		{
 			"building": "",
-			"x": "42.7307",
-			"y": "-73.6807",
+			"x": "42.730573",
+			"y": "-73.680634",
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "55",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/55.jpg"
