@@ -210,13 +210,8 @@
 		},
 		{
 			"building": "",
-<<<<<<< HEAD
-			"x": "42.7286",
-			"y": "-73.6786",
-=======
 			"x": "42.728594",
 			"y": "-73.678926",
->>>>>>> 6cd3cf454256948181fe4adc492ad1c4a6652541
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "29",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/29.jpg"
