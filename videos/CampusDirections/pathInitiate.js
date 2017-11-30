@@ -39,7 +39,6 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
 				findPath(locations, response.routes[0].overview_path);
 			} else {
 				directionsDisplay.setDirections(response);
-				console.log('google view');
 			}
 		} else {
 			window.alert('Directions request failed due to ' + status);
