@@ -1,11 +1,11 @@
-var locations = [];
+var images = [];
 
 $.ajax({
     type: "GET",
-    url: "map.json",
+    url: "video3.json",
     dataType: "json",
     success: function(data){
-        locations = data.locations;
+        images = data.images;
     },
     error: function(msg){
         // error checking
@@ -59,6 +59,7 @@ class Node {
         entity.setAttribute("id", button.id_);
         entity.setAttribute("layout", "type: line; margin: 1.5");
         entity.setAttribute("position", button.position_);
+        entity.setAttribute("rotation", button.rotation_);
         var entity2 = document.createElement("a-entity");
         entity2.setAttribute("template", "src: #link");
         entity2.setAttribute("data-src", "#1");
@@ -94,14 +95,13 @@ function findNode(id) {
 }
 
 function initializeNodes() {
-    for (var i = 0; i < locations.length; ++i) {
-        newNode = new Node(locations[i].nodeNum, locations[i].url);
+    for (var i = 0; i < images.length; ++i) {
+        newNode = new Node(images[i].nodeNum, images[i].url);
+        for (var j = 0; j < images[i].buttons.length; ++j) {
+            newNode.addButton(new Button(images[i].buttons[j].position, images[i].buttons[j].rotation, images[i].buttons[j].pointer, j.toString()));
+        }
         nodes.push(newNode);
     }
-}
-
-function initializeButtons() {
-    nodes[0].addButton(new Button("1 2 -4", "0 0 0", "6", "1"));
 }
 
 function clickButton(event) {
@@ -112,11 +112,14 @@ function clickButton(event) {
     currentNode.addAllButton();
 }
 
-window.onload = function init() {
-    initializeNodes();
-    initializeButtons();
-    currentNode = nodes[0];
-    console.log(currentNode.id_);
+function initializeCurrentNode(id) {
+    currentNode = findNode(id);
     document.getElementById("Current").setAttribute("src", currentNode.picture_);
     currentNode.addAllButton();
+}
+
+window.onload = function init() {
+    initializeNodes();
+    var id = "24";
+    initializeCurrentNode(id);
 };
