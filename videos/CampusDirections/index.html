@@ -6,47 +6,33 @@
 		<meta charset="utf-8">
 		<title> Google CardBoard AR/VR </title>
 		<link rel="stylesheet" type="text/css" href="directions.css">
-		<style> 
-			#map {
-				height: 500px;
-				width: 500px;
-			}
-			body{
-				opacity: 0.9;
-			}
-		</style>
 	</head>
 	<body id="mybody" class="text-center">
 		<header>
 			<!-- HEARDER -->
 			<a id="logo" href="#"><img id="rpi" src="rpilogo.png" width="400" height="70"></a>
 			<a id="rcos" href="https://rcos.io"> RCOS </a>
-			<a id="rpi" href="http://www.rpi.edu"> RPI Main Page </a>
-			<a id="git" href="https://github.com/ZiniuYu/GoogleCardboardVR-AR"> Our GitHub Repo </a>
+			<a id="rpi" href="http://www.rpi.edu"> RPI </a>
+			<a id="git" href="https://github.com/ZiniuYu/GoogleCardboardVR-AR"> GitHub Repo </a>
 		</header>
 		<h2> GoogleCardboard VR/AR </h2>
 		<p> <i> This is a RCOS project to utilize Google Cardboard to contribute to <a href="https://aframe.io/"> aframe</a> </i> </p>
-		<!-- Weather -->
-		<!-- <iframe src="https://cdnres.willyweather.com/widget/loadView.html?id=76652" width="210" align="right" height="228" frameborder="0" scrolling="no">
-		</iframe>
-		<a style="margin: 10px 0 0 0; margin-right: 500px; position: relative; display: block; text-indent: -9999em;z-index: 1;height: 20px" href="https://www.willyweather.com/ny/rensselaer-county/troy.html" rel="nofollow">The latest troy weather</a> -->
 		<!-- Origin: -->
 		<div style="margin-left: 20px">
 			<label for "start"> <b>Origin</b> </label>
-			<select id="start" name="start" style="height: 20px;">
+			<select class="buildings" id="start" name="start">
 			</select>
 		</div>
 		</br>
 		<div style="margin-left: 20px">
 			<!-- Destination: -->
 			<label for "end" > <b>Destination</b> </label>
-			<select id="end" name="end" style="height: 20px;">
+			<select class="buildings" id="end" name="end">
 			</select>
 		</div>
 		</br>
-		<!-- TODO: function()-->
-		<button id="submitPath" value="submit"> AR view </button>
-		<button id="submit2" value="submit2"> Google view </button>
+		<button class="btn" id="submitPath" value="submit"> VR View </button>
+		<button class="btn" id="submit2" value="submit2"> Google View </button>
 		<br/><br/>
 		<br/>
 		<br/><br/>

@@ -17,7 +17,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/2.jpg"
 		},
 		{
-			"building": "",
+			"building": "Quadrangle Complex",
 			"x": "42.730501",
 			"y": "-73.678056",
 			"address": "Quad, Troy, NY 12180",
@@ -41,7 +41,7 @@
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/6.jpg"
 		},
 		{
-			"building": "Quad Hall",
+			"building": "",
 			"x": "42.730129",
 			"y": "-73.677750",
 			"address": "Quad, Troy, NY 12180",
@@ -111,6 +111,14 @@
 			"address": "15t St, Troy, NY 12180",
 			"nodeNum": "15",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/15.jpg"
+		},
+		{
+			"building": "",
+			"x": "42.7308",
+			"y": "-73.6817",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "16",
+			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/16.jpg"
 		},
 		{
 			"building": "",
