@@ -1,3 +1,18 @@
+var locations = [];
+
+$.ajax({
+    type: "GET",
+    url: "map.json",
+    dataType: "json",
+    success: function(data){
+        locations = data.locations;
+    },
+    error: function(msg){
+        // error checking
+        alert("Please Reload!");
+    }
+});
+
 class Button {
     constructor(position = "20 20 20", rotation = "0 0 0", pointer = "", id) {
         this.position_ = position;
@@ -79,25 +94,29 @@ function findNode(id) {
 }
 
 function initializeNodes() {
-    nodes.push(new Node("Sage", "pictures/test1.JPG"));
-    var button1 = new Button("1 2 -4", "0 0 0", "Lally", "01");
-    nodes[0].addButton(button1);
-    nodes.push(new Node("Lally", "pictures/test2.JPG"));
-    var button2 = new Button("1 2 -4", "0 0 0", "Sage", "01");
-    nodes[1].addButton(button2);
+    for (var i = 0; i < locations.length; ++i) {
+        newNode = new Node(locations[i].nodeNum, locations[i].url);
+        nodes.push(newNode);
+    }
+}
+
+function initializeButtons() {
+    nodes[0].addButton(new Button("1 2 -4", "0 0 0", "6", "1"));
 }
 
 function clickButton(event) {
     currentNode.removeAllButton();
     var newNode = findNode(currentNode.findButton(event.path[2].id).pointer_);
     currentNode = newNode;
-    document.getElementById("image-360").setAttribute("src", currentNode.picture_);
+    document.getElementById("Current").setAttribute("src", currentNode.picture_);
     currentNode.addAllButton();
 }
 
 window.onload = function init() {
     initializeNodes();
+    initializeButtons();
     currentNode = nodes[0];
-    document.getElementById("image-360").setAttribute("src", currentNode.picture_);
+    console.log(currentNode.id_);
+    document.getElementById("Current").setAttribute("src", currentNode.picture_);
     currentNode.addAllButton();
 };
