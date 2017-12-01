@@ -15,13 +15,14 @@ window.onload = function() {
 
 	pushToAssets();
 	addButton();
+	// addBuildingName();
 
 	function pushToAssets() {
 		var assets = document.querySelector('a-assets');
 		console.log(assets);
 		for (var i = 0; i < imagePath.length; ++i) {
 			var image = document.createElement('img');
-			image.setAttribute('src', imagePath[i]);
+			image.setAttribute('src', imagePath[i].url);
 			image.setAttribute('id', "image" + i);
 			image.setAttribute('crossorigin', 'anonymous');
 			assets.appendChild(image);
@@ -43,8 +44,19 @@ window.onload = function() {
 		var link = document.querySelector('a-entity');
 		var button = document.createElement('a-entity');
 		button.setAttribute('template', 'src: #button');
-		button.setAttribute('data-src', imagePath[1]);
+		button.setAttribute('data-src', imagePath[1].url);
 		link.appendChild(button);
+	}
+
+	function addBuildingName() {
+		var scene = document.querySelector('a-scene');
+		var buildingText = document.createElement('a-text');
+		buildingText.setAttribute('value', imagePath[0].building.toUpperCase());
+		buildingText.setAttribute('position', '-1.3 2.8 -3');
+		buildingText.setAttribute('color', '#CC1122');
+		// buildingText.setAttribute('align', 'center');
+		// buildingText.setAttribute('width', '10');
+		scene.appendChild(buildingText);
 	}
 
 	function reachedEnd() {
@@ -83,17 +95,17 @@ window.onload = function() {
 					} else {
 						data.target.setAttribute('material', 'src', data.src);
 
-						// I can get this working when I have this connected to directions.html
-						// I need information from JSON file and don't want to reload it here
+						// I might need some special AFRAME register component function
 						// var text = document.querySelector('a-text');
-						// if (locations[imageCounter].building != "") {
-						// 	text.setAttribute('value', locations[imageCounter].building);
-						// } else if (text.value != ""){
-						// 	text.value = "";
+						// if (imagePath[imageCounter].building != "") {
+						// 	text.setAttribute('value', imagePath[imageCounter].building);
+						// } else {
+						// 	text.setAttribute('value', '');
 						// }
+						// console.log(text);
 
-						data.src = imagePath[++imageCounter]; // deal with case where end is reached
-						
+						data.src = imagePath[++imageCounter].url; // deal with case where end is reached
+
 						// var button = document.querySelector('a-entity').querySelector('a-entity');
 						// button.setAttribute('data-src', imagePath[imageCounter]);
 					}

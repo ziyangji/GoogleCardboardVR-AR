@@ -47,8 +47,11 @@ function findPath(locations, path) {
 		for (var j = 0; j < locations.length; ++j) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
 			if (Math.abs(path[i].lat() - locations[j].x) < 0.0003 && Math.abs(path[i].lng() - locations[j].y) < 0.0003) {
-				if (!images.includes(locations[j].url)) {
-					images.push(locations[j].url); // this should be url, when we get that information
+				// if (!images.includes(locations[j].url)) {
+				// 	images.push(locations[j].url); // this should be url, when we get that information
+				// }
+				if (!images.includes(locations[j])) {
+					images.push(locations[j]);
 				}
 			}
 		}
