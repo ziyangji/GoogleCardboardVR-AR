@@ -1,315 +1,297 @@
 {
-	"Images:": [
+	"images": [
 		{
-			"id": "1",
+			"nodeNum": "1",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/1.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "2",
+			"nodeNum": "2",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/2.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "3",
+			"nodeNum": "3",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/3.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "4",
+			"nodeNum": "4",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/4.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "5",
+			"nodeNum": "5",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/5.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "6",
+			"nodeNum": "6",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/6.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "7",
+			"nodeNum": "7",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/7.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "8",
+			"nodeNum": "8",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/8.jpg",
-			"Buttons": [
-				{
-					"position": "-3.173 -2.171 -3.08",
-					"rotation": "0 22.86101602571985 0",
-					"id": "24",
-					"buttonId": "0"
-				},
-				{
-					"position": "4.967 -2.012 -0.5",
-					"rotation": "0 -54.54558209645437 0",
-					"id": "31",
-					"buttonId": "1"
-				},
-				{
-					"position": "7.272 -1.691 2.225",
-					"rotation": "0 -76.77634454753031 0",
-					"id": "2",
-					"buttonId": "2"
-				},
-				{
-					"position": "5.635 -1.819 7.951",
-					"rotation": "0 -121.75353146529994 0",
-					"id": "12",
-					"buttonId": "3"
-				},
-				{
-					"position": "-3.316 -2.021 8.72",
-					"rotation": "0 169.36632424067133 0",
-					"id": "36",
-					"buttonId": "4"
-				},
+			"buttons": [ { "position": "-1.557 -0.08 -4.992",    "rotation": "0 13.006141949469688 0",     "pointer": "24" },
+				         { "position": "5.479 -0.564 -4.021",    "rotation": "0 -48.930595704172305 0",    "pointer": "31" },
+				         { "position": "5.801 0.14 -1.535",      "rotation": "0 -75.802 0",                "pointer": "2" },
+				         { "position": "4.099 -0.062 1.837",     "rotation": "0 -120.55032009552521 0",    "pointer": "12" },
+				         { "position": "-1.155 -0.37 3.841",     "rotation": "0 164.89725343865092 0",     "pointer": "36" }
 			]
 		},
 		{
-			"id": "9",
+			"nodeNum": "9",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/9.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "10",
+			"nodeNum": "10",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/10.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "11",
+			"nodeNum": "11",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/11.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "12",
+			"nodeNum": "12",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/12.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "13",
+			"nodeNum": "13",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/13.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "14",
+			"nodeNum": "14",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/14.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "15",
+			"nodeNum": "15",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/15.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "16",
+			"nodeNum": "16",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/16.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "17",
+			"nodeNum": "17",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/17.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "18",
+			"nodeNum": "18",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/18.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "19",
+			"nodeNum": "19",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/19.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "20",
+			"nodeNum": "20",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/20.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "21",
+			"nodeNum": "21",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/21.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "22",
+			"nodeNum": "22",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/22.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "23",
+			"nodeNum": "23",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/23.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "24",
+			"nodeNum": "24",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/24.jpg",
-			"Buttons": []
+			"buttons": [ { "position": "-4.424 -0.123 -2.533",  "rotation": "0 52.368342474957245 0",   "pointer": "32" },
+				         { "position": "-1.856 -0.71 -5.732",   "rotation": "0 15.52715624804531 0",    "pointer": "35" },
+				         { "position": "4.039 -0.193 -2.541",   "rotation": "0 -56.60823015892534 0",   "pointer": "31" },
+				         { "position": "5.111 -0.378 2.733",    "rotation": "0 -134.5304902967173 0",   "pointer": "39" },
+				         { "position": "-0.584 -0.05 5.852",    "rotation": "0 -179.33578987594765 0",  "pointer": "8"  }
+			]
 		},
 		{
-			"id": "25",
+			"nodeNum": "25",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/25.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "26",
+			"nodeNum": "26",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/26.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "27",
+			"nodeNum": "27",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/27.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "28",
+			"nodeNum": "28",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/28.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "29",
+			"nodeNum": "29",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/29.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "30",
+			"nodeNum": "30",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/30.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "31",
+			"nodeNum": "31",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/31.jpg",
-			"Buttons": []
+			"buttons": [ { "position": "2.884 -0.244 4.623",      "rotation": "0 175.66885998711038 0",   "pointer": "39" },
+				         { "position": "0.237 -0.244 1.591",      "rotation": "0 145.9323504198207 0",    "pointer": "8"  },
+				         { "position": "-5.997 -0.875 -0.109",    "rotation": "0 84.16750010471793 0",    "pointer": "24" }
+			]
 		},
 		{
-			"id": "32",
+			"nodeNum": "32",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/32.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "33",
+			"nodeNum": "33",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/33.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "34",
+			"nodeNum": "34",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/34.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "35",
+			"nodeNum": "35",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/35.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "36",
+			"nodeNum": "36",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/36.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "37",
+			"nodeNum": "37",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/37.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "38",
+			"nodeNum": "38",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/38.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "39",
+			"nodeNum": "39",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/39.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "40",
+			"nodeNum": "40",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/40.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "41",
+			"nodeNum": "41",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/41.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "42",
+			"nodeNum": "42",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/42.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "43",
+			"nodeNum": "43",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/43.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "44",
+			"nodeNum": "44",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/44.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "45",
+			"nodeNum": "45",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/45.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "46",
+			"nodeNum": "46",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/46.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "47",
+			"nodeNum": "47",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/47.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "48",
+			"nodeNum": "48",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/48.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "49",
+			"nodeNum": "49",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/49.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "50",
+			"nodeNum": "50",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/50.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "51",
+			"nodeNum": "51",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/51.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "52",
+			"nodeNum": "52",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/52.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "53",
+			"nodeNum": "53",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/53.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "54",
+			"nodeNum": "54",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/54.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "55",
+			"nodeNum": "55",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/55.jpg",
-			"Buttons": []
+			"buttons": []
 		},
 		{
-			"id": "56",
+			"nodeNum": "56",
 			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/56.jpg",
-			"Buttons": []
+			"buttons": []
 		}
 	]
 }
