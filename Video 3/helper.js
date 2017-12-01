@@ -114,6 +114,9 @@ function clickButton(event) {
 
 function initializeCurrentNode(id) {
     currentNode = findNode(id);
+    if (currentNode == null) {
+        alert("Please Reload! Cannot find first node.");
+    }
     document.getElementById("Current").setAttribute("src", currentNode.picture_);
     currentNode.addAllButton();
 }

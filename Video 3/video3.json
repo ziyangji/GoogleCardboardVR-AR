@@ -37,7 +37,7 @@
 		},
 		{
 			"nodeNum": "8",
-			"url": "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/8(2).jpg",
+			"url": "pictures/8.jpg",
 			"buttons": [ { "position": "-1.557 -0.08 -4.992",    "rotation": "0 13.006141949469688 0",     "pointer": "24" },
 				         { "position": "5.479 -0.564 -4.021",    "rotation": "0 -48.930595704172305 0",    "pointer": "31" },
 				         { "position": "5.801 0.14 -1.535",      "rotation": "0 -75.802 0",                "pointer": "2" },
