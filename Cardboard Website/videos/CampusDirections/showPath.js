@@ -15,13 +15,14 @@ window.onload = function() {
 
 	pushToAssets();
 	addButton();
+	// addBuildingName();
 
 	function pushToAssets() {
 		var assets = document.querySelector('a-assets');
 		console.log(assets);
 		for (var i = 0; i < imagePath.length; ++i) {
 			var image = document.createElement('img');
-			image.setAttribute('src', imagePath[i]);
+			image.setAttribute('src', imagePath[i].url);
 			image.setAttribute('id', "image" + i);
 			image.setAttribute('crossorigin', 'anonymous');
 			assets.appendChild(image);
@@ -43,8 +44,35 @@ window.onload = function() {
 		var link = document.querySelector('a-entity');
 		var button = document.createElement('a-entity');
 		button.setAttribute('template', 'src: #button');
-		button.setAttribute('data-src', imagePath[1]);
+		button.setAttribute('data-src', imagePath[1].url);
 		link.appendChild(button);
+	}
+
+	function addBuildingName() {
+		var scene = document.querySelector('a-scene');
+		var buildingText = document.createElement('a-text');
+		buildingText.setAttribute('value', imagePath[0].building.toUpperCase());
+		buildingText.setAttribute('position', '-1.3 2.8 -3');
+		buildingText.setAttribute('color', '#CC1122');
+		// buildingText.setAttribute('align', 'center');
+		// buildingText.setAttribute('width', '10');
+		scene.appendChild(buildingText);
+	}
+
+	function reachedEnd() {
+		var scene = document.querySelector('a-scene');
+		var destinationText = document.createElement('a-text');
+		destinationText.setAttribute('value', 'YOU HAVE REACHED THE END!');
+		destinationText.setAttribute('position', '-1.3 2 -3');
+		destinationText.setAttribute('color', '#CC1122');
+		scene.appendChild(destinationText);
+
+		var destinationButton = document.createElement('a-entity');
+		destinationButton.setAttribute('template', 'src: #textButton');
+		destinationButton.setAttribute('id', 'home');
+		destinationButton.setAttribute('data-src', '#thumbnail');
+		destinationButton.setAttribute('position', '0 1 -4');
+		scene.appendChild(destinationButton);
 	}
 
 	// based on aframe tutorial
@@ -63,38 +91,21 @@ window.onload = function() {
 				data.target.emit('set-image-fade');
 				setTimeout(function() {
 					if (imageCounter >= imagePath.length) {
-						// append text element?
-						var scene = document.querySelector('a-scene');
-						var destinationText = document.createElement('a-text');
-						destinationText.setAttribute('value', 'You have reached the end!');
-						destinationText.setAttribute('position', '-1.3 2 -3');
-						destinationText.setAttribute('color', '#CC1122');
-						scene.appendChild(destinationText);
-
-						// var destinationButton = document.createElement('a-entity');
-						// this isn't working, link doesn't show up for some reason
-						var destinationButton = document.createElement('a-link');
-						destinationButton.setAttribute('href', 'localhost:8000/videos/CampusDirections');
-						destinationButton.setAttribute('color', '#FF0000');
-						destinationButton.setAttribute('title', 'home');
-						destinationButton.setAttribute('location', '0 0 -2');
-						scene.appendChild(destinationButton);
-
-						// location.href = 'directions.html';
+						reachedEnd();
 					} else {
 						data.target.setAttribute('material', 'src', data.src);
 
-						// I can get this working when I have this connected to directions.html
-						// I need information from JSON file and don't want to reload it here
+						// I might need some special AFRAME register component function
 						// var text = document.querySelector('a-text');
-						// if (locations[imageCounter].building != "") {
-						// 	text.setAttribute('value', locations[imageCounter].building);
-						// } else if (text.value != ""){
-						// 	text.value = "";
+						// if (imagePath[imageCounter].building != "") {
+						// 	text.setAttribute('value', imagePath[imageCounter].building);
+						// } else {
+						// 	text.setAttribute('value', '');
 						// }
+						// console.log(text);
 
-						data.src = imagePath[++imageCounter]; // deal with case where end is reached
-						
+						data.src = imagePath[++imageCounter].url; // deal with case where end is reached
+
 						// var button = document.querySelector('a-entity').querySelector('a-entity');
 						// button.setAttribute('data-src', imagePath[imageCounter]);
 					}
@@ -118,6 +129,24 @@ window.onload = function() {
 		      from: '#FFF',
 		      to: '#000'
 		    });
+		}
+	});
+
+	AFRAME.registerComponent('set-page', {
+		schema: {
+			on: {type: 'string'},
+			target: {type: 'selector'},
+			src: {type: 'string'},
+			dur: {type: 'number', default: 300}
+		},
+		init: function() {
+			var data = this.data;
+			var el = this.el;
+			el.addEventListener(data.on, function() {
+				setTimeout(function() {
+					location.href = 'index.html';
+				}, data.dur);
+			});
 		}
 	});
 

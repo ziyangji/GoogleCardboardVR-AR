@@ -14,11 +14,11 @@ $.ajax({
 });
 
 function mySite(data){
-
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
+	var added = new Set();
 	for (var i = 0; i < data.locations.length; i ++){
-		if (data.locations[i].building != "") {
+		if (data.locations[i].building != "" && !added.has(data.locations[i].building)) { // && building not already in list
 			// create new options and attach them to the "start" and "end" selectors
 			var option1 = document.createElement("option");
 			var option2 = document.createElement("option");		
@@ -34,6 +34,7 @@ function mySite(data){
 			select2.add(option2, i+1);
 			option1.value = address;
 			option2.value = address;
+			added.add(data.locations[i].building);
 		}
 	}
 }
@@ -45,9 +46,12 @@ function findPath(locations, path) {
 		// find the closest location
 		for (var j = 0; j < locations.length; ++j) {
 			// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
-			if (Math.abs(path[i].lat() - locations[j].x) < 0.0001 && Math.abs(path[i].lng() - locations[j].y) < 0.0001) {
-				if (!images.includes(locations[j].url)) {
-					images.push(locations[j].url); // this should be url, when we get that information
+			if (Math.abs(path[i].lat() - locations[j].x) < 0.0003 && Math.abs(path[i].lng() - locations[j].y) < 0.0003) {
+				// if (!images.includes(locations[j].url)) {
+				// 	images.push(locations[j].url); // this should be url, when we get that information
+				// }
+				if (!images.includes(locations[j])) {
+					images.push(locations[j]);
 				}
 			}
 		}

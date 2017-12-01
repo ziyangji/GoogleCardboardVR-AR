@@ -14,8 +14,9 @@
 		<a-scene>
 			<a-assets id="assets">
 				<!-- images (added in js) -->
+				<img id="thumbnail" src="backToMenu.png">
 				<script id="button" type="text/html">
-				<!-- button template, might not need if there's only one button? -->
+					<!-- button template, might not need if there's only one button? -->
 		    		<a-entity class="link"
 		    		geometry="primitive: sphere; radius: 0.5"
 		    		material="color: #FFFFFF"
@@ -26,9 +27,21 @@
 			        event-set__4="_event: mouseleave; scale: 1 1 1"
 		    		set-image="on: click; target: #loc; src: ${src}"></a-entity>
 		    	</script>
+		    	<script id="textButton" type="text/html">
+		    		<!-- template for plane buttons (can have image w/ text) -->
+		    		<a-entity class="link"
+					geometry="primitive: plane; height: 1; width: 1"
+					material="shader: flat; src: #thumbnail"
+					event-set__1="_event: mousedown; scale: 1 1 1"
+			        event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+			        event-set__4="_event: mouseleave; scale: 1 1 1"
+			        set-page="on: click"></a-entity>
+			        <!-- set-page="on: click; target: #home; src: ${src}"></a-entity> -->
+			        <!-- thing is, I need to set location.href = 'index.html' -->
+		    	</script>
 			</a-assets>
 			<!-- sky (in js file) -->
-			<!-- <a-entity link="href: localhost:8000/directions.html; title: Home"></a-entity> -->
 			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
 				<!-- button using template, created in js file -->
 			</a-entity>
