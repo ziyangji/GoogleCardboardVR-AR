@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>Show Path</title>
+	    <!-- keeping source for aframe in head prevents warnings -->
+	    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+		<script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets id="assets">
+				<!-- images (added in js) -->
+				<img id="thumbnail" src="backToMenu.png">
+				<script id="button" type="text/html">
+					<!-- button template, might not need if there's only one button? -->
+		    		<a-entity class="link"
+		    		geometry="primitive: sphere; radius: 0.5"
+		    		material="color: #FFFFFF"
+		    		position="3 0 -2"
+					event-set__1="_event: mousedown; scale: 1 1 1"
+			        event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+			        event-set__4="_event: mouseleave; scale: 1 1 1"
+		    		set-image="on: click; target: #loc; src: ${src}"
+		    		set-building="on: click; target: #building">
+		    		</a-entity>
+		    	</script>
+		    	<script id="textButton" type="text/html">
+		    		<!-- template for plane buttons (can have image w/ text) -->
+		    		<a-entity class="link"
+					geometry="primitive: plane; height: 1; width: 1"
+					material="shader: flat; src: #thumbnail"
+					event-set__1="_event: mousedown; scale: 1 1 1"
+			        event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+			        event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+			        event-set__4="_event: mouseleave; scale: 1 1 1"
+			        set-page="on: click"></a-entity>
+			        <!-- set-page="on: click; target: #home; src: ${src}"></a-entity> -->
+			        <!-- thing is, I need to set location.href = 'index.html' -->
+		    	</script>
+			</a-assets>
+			<!-- sky (in js file) -->
+			<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
+				<!-- button using template, created in js file -->
+			</a-entity>
+			<!-- not sure on: set-image will work yet... -->
+			<!-- <a-text id="building" value="START" position="-1.3 2.8 -3" color="#CC1122"></a-text> -->
+
+			<a-camera>
+				<a-cursor id="cursor">
+					   <a-animation begin="click" easing="ease-in" attribute="scale"
+	                   		fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+	      			   <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+	                   		from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+				</a-cursor>
+			</a-camera>
+		</a-scene>
+	</body>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="showPath.js"></script>
+</html>
+ 
