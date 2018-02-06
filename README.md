@@ -8,7 +8,7 @@ Google Cardboard VR/AR is a project designed by RCOS (Rensselaer Center for Open
 
 Prof. Mukkai Krishnamoorthy: Github: mskmoorthy
 
-# Current Team Members
+## Current Team Members
 
 Shoshana Malfatto: malfas@rpi.edu  Github: shanalily
 
