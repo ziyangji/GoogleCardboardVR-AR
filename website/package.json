@@ -1,0 +1,28 @@
+{
+  "name": "vr-ar-rpi",
+  "version": "0.0.1",
+  "description": "VR-AR-RPI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.9",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "vue": "^2.5.13",
+    "vue-loader": "^14.1.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.11.0"
+  },
+  "presets": [
+    "env"
+  ]
+}

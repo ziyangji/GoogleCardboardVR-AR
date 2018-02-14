@@ -1,10 +1,13 @@
-var express = require("express");
-var MongoClient = require('mongodb').MongoClient;
+const express = require('express');
+const cors = require('cors');
+const MongoClient = require('mongodb').MongoClient;
 
 var url = '';
 var dbName = 'rpivrar';
 
 var app = express();
+
+app.use(cors()); // not sure if I'm keeping this yet
 
 app.get('/', function(req, res) {
 	res.send('hello');
