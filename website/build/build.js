@@ -533,6 +533,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
@@ -553,7 +563,6 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
 //
 //
 //
@@ -14642,7 +14651,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -14693,9 +14702,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" })
+  return _c("div", { staticClass: "container" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("h1", [_vm._v("Greetings from App.vue")]),
+    _vm._v(" "),
+    _c("div", [_vm._v(_vm._s(_vm.message))]),
+    _vm._v(" "),
+    _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.message,
+          expression: "message"
+        }
+      ],
+      domProps: { value: _vm.message },
+      on: {
+        input: function($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.message = $event.target.value
+        }
+      }
+    })
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("nav", [
+        _c("div", { staticClass: "navbar navbar-header" }, [
+          _c("a", { staticClass: "navbar-brand", attrs: { href: "" } }, [
+            _vm._v("VR/AR RPI")
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 if (false) {
@@ -14801,7 +14851,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n", ""]);
 
 // exports
 

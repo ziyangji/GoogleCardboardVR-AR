@@ -1,9 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
+const config = require('./config/db.js')
+
+console.log('hello from server.js')
 
 var url = '';
 var dbName = 'rpivrar';
+// connect to database here
 
 var app = express();
 
