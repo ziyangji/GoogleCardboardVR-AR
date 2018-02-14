@@ -1,6 +1,6 @@
 <template>
-	<div class="container">
-		<h1>Greetings from App.vue</h1>
+	<div>
+		<h1>Home</h1>
 	</div>
 </template>
 
@@ -9,11 +9,12 @@
 </style>
 
 <script>
+	console.log("hello from Home.vue")
 	export default {
-		name: 'App',
+		name: 'Home',
 		data() {
 			return {
-				message: 'hi'
+				welcome: "welcome"
 			}
 		}
 	}

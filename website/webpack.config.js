@@ -2,12 +2,16 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	target: 'node',
 	entry: './src/main.js',
 	output: {
 		path: path.resolve(__dirname, './build'),
 		publicPath: '/build',
 		filename: 'build.js'
+	},
+	resolve: {
+		alias: {
+			vue: 'vue/dist/vue.esm.js'
+		}
 	},
 	module: {
 		loaders: [
@@ -18,8 +22,10 @@ module.exports = {
 			},
 			{
 				test: /\.vue$/,
-				loader: 'vue-loader',
-				exclude: /(node_modules|bower_components)/
+				exclude: /(node_modules|bower_components)/,
+				use: {
+					loader: 'vue-loader',
+				}
 			}
 	
 		]
@@ -33,13 +39,3 @@ module.exports = {
 		})
 	]
 }
-
-// if (process.env.NODE_ENV === 'production') {
-// 	module.exports.plugins = (module.exports.plugins || []).concat([
-// 		new webpack.DefinePlugin({
-// 			'process.env': {
-// 				NODE_ENV: '"production"' // for some reason this makes things disappear			
-// 			}
-// 		})
-// 	])
-// }
