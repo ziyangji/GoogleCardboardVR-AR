@@ -21,4 +21,6 @@ app.get('/contact', function(req, res)) {
 	res.send('send us your stuff');
 }
 
-app.listen(3000);
+const server = app.listen(3000, function() {
+	console.log('listening on port ' + port);
+});

@@ -21,6 +21,25 @@ module.exports = {
 				loader: 'vue-loader',
 				exclude: /(node_modules|bower_components)/
 			}
+	
 		]
-	}
+	},
+	plugins: [
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: '"development"' // for some reason this makes things disappear
+
+			}
+		})
+	]
 }
+
+// if (process.env.NODE_ENV === 'production') {
+// 	module.exports.plugins = (module.exports.plugins || []).concat([
+// 		new webpack.DefinePlugin({
+// 			'process.env': {
+// 				NODE_ENV: '"production"' // for some reason this makes things disappear			
+// 			}
+// 		})
+// 	])
+// }
