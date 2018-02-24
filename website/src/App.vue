@@ -7,6 +7,8 @@
 			<nav>
 				<div class="navbar navbar-default">
 					<a href="" class="navbar-brand">VR/AR RPI</a>
+					<router-link :to="{ name: 'About' }" class="navbar-brand">About</router-link>
+					<router-view></router-view>
 				</div>
 			</nav>
 		</div>
