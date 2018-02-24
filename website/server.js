@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-// const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const config = require('./config/db.js')
 
@@ -12,12 +11,13 @@ var dbName = 'rpivrar';
 
 var app = express();
 
-// app.use(cors()); // not sure if I'm keeping this yet
+app.use(express.static('/home/main/Desktop/rpivrar/repo/website'));
+// consider adding cors?
 
 app.get('/', function(req, res) {
 	console.log('home');
-	// res.send('hello');
-	res.sendFile(path.join(__dirname + '/index.html'))
+	console.log("__dirname: " + __dirname);
+	res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 var port = 3000;
