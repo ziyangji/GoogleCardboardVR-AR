@@ -4,6 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 const config = require('./config/db.js')
 
 console.log('hello from server.js')
+console.log("__dirname: " + __dirname);
 
 var url = '';
 var dbName = 'rpivrar';
@@ -11,24 +12,26 @@ var dbName = 'rpivrar';
 
 var app = express();
 
-app.use(express.static('/home/main/Desktop/rpivrar/repo/website'));
-// consider adding cors?
+// this will probably need to be updated
+var dir = __dirname;
+
+app.use(express.static(dir));
 
 app.get('/', function(req, res) {
 	console.log('home');
-	console.log("__dirname: " + __dirname);
-	res.sendFile(path.join(__dirname + '/index.html'));
+	res.sendFile(path.join(dir + '/index.html'));
 })
 
 var port = 3000;
 
 app.get('/about', function(req, res) {
 	console.log('about!!!')
-	res.send('about');
+	res.sendFile(path.join(dir + '/index.html'));
 })
 
 app.get('/contact', function(req, res) {
-	res.send('send us your stuff');
+	console.log('send us your stuff');
+	res.sendFile(path.join(dir + '/index.html'));
 })
 
 const server = app.listen(port, function() {

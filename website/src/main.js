@@ -6,11 +6,9 @@ import About from './components/About.vue';
 import Contact from './components/Contact.vue';
 
 console.log("I am working!!!!! sort of")
-console.log(location.pathname);
 
 Vue.use(VueRouter);
 
-// I need to somehow use the routes from my express app
 const routes = [
 	{
 		path: '/',
@@ -31,7 +29,6 @@ const routes = [
 
 const router = new VueRouter({
 	mode: 'history',
-	// base: __dirname,
 	routes: routes
 });
 

@@ -547,12 +547,68 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
 	data: function data() {
 		return {
-			message: 'hi'
+			message: 'hello from App.vue'
 		};
 	}
 };
@@ -567,6 +623,20 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -673,11 +743,9 @@ var _Contact2 = _interopRequireDefault(_Contact);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log("I am working!!!!! sort of");
-console.log(location.pathname);
 
 _vue2.default.use(_vueRouter2.default);
 
-// I need to somehow use the routes from my express app
 var routes = [{
 	path: '/',
 	name: 'Home',
@@ -694,7 +762,6 @@ var routes = [{
 
 var router = new _vueRouter2.default({
 	mode: 'history',
-	// base: __dirname,
 	routes: routes
 });
 
@@ -14697,7 +14764,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.navbar-brand {\n\tcolor: white;\n}\n.content {\n\tpadding: 60px;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -14749,55 +14816,124 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", [
+    _c("div", { staticClass: "container-fullwidth" }, [
+      _c("div", { staticClass: "row-fluid" }, [
         _c(
           "div",
-          { staticClass: "navbar navbar-default" },
+          { staticClass: "navbar navbar-default navbar-fixed-top red" },
           [
-            _c("a", { staticClass: "navbar-brand", attrs: { href: "" } }, [
-              _vm._v("VR/AR RPI")
-            ]),
+            _c(
+              "router-link",
+              { staticClass: "navbar-brand", attrs: { to: "/" } },
+              [_vm._v("VR/AR RPI")]
+            ),
             _vm._v(" "),
             _c(
               "router-link",
-              { staticClass: "navbar-brand", attrs: { to: { name: "About" } } },
+              { staticClass: "navbar-brand", attrs: { to: "/about" } },
               [_vm._v("About")]
             ),
             _vm._v(" "),
-            _c("router-view")
+            _c(
+              "router-link",
+              { staticClass: "navbar-brand", attrs: { to: "/contact" } },
+              [_vm._v("Contact")]
+            ),
+            _vm._v(" "),
+            _vm._m(0)
           ],
           1
         )
       ])
     ]),
     _vm._v(" "),
-    _c("h1", [_vm._v("Greetings from App.vue")]),
-    _vm._v(" "),
-    _c("div", [_vm._v(_vm._s(_vm.message))]),
-    _vm._v(" "),
-    _c("input", {
-      directives: [
-        {
-          name: "model",
-          rawName: "v-model",
-          value: _vm.message,
-          expression: "message"
-        }
-      ],
-      domProps: { value: _vm.message },
-      on: {
-        input: function($event) {
-          if ($event.target.composing) {
-            return
+    _c(
+      "div",
+      { staticClass: "container content" },
+      [
+        _c("div", [_vm._v(_vm._s(_vm.message))]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.message,
+              expression: "message"
+            }
+          ],
+          domProps: { value: _vm.message },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.message = $event.target.value
+            }
           }
-          _vm.message = $event.target.value
-        }
-      }
-    })
+        }),
+        _vm._v(" "),
+        _c("router-view")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(1)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dropdown" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-default dropdown-toggle",
+          attrs: {
+            type: "button",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false"
+          }
+        },
+        [_vm._v(" WebVR "), _c("span", { staticClass: "caret" })]
+      ),
+      _vm._v(" "),
+      _c(
+        "ul",
+        {
+          staticClass: "dropdown-menu",
+          attrs: { "aria-labelledby": "dropdownMenu" }
+        },
+        [
+          _c("li", [
+            _c("a", { attrs: { href: "#" } }, [_vm._v("please work")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "divider", attrs: { role: "separator" } })
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "footer red" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm._v("\n\t\t\tOther links\n\t\t")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer-copyright" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._v("\n\t\t\t\tRCOS 2017\n\t\t\t")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 if (false) {
@@ -14903,7 +15039,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.bar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n", ""]);
 
 // exports
 
