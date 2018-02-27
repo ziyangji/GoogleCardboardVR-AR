@@ -603,6 +603,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
@@ -14816,36 +14820,66 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "container-fullwidth" }, [
-      _c("div", { staticClass: "row-fluid" }, [
+    _c(
+      "nav",
+      { staticClass: "navbar navbar-expand-md navbar-fixed-top red" },
+      [
+        _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
+          _vm._v("VR/AR RPI")
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#menu",
+              "aria-controls": "menu",
+              "aria-expanded": "false",
+              "aria-label": "toggle menu"
+            }
+          },
+          [_vm._v("|||")]
+        ),
+        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "navbar navbar-default navbar-fixed-top red" },
+          { staticClass: "collapse navbar-collapse", attrs: { id: "menu" } },
           [
-            _c(
-              "router-link",
-              { staticClass: "navbar-brand", attrs: { to: "/" } },
-              [_vm._v("VR/AR RPI")]
-            ),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              { staticClass: "navbar-brand", attrs: { to: "/about" } },
-              [_vm._v("About")]
-            ),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              { staticClass: "navbar-brand", attrs: { to: "/contact" } },
-              [_vm._v("Contact")]
-            ),
-            _vm._v(" "),
-            _vm._m(0)
-          ],
-          1
+            _c("ul", { staticClass: "navbar-nav" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/about" } },
+                    [_vm._v("About")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/contact" } },
+                    [_vm._v("Contact")]
+                  )
+                ],
+                1
+              )
+            ])
+          ]
         )
-      ])
-    ]),
+      ],
+      1
+    ),
     _vm._v(" "),
     _c(
       "div",
@@ -14878,45 +14912,10 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _vm._m(1)
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "dropdown" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-default dropdown-toggle",
-          attrs: {
-            type: "button",
-            "data-toggle": "dropdown",
-            "aria-haspopup": "true",
-            "aria-expanded": "false"
-          }
-        },
-        [_vm._v(" WebVR "), _c("span", { staticClass: "caret" })]
-      ),
-      _vm._v(" "),
-      _c(
-        "ul",
-        {
-          staticClass: "dropdown-menu",
-          attrs: { "aria-labelledby": "dropdownMenu" }
-        },
-        [
-          _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("please work")])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "divider", attrs: { role: "separator" } })
-        ]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

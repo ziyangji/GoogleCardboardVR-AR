@@ -3,28 +3,32 @@
 		<!-- header, which should be at the top of every page -->
 		<!-- It should probably become a drop down menu on mobile devices,
 		but I still need to figure out how to see the VR programs -->
-		<div class="container-fullwidth">
-			<div class="row-fluid">
-				<div class="navbar navbar-default navbar-fixed-top red">
-					<router-link to="/" class="navbar-brand">VR/AR RPI</router-link>
-					<router-link to="/about" class="navbar-brand">About</router-link>
-					<router-link to="/contact" class="navbar-brand">Contact</router-link>
-					
-					<!-- WebVR programs menu -->
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-							<li><a href="#">please work</a></li>
-							<li role="separator" class="divider"></li>
-							<!-- <li>
-								<a href="../homepage/RPIVRMap/index.html">Campus Directions</a>
-							</li> -->
-						</ul>					
-					</div>
+		<nav class="navbar navbar-expand-md navbar-fixed-top red">
+			<router-link to="/" class="navbar-brand">VR/AR RPI</router-link>
 
-				</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle menu">|||</button>
+
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<router-link class="nav-link" to="/about">About</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/contact">Contact</router-link>
+					</li>
+				</ul>
 			</div>
-		</div>
+			
+			<!-- WebVR programs menu -->
+			<!-- <div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<li><a href="#">please work</a></li>
+					<li role="separator" class="divider"></li>
+				</ul>					
+			</div> -->
+
+		</nav>
 
 		<!-- actual content -->
 		<div class="container content">
