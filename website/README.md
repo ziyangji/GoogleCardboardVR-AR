@@ -15,12 +15,8 @@ Whenever you make changes to vue.js files, recompile by running the following li
 webpack
 ```
 
-To start running MongoDB:
+Use the following commands to stop and start MongoDB:
 ```
 sudo service mongod start
-```
-
-To stop running MongoDB:
-```
 sudo service mongod stop
 ```
