@@ -1,14 +1,8 @@
 <template>
-	<div>
+	<!-- <div class="container" v-bind:style="{'background-image': 'url(' + image + ')'}"> -->
+	<div class="container">
 		<h1>Home</h1>
-		<!-- middle bar - do I want to stick with this design? -->
-		<!-- <div class="container red bar">
-			<div class="row">
-				<div class="col-lg-12">
-					<div>About</div>
-				</div>
-			</div>
-		</div> -->
+		<!-- <img class="img-fluid" :src='image'/> -->
 	</div>
 </template>
 
@@ -19,6 +13,14 @@
 		width: 100%;
 		height: 60px;
 	}
+	.container {
+		/*background-image: url("../assets/nearempac.jpg");*/
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 </style>
 
 <script>
@@ -27,7 +29,8 @@
 		name: 'Home',
 		data() {
 			return {
-				welcome: "welcome"
+				welcome: "welcome",
+				image: 'src/assets/nearempac.jpg'
 			}
 		}
 	}

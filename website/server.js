@@ -1,14 +1,18 @@
 const express = require('express');
 const path = require('path');
-const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose');
 const config = require('./config/db.js')
+const location = require('./models/location')
+
+var port = 3000;
 
 console.log('hello from server.js')
 console.log("__dirname: " + __dirname);
 
-var url = '';
-var dbName = 'rpivrar';
-// connect to database here
+mongoose.connect('mongodb://localhost:27017/rpivrardb').then(
+	() => { console.log('Connected successfully to rpivrardb') },
+	err => { console.log('Can\'t connect to db') }
+);
 
 var app = express();
 
@@ -21,8 +25,6 @@ app.get('/', function(req, res) {
 	console.log('home');
 	res.sendFile(path.join(dir + '/index.html'));
 })
-
-var port = 3000;
 
 app.get('/about', function(req, res) {
 	console.log('about!!!')

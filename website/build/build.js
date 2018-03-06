@@ -607,6 +607,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
@@ -650,13 +660,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 console.log("hello from Home.vue");
 exports.default = {
 	name: 'Home',
 	data: function data() {
 		return {
-			welcome: "welcome"
+			welcome: "welcome",
+			image: 'src/assets/nearempac.jpg'
 		};
 	}
 };
@@ -14768,7 +14781,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.navbar-brand {\n\tcolor: white;\n}\n.content {\n\tpadding: 60px;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.navbar-brand {\n\tcolor: white;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n}\n.content {\n\tpadding: 60px;\n\t/*left: 0;*/\n\t/*width: 100%;\n\theight: 100%;*/\n\t/*position: absolute;*/\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -14819,10 +14832,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "container-fluid" }, [
     _c(
       "nav",
-      { staticClass: "navbar navbar-expand-md navbar-fixed-top red" },
+      { staticClass: "navbar navbar-expand-md sticky-top red" },
       [
         _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
           _vm._v("VR/AR RPI")
@@ -14841,7 +14854,7 @@ var render = function() {
               "aria-label": "toggle menu"
             }
           },
-          [_vm._v("|||")]
+          [_vm._v("\n\t\t\t|||\n\t\t")]
         ),
         _vm._v(" "),
         _c(
@@ -14881,36 +14894,7 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container content" },
-      [
-        _c("div", [_vm._v(_vm._s(_vm.message))]),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.message,
-              expression: "message"
-            }
-          ],
-          domProps: { value: _vm.message },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.message = $event.target.value
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("router-view")
-      ],
-      1
-    ),
+    _c("div", { staticClass: "container content" }, [_c("router-view")], 1),
     _vm._v(" "),
     _vm._m(0)
   ])
@@ -14920,12 +14904,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "footer red" }, [
+    return _c("footer", { staticClass: "footer red fixed-bottom" }, [
       _c("div", { staticClass: "container" }, [
         _vm._v("\n\t\t\tOther links\n\t\t")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "footer-copyright" }, [
+      _c("div", { staticClass: "footer-copyright fixed-bottom" }, [
         _c("div", { staticClass: "container" }, [
           _vm._v("\n\t\t\t\tRCOS 2017\n\t\t\t")
         ])
@@ -15038,7 +15022,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n", ""]);
+exports.push([module.i, "\n.bar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.container {\n\t/*background-image: url(\"../assets/nearempac.jpg\");*/\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n", ""]);
 
 // exports
 
@@ -15061,7 +15045,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Home")])])
+    return _c("div", { staticClass: "container" }, [_c("h1", [_vm._v("Home")])])
   }
 ]
 render._withStripped = true

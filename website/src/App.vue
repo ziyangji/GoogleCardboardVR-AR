@@ -1,12 +1,14 @@
 <template>
-	<div class="container">
+	<div class="container-fluid">
 		<!-- header, which should be at the top of every page -->
 		<!-- It should probably become a drop down menu on mobile devices,
 		but I still need to figure out how to see the VR programs -->
-		<nav class="navbar navbar-expand-md navbar-fixed-top red">
+		<nav class="navbar navbar-expand-md sticky-top red">
 			<router-link to="/" class="navbar-brand">VR/AR RPI</router-link>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle menu">|||</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle menu">
+				|||
+			</button>
 
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="navbar-nav">
@@ -32,16 +34,15 @@
 
 		<!-- actual content -->
 		<div class="container content">
-			<div>{{ message }}</div>
-			<input v-model="message">
 			<router-view></router-view>
 		</div>
 
-		<footer class="footer red">
+		<!-- this needs to be fixed to the bottom -->
+		<footer class="footer red fixed-bottom">
 			<div class="container">
 				Other links
 			</div>
-			<div class="footer-copyright">
+			<div class="footer-copyright fixed-bottom">
 				<div class="container">
 					RCOS 2017
 				</div>
@@ -67,15 +68,24 @@
 	.navbar-brand {
 		color: white;
 	}
+	.nav-link {
+		background-color: #d7001a; 
+		color: white;
+	}
 	.content {
 		padding: 60px;
+		/*left: 0;*/
+		/*width: 100%;
+		height: 100%;*/
+		/*position: absolute;*/
 	}
 	.footer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 60px;
+		height: 80px;
+		padding-top: 10px;
 	}
 	.footer-copyright {
 		background-color: #c0001a;
@@ -87,7 +97,7 @@
 		name: 'App',
 		data() {
 			return {
-				message: 'hello from App.vue'
+				message: 'hello from App.vue',
 			}
 		}
 	}
