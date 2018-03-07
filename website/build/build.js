@@ -617,6 +617,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
@@ -662,6 +666,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 console.log("hello from Home.vue");
 exports.default = {
@@ -669,7 +676,8 @@ exports.default = {
 	data: function data() {
 		return {
 			welcome: "welcome",
-			image: 'src/assets/nearempac.jpg'
+			image: 'src/assets/nearempac.jpg',
+			image2: 'src/assets/nearempacequirectangular.jpg'
 		};
 	}
 };
@@ -706,6 +714,9 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
 //
 //
 //
@@ -14781,7 +14792,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.navbar-brand {\n\tcolor: white;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n}\n.content {\n\tpadding: 60px;\n\t/*left: 0;*/\n\t/*width: 100%;\n\theight: 100%;*/\n\t/*position: absolute;*/\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\t/*height: 60px;*/\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.content {\n\tpadding-top: 80px;\n\t/*padding-bottom: 60px;*/\n\tleft: 0;\n\theight: 100%;\n\tposition: absolute;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -14833,73 +14844,121 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
-    _c(
-      "nav",
-      { staticClass: "navbar navbar-expand-md sticky-top red" },
-      [
-        _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
-          _vm._v("VR/AR RPI")
-        ]),
-        _vm._v(" "),
+    _c("nav", { staticClass: "navbar navbar-expand-md sticky-top red" }, [
+      _c("div", { staticClass: "navbar-header" }, [
         _c(
-          "button",
-          {
-            staticClass: "navbar-toggler",
-            attrs: {
-              type: "button",
-              "data-toggle": "collapse",
-              "data-target": "#menu",
-              "aria-controls": "menu",
-              "aria-expanded": "false",
-              "aria-label": "toggle menu"
-            }
-          },
-          [_vm._v("\n\t\t\t|||\n\t\t")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "collapse navbar-collapse", attrs: { id: "menu" } },
+          "h2",
           [
-            _c("ul", { staticClass: "navbar-nav" }, [
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/about" } },
-                    [_vm._v("About")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/contact" } },
-                    [_vm._v("Contact")]
-                  )
-                ],
-                1
-              )
-            ])
-          ]
+            _c(
+              "router-link",
+              { staticClass: "navbar-brand", attrs: { to: "/" } },
+              [_vm._v("VR/AR RPI")]
+            )
+          ],
+          1
         )
-      ],
-      1
-    ),
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "navbar-toggler",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#menu",
+            "aria-controls": "menu",
+            "aria-expanded": "false",
+            "aria-label": "toggle menu"
+          }
+        },
+        [_vm._v("|||")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "collapse navbar-collapse", attrs: { id: "menu" } },
+        [
+          _c("ul", { staticClass: "navbar-nav" }, [
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  { staticClass: "nav-link", attrs: { to: "/about" } },
+                  [_vm._v("About")]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  { staticClass: "nav-link", attrs: { to: "/contact" } },
+                  [_vm._v("Contact")]
+                )
+              ],
+              1
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "container content" }, [_c("router-view")], 1),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dropdown" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-default dropdown-toggle",
+          attrs: {
+            type: "button",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false"
+          }
+        },
+        [_vm._v(" WebVR "), _c("span", { staticClass: "caret" })]
+      ),
+      _vm._v(" "),
+      _c(
+        "ul",
+        {
+          staticClass: "dropdown-menu",
+          attrs: { "aria-labelledby": "dropdownMenu" }
+        },
+        [
+          _c("li", [
+            _c("a", { attrs: { href: "#" } }, [_vm._v("please work")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { href: "src/webvr/RPIVRMap" } }, [
+              _vm._v("RPI VR Map")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "divider", attrs: { role: "separator" } })
+        ]
+      )
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -15022,7 +15081,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.container {\n\t/*background-image: url(\"../assets/nearempac.jpg\");*/\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n.bar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\theight: 60px;\n}\n.container-fluid {\n\t/*background-image: url(\"../assets/nearempac.jpg\");*/\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n.fill {\n\tmin-height:  100%;\n\theight: 100%;\n}\n", ""]);
 
 // exports
 
@@ -15038,16 +15097,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      staticClass: "container-fluid fill",
+      style: { "background-image": "url(" + _vm.image2 + ")" }
+    },
+    [_c("h1", [_vm._v("Home")])]
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [_c("h1", [_vm._v("Home")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 if (false) {
@@ -15131,7 +15190,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("About")])])
+    return _c("div", { staticClass: "container" }, [
+      _c("h1", [_vm._v("About")])
+    ])
   }
 ]
 render._withStripped = true
@@ -15239,7 +15300,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.container {\n\tpadding-top: 60px;\n}\n", ""]);
 
 // exports
 
@@ -15262,7 +15323,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Contact")])])
+    return _c("div", { staticClass: "container" }, [
+      _c("h1", [_vm._v("Contact")])
+    ])
   }
 ]
 render._withStripped = true

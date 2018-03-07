@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const config = require('./config/db.js')
+const config = require('./config/db.js') // needed?
 const location = require('./models/location')
 
 var port = 3000;
@@ -13,6 +13,8 @@ mongoose.connect('mongodb://localhost:27017/rpivrardb').then(
 	() => { console.log('Connected successfully to rpivrardb') },
 	err => { console.log('Can\'t connect to db') }
 );
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 var app = express();
 

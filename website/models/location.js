@@ -1,13 +1,12 @@
 var mongoose = require('mongoose');
 
-var location = new mongoose.Schema({
-	id: Number, // previously nodeNum
+var locationSchema = new mongoose.Schema({
+	id: { type: Number, unique: true }, // previously nodeNum
 	building: String,
-	lon: Number,
-	lat: Number,
+	point: { long: Number, lat: Number },
 	address: String,
 	url: String, // could change
-	outdoor: Boolean
+	outdoor: { type: Boolean, default: true }
 });
 
-module.exports = mongoose.model('location', location);
+module.exports = mongoose.model('location', locationSchema);
