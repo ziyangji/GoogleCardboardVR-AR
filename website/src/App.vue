@@ -1,11 +1,13 @@
 <template>
 	<div class="container-fluid">
 		<!-- header, which should be at the top of every page -->
-		<nav class="navbar navbar-expand-md sticky-top red">
+		<nav class="navbar navbar-dark navbar-expand-md sticky-top red">
 			<div class="navbar-header">
 				<h2><router-link to="/" class="navbar-brand">VR/AR RPI</router-link></h2>
 			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle menu">|||</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="navbar-nav">
@@ -20,8 +22,6 @@
 						<div class="dropdown show nav-item nav-link">
 							<button class="btn btn-default dropdown-toggle red" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenu">
-								<!-- <a href="src/webvr/RPIVRMap" class="dropdown-item">RPI VR Map</a> -->
-								<!-- this needs to link to RPI VR Map component -->
 								<router-link class="dropdown-item" to="/vr-map">RPI VR Map</router-link>
 							</div>				
 						</div>
@@ -32,7 +32,7 @@
 		</nav>
 
 		<!-- actual content -->
-		<div class="container content">
+		<div class="container-fluid content col-12">
 			<router-view></router-view>
 		</div>
 
@@ -40,7 +40,8 @@
 		<footer class="footer red fixed-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-xs-4">Other links</div>
+					<!-- I'm not sure yet why columns are behaving weirdly... -->
+					<div class="col-md-2 col-xs-2">Other links</div>
 					<div class="col-md-2 col-xs-4"><a href="https://rcos.io/">RCOS</a></div>
 					<div class="col-md-2 col-xs-4"><a href="http://www.rpi.edu/">RPI Homepage</a></div>
 				</div>
@@ -56,7 +57,7 @@
 
 <style>
 	body {
-		margin-bottom: 60px;
+		/*background-color: #404040;*/
 	}
 	a {
 		color: white;
@@ -69,7 +70,7 @@
 		position: absolute;
 		left: 0;
 		width: 100%;
-		/*height: 60px;*/
+		/*height: 80px;*/
 	}
 	.navbar-brand {
 		color: white;
@@ -80,14 +81,13 @@
 		color: white;
 		font-size: 20px;
 	}
-	/* this doesn't work on phone because position changes*/
-	/*.dropdown-menu {
-		right: 0;
-		left: auto;
-	}*/
 	.content {
 		padding-top: 80px;
 		padding-bottom: 80px;
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: auto;
+		margin-left: auto;
 		left: 0;
 		bottom: 0;
 		top: 0;

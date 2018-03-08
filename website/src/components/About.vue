@@ -1,24 +1,11 @@
 <template>
-	<!-- <div class="container-fluid" v-bind:style="{'background-image': 'url(' + image + ')'}"> -->
-	<div class="container-fluid">
-		<!-- <h1>About</h1> -->
-		<a-scene embedded>
-			<a-sky :src="image"></a-sky>
-		</a-scene>
-	</div>
+	<a-scene embedded>
+		<a-sky :src="image"></a-sky>
+	</a-scene>
 </template>
 
 <style scoped>
-	h1 {
-		color: white;
-	}
-	.container-fluid {
-		width: 100%;
-		height: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+
 </style>
 
 <script>

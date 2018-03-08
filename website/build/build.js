@@ -664,16 +664,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 console.log("hello from Home.vue");
 exports.default = {
@@ -696,19 +686,6 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -14864,7 +14841,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n\tmargin-bottom: 60px;\n}\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\t/*height: 60px;*/\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n/* this doesn't work on phone because position changes*/\n/*.dropdown-menu {\n\tright: 0;\n\tleft: auto;\n}*/\n.content {\n\tpadding-top: 80px;\n\tpadding-bottom: 80px;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\t/*position: absolute;*/\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n\t/*background-color: #404040;*/\n}\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\t/*height: 80px;*/\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.content {\n\tpadding-top: 80px;\n\tpadding-bottom: 80px;\n\tpadding-right: 0;\n\tpadding-left: 0;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\t/*position: absolute;*/\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -14916,103 +14893,118 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
-    _c("nav", { staticClass: "navbar navbar-expand-md sticky-top red" }, [
-      _c("div", { staticClass: "navbar-header" }, [
+    _c(
+      "nav",
+      { staticClass: "navbar navbar-dark navbar-expand-md sticky-top red" },
+      [
+        _c("div", { staticClass: "navbar-header" }, [
+          _c(
+            "h2",
+            [
+              _c(
+                "router-link",
+                { staticClass: "navbar-brand", attrs: { to: "/" } },
+                [_vm._v("VR/AR RPI")]
+              )
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
         _c(
-          "h2",
+          "div",
+          { staticClass: "collapse navbar-collapse", attrs: { id: "menu" } },
           [
-            _c(
-              "router-link",
-              { staticClass: "navbar-brand", attrs: { to: "/" } },
-              [_vm._v("VR/AR RPI")]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggler",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#menu",
-            "aria-controls": "menu",
-            "aria-expanded": "false",
-            "aria-label": "toggle menu"
-          }
-        },
-        [_vm._v("|||")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "collapse navbar-collapse", attrs: { id: "menu" } },
-        [
-          _c("ul", { staticClass: "navbar-nav" }, [
-            _c(
-              "li",
-              { staticClass: "nav-item" },
-              [
-                _c(
-                  "router-link",
-                  { staticClass: "nav-link", attrs: { to: "/about" } },
-                  [_vm._v("About")]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              { staticClass: "nav-item" },
-              [
-                _c(
-                  "router-link",
-                  { staticClass: "nav-link", attrs: { to: "/contact" } },
-                  [_vm._v("Contact")]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("li", [
-              _c("div", { staticClass: "dropdown show nav-item nav-link" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "dropdown-menu",
-                    attrs: { "aria-labelledby": "dropdownMenu" }
-                  },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "dropdown-item",
-                        attrs: { to: "/vr-map" }
-                      },
-                      [_vm._v("RPI VR Map")]
-                    )
-                  ],
-                  1
-                )
+            _c("ul", { staticClass: "navbar-nav" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/about" } },
+                    [_vm._v("About")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/contact" } },
+                    [_vm._v("Contact")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("li", [
+                _c("div", { staticClass: "dropdown show nav-item nav-link" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "dropdownMenu" }
+                    },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { to: "/vr-map" }
+                        },
+                        [_vm._v("RPI VR Map")]
+                      )
+                    ],
+                    1
+                  )
+                ])
               ])
             ])
-          ])
-        ]
-      )
-    ]),
+          ]
+        )
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "container content" }, [_c("router-view")], 1),
+    _c(
+      "div",
+      { staticClass: "container-fluid content col-12" },
+      [_c("router-view")],
+      1
+    ),
     _vm._v(" "),
-    _vm._m(1)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#menu",
+          "aria-controls": "menu",
+          "aria-expanded": "false",
+          "aria-label": "toggle menu"
+        }
+      },
+      [_c("span", { staticClass: "navbar-toggler-icon" })]
+    )
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -15039,7 +15031,7 @@ var staticRenderFns = [
     return _c("footer", { staticClass: "footer red fixed-bottom" }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-2 col-xs-4" }, [
+          _c("div", { staticClass: "col-md-2 col-xs-2" }, [
             _vm._v("Other links")
           ]),
           _vm._v(" "),
@@ -15168,7 +15160,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid {\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -15185,16 +15177,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
-    { staticClass: "container-fluid" },
-    [
-      _c(
-        "a-scene",
-        { attrs: { embedded: "" } },
-        [_c("a-sky", { attrs: { src: _vm.image2 } })],
-        1
-      )
-    ],
+    "a-scene",
+    { attrs: { embedded: "" } },
+    [_c("a-sky", { attrs: { src: _vm.image2 } })],
     1
   )
 }
@@ -15304,7 +15289,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\nh1[data-v-c226fde6] {\n\tcolor: white;\n}\n.container-fluid[data-v-c226fde6] {\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -15321,16 +15306,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
-    { staticClass: "container-fluid" },
-    [
-      _c(
-        "a-scene",
-        { attrs: { embedded: "" } },
-        [_c("a-sky", { attrs: { src: _vm.image } })],
-        1
-      )
-    ],
+    "a-scene",
+    { attrs: { embedded: "" } },
+    [_c("a-sky", { attrs: { src: _vm.image } })],
     1
   )
 }
