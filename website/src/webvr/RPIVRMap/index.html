@@ -1,50 +1,64 @@
+<!-- Should I make this a vue.js component? -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<!-- Google Directions API Key: AIzaSyAXMG7IIHbPwz9NcCYFo2vgfD7WtKwizmM -->
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
-		<title> Google CardBoard AR/VR </title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+		<!-- I want to use Bootstrap (Bootstrap 4 CSS) -->
+  		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="directions.css">
+
+		<title> Google CardBoard AR/VR </title>
 	</head>
 	<body id="mybody" class="text-center">
-		<header>
-			<!-- HEARDER -->
-			<a id="logo" href="#"><img id="rpi" src="rpilogo.png" width="400" height="70"></a>
-			<a id="rcos" href="https://rcos.io"> RCOS </a>
-			<a id="rpi" href="http://www.rpi.edu"> RPI </a>
-			<a id="git" href="https://github.com/ZiniuYu/GoogleCardboardVR-AR"> GitHub Repo </a>
-		</header>
-		<h2> GoogleCardboard VR/AR </h2>
-		<p> <i> This is a RCOS project to utilize Google Cardboard to contribute to <a href="https://aframe.io/"> aframe</a> </i> </p>
-		<!-- Origin: -->
-		<div style="margin-left: 20px">
-			<label for "start"> <b>Origin</b> </label>
-			<select class="buildings" id="start" name="start">
-			</select>
+		<div class="container">
+			<header>
+				<!-- HEARDER -->
+				<a id="logo" href="#"><img id="rpi" src="rpilogo.png" width="400" height="70"></a>
+				<a id="rcos" href="https://rcos.io"> RCOS </a>
+				<a id="rpi" href="http://www.rpi.edu"> RPI </a>
+				<a id="git" href="https://github.com/ZiniuYu/GoogleCardboardVR-AR"> GitHub Repo </a>
+			</header>
+			<h2> GoogleCardboard VR/AR </h2>
+			<p> <i> This is a RCOS project to utilize Google Cardboard to contribute to <a href="https://aframe.io/"> aframe</a> </i> </p>
+			<!-- Origin: -->
+			<div style="margin-left: 20px">
+				<label for "start"> <b>Origin</b> </label>
+				<select class="buildings" id="start" name="start">
+				</select>
+			</div>
+			</br>
+			<div style="margin-left: 20px">
+				<!-- Destination: -->
+				<label for "end" > <b>Destination</b> </label>
+				<select class="buildings" id="end" name="end">
+				</select>
+			</div>
+			</br>
+			<button class="btn" id="submitPath" value="submit"> VR View </button>
+			<button class="btn" id="submit2" value="submit2"> Google View </button>
+			<br/><br/>
+			<br/>
+			<br/><br/>
+			<hr>
+			<div id="map">
+			</div>
+			<hr>
 		</div>
-		</br>
-		<div style="margin-left: 20px">
-			<!-- Destination: -->
-			<label for "end" > <b>Destination</b> </label>
-			<select class="buildings" id="end" name="end">
-			</select>
-		</div>
-		</br>
-		<button class="btn" id="submitPath" value="submit"> VR View </button>
-		<button class="btn" id="submit2" value="submit2"> Google View </button>
-		<br/><br/>
-		<br/>
-		<br/><br/>
-		<hr>
-		<header class="text-center"> <button id="map1"> Google Map View </header>
-		<div id="map">
-		</div>
-		<hr>
 	</body>
 	
 	<script type="text/javascript" src="pathInitiate.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="directions.js" type="text/javascript"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg&callback=initMap"></script>
+
+	<!-- I still need to figure out adding bootstrap locally -->
+	<!-- <script href="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- <script href="node_modules/popper.js/dist/popper.min.js"></script> -->
+	<script href="node_modules/bootstrap/dist/css/bootstrap.min.js" rel="stylesheet"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

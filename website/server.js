@@ -38,6 +38,10 @@ app.get('/contact', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 
+app.get('/vr-map', function(req, res) {
+	res.sendFile(path.join(dir + '/index.html'));
+})
+
 const server = app.listen(port, function() {
 	console.log('listening on port ' + port);
 });

@@ -1,10 +1,7 @@
 <template>
 	<div class="container-fluid">
 		<!-- header, which should be at the top of every page -->
-		<!-- It should probably become a drop down menu on mobile devices,
-		but I still need to figure out how to see the VR programs -->
 		<nav class="navbar navbar-expand-md sticky-top red">
-			<!-- <div class="container-fluid"> -->
 			<div class="navbar-header">
 				<h2><router-link to="/" class="navbar-brand">VR/AR RPI</router-link></h2>
 			</div>
@@ -18,18 +15,18 @@
 					<li class="nav-item">
 						<router-link class="nav-link" to="/contact">Contact</router-link>
 					</li>
+					<li>
+						<!-- WebVR programs menu -->
+						<div class="dropdown show nav-item nav-link">
+							<button class="btn btn-default dropdown-toggle red" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+								<!-- <a href="src/webvr/RPIVRMap" class="dropdown-item">RPI VR Map</a> -->
+								<!-- this needs to link to RPI VR Map component -->
+								<router-link class="dropdown-item" to="/vr-map">RPI VR Map</router-link>
+							</div>				
+						</div>
+					</li>
 				</ul>
-			</div>
-			<!-- </div> -->
-			
-			<!-- WebVR programs menu -->
-			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-					<li><a href="#">please work</a></li>
-					<li><a href="src/webvr/RPIVRMap">RPI VR Map</a></li>
-					<li role="separator" class="divider"></li>
-				</ul>					
 			</div>
 
 		</nav>
@@ -42,9 +39,13 @@
 		<!-- this needs to be fixed to the bottom -->
 		<footer class="footer red fixed-bottom">
 			<div class="container">
-				Other links
+				<div class="row">
+					<div class="col-md-2 col-xs-4">Other links</div>
+					<div class="col-md-2 col-xs-4"><a href="https://rcos.io/">RCOS</a></div>
+					<div class="col-md-2 col-xs-4"><a href="http://www.rpi.edu/">RPI Homepage</a></div>
+				</div>
 			</div>
-			<div class="footer-copyright fixed-bottom">
+			<div class="footer-copyright text-center fixed-bottom">
 				<div class="container">
 					RCOS 2017
 				</div>
@@ -56,6 +57,9 @@
 <style>
 	body {
 		margin-bottom: 60px;
+	}
+	a {
+		color: white;
 	}
 	.red {
 		background-color: #d7001a;
@@ -76,15 +80,23 @@
 		color: white;
 		font-size: 20px;
 	}
+	/* this doesn't work on phone because position changes*/
+	/*.dropdown-menu {
+		right: 0;
+		left: auto;
+	}*/
 	.content {
 		padding-top: 80px;
-		/*padding-bottom: 60px;*/
+		padding-bottom: 80px;
 		left: 0;
+		bottom: 0;
+		top: 0;
 		height: 100%;
+		width: 100%;
 		position: absolute;
 	}
 	.footer {
-		position: absolute;
+		/*position: absolute;*/
 		bottom: 0;
 		left: 0;
 		width: 100%;

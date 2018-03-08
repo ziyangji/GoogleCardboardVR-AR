@@ -1,12 +1,16 @@
 <template>
-	<div class="container">
+	<div class="container-fluid">
 		<h1>Contact</h1>
 	</div>
 </template>
 
-<style>
-	.container {
-		padding-top: 60px;
+<style scoped>
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 </style>
 

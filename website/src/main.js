@@ -4,6 +4,7 @@ import App from './App.vue';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
+import VRMap from './components/RPIVRMap.vue';
 
 console.log("I am working!!!!! sort of")
 
@@ -24,6 +25,11 @@ const routes = [
 		path: '/contact',
 		name: 'Contact',
 		component: Contact
+	},
+	{
+		path: '/vr-map',
+		name: "RPI VR Map",
+		component: VRMap
 	}
 ];
 
