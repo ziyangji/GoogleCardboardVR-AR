@@ -2,6 +2,7 @@
 <template>
 	<div class="container">
 		<div class="form-group">
+			<br/>
 			<div>
 				<label> <b>Origin</b> </label>
 				<select class="buildings form-control" id="start" name="start">
@@ -13,8 +14,8 @@
 				</select>
 			</div>
 			<br/>
-			<button class="btn btn-default" id="submitPath" value="submit"> VR View </button>
-			<button class="btn btn-default" id="submit2" value="submit2"> Google View </button>
+			<button v-on:click="" class="btn btn-default" id="submitPath" value="submit"> VR View </button>
+			<button v-on:click="" class="btn btn-default" id="submit2" value="submit2"> Google View </button>
 			<div id="map">
 			</div>
 		</div>
@@ -22,13 +23,23 @@
 </template>
 
 <style>
-	
+	.container {
+		/*padding-top: 20px;*/
+	}
 </style>
 
 <script>
-	
+	import initMap from '../webvr/RPIVRMap/pathInitiate.js';
+
+	export default {
+		name: 'VR-Map',
+		methods: {
+			vrView : function(event) {
+
+			},
+			mapView: function(event) {
+
+			}
+		}
+	};
 </script>
-<!-- <script src="src/webvr/RPIVRMap/pathInitiate.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../webvr/RPIVRMap/directions.js" type="text/javascript"></script> -->
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg&callback=initMap"></script> -->

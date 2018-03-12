@@ -7,7 +7,8 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
 		<!-- I want to use Bootstrap (Bootstrap 4 CSS) -->
-  		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  		<!-- <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 		<link rel="stylesheet" type="text/css" href="directions.css">
 
@@ -25,16 +26,16 @@
 			<h2> GoogleCardboard VR/AR </h2>
 			<p> <i> This is a RCOS project to utilize Google Cardboard to contribute to <a href="https://aframe.io/"> aframe</a> </i> </p>
 			<!-- Origin: -->
-			<div style="margin-left: 20px">
-				<label for "start"> <b>Origin</b> </label>
-				<select class="buildings" id="start" name="start">
+			<div>
+				<label> <b>Origin</b> </label>
+				<select class="buildings form-control" id="start" name="start">
 				</select>
 			</div>
 			</br>
-			<div style="margin-left: 20px">
+			<div>
 				<!-- Destination: -->
-				<label for "end" > <b>Destination</b> </label>
-				<select class="buildings" id="end" name="end">
+				<label> <b>Destination</b> </label>
+				<select class="buildings form-control" id="end" name="end">
 				</select>
 			</div>
 			</br>
@@ -59,6 +60,7 @@
 	<!-- <script href="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<!-- <script href="node_modules/popper.js/dist/popper.min.js"></script> -->
-	<script href="node_modules/bootstrap/dist/css/bootstrap.min.js" rel="stylesheet"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<!-- <script href="node_modules/bootstrap/dist/css/bootstrap.min.js" rel="stylesheet"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

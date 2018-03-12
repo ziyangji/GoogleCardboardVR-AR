@@ -13,6 +13,7 @@ function initMap() {
 	});
 	directionsDisplay.setMap(map);
 	
+	// I think this is the issue?
 	$("#submitPath").on("click", function(e) {
 		calculateAndDisplayRoute(directionsService, directionsDisplay, true);
 	});
@@ -20,6 +21,14 @@ function initMap() {
 	$("#submit2").on("click", function(e) {
 		calculateAndDisplayRoute(directionsService, directionsDisplay, false);
 	});
+
+	// function vrView() {
+	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+	// };
+
+	// function mapView() {
+	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, false);
+	// };
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {

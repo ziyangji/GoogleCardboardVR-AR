@@ -633,6 +633,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	name: 'App',
@@ -664,14 +670,14 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 console.log("hello from Home.vue");
 exports.default = {
 	name: 'Home',
 	data: function data() {
 		return {
-			image: 'src/assets/nearempac.jpg',
-			image2: 'src/assets/nearempacequirectangular.jpg'
+			image: 'src/assets/nearempacequirectangular.jpg'
 		};
 	}
 };
@@ -686,6 +692,36 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -733,6 +769,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 console.log("hello from Contact.vue");
 exports.default = {
@@ -749,34 +791,54 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _pathInitiate = __webpack_require__(35);
+
+var _pathInitiate2 = _interopRequireDefault(_pathInitiate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+	name: 'VR-Map',
+	methods: {
+		vrView: function vrView(event) {},
+		mapView: function mapView(event) {}
+	}
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 /* 9 */
@@ -833,7 +895,7 @@ var routes = [{
 	component: _Contact2.default
 }, {
 	path: '/vr-map',
-	name: "RPI VR Map",
+	name: "VR-Map",
 	component: _RPIVRMap2.default
 }];
 
@@ -14841,7 +14903,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n\t/*background-color: #404040;*/\n}\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n\t/*height: 80px;*/\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.content {\n\tpadding-top: 80px;\n\tpadding-bottom: 80px;\n\tpadding-right: 0;\n\tpadding-left: 0;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\t/*position: absolute;*/\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 80px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
+exports.push([module.i, "\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.dropdown-menu {\n\tbackground-color: #d7001a;\n\tcolor: white;\n\tborder: none;\n}\n.dropdown-item {\n\tcolor: white;\n}\n.content {\n\tpadding-top: 70px;\n\tpadding-bottom: 100px;\n\tpadding-right: 0;\n\tpadding-left: 0;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -15031,26 +15093,30 @@ var staticRenderFns = [
     return _c("footer", { staticClass: "footer red fixed-bottom" }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-2 col-xs-2" }, [
+          _c("div", { staticClass: "col-md-2 col-xs-6" }, [
             _vm._v("Other links")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-2 col-xs-4" }, [
-            _c("a", { attrs: { href: "https://rcos.io/" } }, [_vm._v("RCOS")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2 col-xs-4" }, [
-            _c("a", { attrs: { href: "http://www.rpi.edu/" } }, [
-              _vm._v("RPI Homepage")
+          _c("div", { staticClass: "col-md-2 col-xs-6" }, [
+            _c("ul", { staticClass: "list-unstyled" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "https://rcos.io/" } }, [
+                  _vm._v("RCOS")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "http://www.rpi.edu/" } }, [
+                  _vm._v("RPI Homepage")
+                ])
+              ])
             ])
           ])
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "footer-copyright text-center fixed-bottom" }, [
-        _c("div", { staticClass: "container" }, [
-          _vm._v("\n\t\t\t\tRCOS 2017\n\t\t\t")
-        ])
+        _c("div", { staticClass: "container" }, [_vm._v("RCOS 2017")])
       ])
     ])
   }
@@ -15160,7 +15226,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -15179,7 +15245,16 @@ var render = function() {
   return _c(
     "a-scene",
     { attrs: { embedded: "" } },
-    [_c("a-sky", { attrs: { src: _vm.image2 } })],
+    [
+      _c("a-sky", { attrs: { src: _vm.image, rotation: "0 -90 0" } }),
+      _vm._v(" "),
+      _c("a-text", {
+        attrs: {
+          value: "Rensselaer\\nPolytechnic\\nInstitute\\nin Virtual Reality",
+          position: "-1.5 2.5 -3"
+        }
+      })
+    ],
     1
   )
 }
@@ -15289,7 +15364,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\na[data-v-c226fde6] {\n\tcolor: gray;\n}\n.container-fluid[data-v-c226fde6] {\n\tposition: absolute;\n\t/*padding-top: 70px;*/\n\tpadding-bottom: 100px;\n\t/*padding-right: 0px;\n\tpadding-left: 0px;*/\n\t/*margin-right: auto;\n\tmargin-left: auto;*/\n\t/*left: 0;*/\n\t/*bottom: 0;*/\n\t/*top: 0;*/\n\theight: 100%;\n\t/*width: 100%;*/\n}\n", ""]);
 
 // exports
 
@@ -15305,14 +15380,56 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "a-scene",
-    { attrs: { embedded: "" } },
-    [_c("a-sky", { attrs: { src: _vm.image } })],
-    1
-  )
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6 col-xs-12" },
+        [
+          _c(
+            "a-scene",
+            { attrs: { embedded: "" } },
+            [_c("a-sky", { attrs: { src: _vm.image } })],
+            1
+          )
+        ],
+        1
+      )
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6 col-xs-12 info" }, [
+      _c("h2", [_c("b", [_vm._v("About Us")])]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "We are team of RPI students aiming to create virtual and augmented reality programs for the web that will be easily viewable with affordable platforms like Google Cardboard."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("This project is open source, so feel welcome to fork our "),
+        _c(
+          "a",
+          {
+            attrs: { href: "https://github.com/ZiniuYu/GoogleCardboardVR-AR" }
+          },
+          [_vm._v("Github repository")]
+        ),
+        _vm._v(" and contribute.")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 if (false) {
@@ -15418,7 +15535,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-cf6573c0] {\n\twidth: 100%;\n\theight: 100%;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-cf6573c0] {\n\twidth: 100%;\n\theight: 100%;\n\t/*background-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;*/\n}\n", ""]);
 
 // exports
 
@@ -15442,7 +15559,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("h1", [_vm._v("Contact")])
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6 col-xs-12" }, [
+          _c("h2", [_c("b", [_vm._v("Contact")])]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("You can contact Shoshana Malfatto at malfas@rpi.edu")
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -15464,7 +15591,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RPIVRMap_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RPIVRMap_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RPIVRMap_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RPIVRMap_vue__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RPIVRMap_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6f8abba5_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_RPIVRMap_vue__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6f8abba5_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_RPIVRMap_vue__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(2);
 var disposed = false
 function injectStyle (context) {
@@ -15551,13 +15678,76 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.container {\n\t/*padding-top: 20px;*/\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// users click on two parts of a map of RPI campus (first click is start, second is destination)
+// use that with Google directions api to get "steps" to destination
+// finds path in latitude and longitude coordinates
+// find closest points in map.json to the lat/long of steps, set up order
+// now you can move through images until you get to the location
+function initMap() {
+	var directionsService = new google.maps.DirectionsService();
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 15,
+		center: { lat: 42.7285, lng: -73.677 }
+	});
+	directionsDisplay.setMap(map);
+
+	// I think this is the issue?
+	$("#submitPath").on("click", function (e) {
+		calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+	});
+
+	$("#submit2").on("click", function (e) {
+		calculateAndDisplayRoute(directionsService, directionsDisplay, false);
+	});
+
+	// function vrView() {
+	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+	// };
+
+	// function mapView() {
+	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, false);
+	// };
+}
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
+	directionsService.route({
+		origin: document.getElementById('start').value,
+		destination: document.getElementById('end').value,
+		travelMode: 'WALKING'
+	}, function (response, status) {
+		if (status == 'OK') {
+			// response if the directions result
+			console.log(response);
+			for (var i = 0; i < response.routes[0].overview_path.length; ++i) {
+				console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
+			}
+			// use following line for Google View
+			if (vr) {
+				findPath(locations, response.routes[0].overview_path);
+			} else {
+				directionsDisplay.setDirections(response);
+			}
+		} else {
+			window.alert('Directions request failed due to ' + status);
+		}
+	});
+}
+
+/***/ }),
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15567,55 +15757,65 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "form-group" }, [
+      _c("br"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-default",
+          attrs: { id: "submitPath", value: "submit" },
+          on: { click: function($event) {} }
+        },
+        [_vm._v(" VR View ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-default",
+          attrs: { id: "submit2", value: "submit2" },
+          on: { click: function($event) {} }
+        },
+        [_vm._v(" Google View ")]
+      ),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "map" } })
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "form-group" }, [
-        _c("div", [
-          _c("label", [_c("b", [_vm._v("Origin")])]),
-          _vm._v(" "),
-          _c("select", {
-            staticClass: "buildings form-control",
-            attrs: { id: "start", name: "start" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c("label", [_c("b", [_vm._v("Destination")])]),
-          _vm._v(" "),
-          _c("select", {
-            staticClass: "buildings form-control",
-            attrs: { id: "end", name: "end" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-default",
-            attrs: { id: "submitPath", value: "submit" }
-          },
-          [_vm._v(" VR View ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-default",
-            attrs: { id: "submit2", value: "submit2" }
-          },
-          [_vm._v(" Google View ")]
-        ),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "map" } })
-      ])
+    return _c("div", [
+      _c("label", [_c("b", [_vm._v("Origin")])]),
+      _vm._v(" "),
+      _c("select", {
+        staticClass: "buildings form-control",
+        attrs: { id: "start", name: "start" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("label", [_c("b", [_vm._v("Destination")])]),
+      _vm._v(" "),
+      _c("select", {
+        staticClass: "buildings form-control",
+        attrs: { id: "end", name: "end" }
+      })
     ])
   }
 ]

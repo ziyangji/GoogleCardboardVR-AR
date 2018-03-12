@@ -41,24 +41,23 @@
 			<div class="container">
 				<div class="row">
 					<!-- I'm not sure yet why columns are behaving weirdly... -->
-					<div class="col-md-2 col-xs-2">Other links</div>
-					<div class="col-md-2 col-xs-4"><a href="https://rcos.io/">RCOS</a></div>
-					<div class="col-md-2 col-xs-4"><a href="http://www.rpi.edu/">RPI Homepage</a></div>
+					<div class="col-md-2 col-xs-6">Other links</div>
+					<div class="col-md-2 col-xs-6">
+						<ul class="list-unstyled">
+							<li><a href="https://rcos.io/">RCOS</a></li>
+							<li><a href="http://www.rpi.edu/">RPI Homepage</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="footer-copyright text-center fixed-bottom">
-				<div class="container">
-					RCOS 2017
-				</div>
+				<div class="container">RCOS 2017</div>
 			</div>
 		</footer>
 	</div>
 </template>
 
 <style>
-	body {
-		/*background-color: #404040;*/
-	}
 	a {
 		color: white;
 	}
@@ -70,7 +69,6 @@
 		position: absolute;
 		left: 0;
 		width: 100%;
-		/*height: 80px;*/
 	}
 	.navbar-brand {
 		color: white;
@@ -81,9 +79,17 @@
 		color: white;
 		font-size: 20px;
 	}
+	.dropdown-menu {
+		background-color: #d7001a;
+		color: white;
+		border: none;
+	}
+	.dropdown-item {
+		color: white;
+	}
 	.content {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 70px;
+		padding-bottom: 100px;
 		padding-right: 0;
 		padding-left: 0;
 		margin-right: auto;
@@ -96,11 +102,11 @@
 		position: absolute;
 	}
 	.footer {
-		/*position: absolute;*/
+		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 80px;
+		height: 100px;
 		padding-top: 10px;
 	}
 	.footer-copyright {

@@ -28,7 +28,7 @@ const routes = [
 	},
 	{
 		path: '/vr-map',
-		name: "RPI VR Map",
+		name: "VR-Map",
 		component: VRMap
 	}
 ];
