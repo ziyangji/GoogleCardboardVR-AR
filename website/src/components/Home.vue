@@ -1,5 +1,4 @@
 <template>
-	<!-- put a text element in vr image -->
 	<a-scene embedded>
 		<a-sky :src="image" rotation="0 -90 0"></a-sky>
 		<a-text value="Rensselaer\nPolytechnic\nInstitute\nin Virtual Reality" position="-1.5 2.5 -3"></a-text>

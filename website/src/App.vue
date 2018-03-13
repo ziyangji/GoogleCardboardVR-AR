@@ -38,21 +38,7 @@
 
 		<!-- this needs to be fixed to the bottom -->
 		<footer class="footer red fixed-bottom">
-			<div class="container">
-				<div class="row">
-					<!-- I'm not sure yet why columns are behaving weirdly... -->
-					<div class="col-md-2 col-xs-6">Other links</div>
-					<div class="col-md-2 col-xs-6">
-						<ul class="list-unstyled">
-							<li><a href="https://rcos.io/">RCOS</a></li>
-							<li><a href="http://www.rpi.edu/">RPI Homepage</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright text-center fixed-bottom">
-				<div class="container">RCOS 2017</div>
-			</div>
+			<div class="container text-center">RCOS 2018</div>
 		</footer>
 	</div>
 </template>
@@ -89,7 +75,7 @@
 	}
 	.content {
 		padding-top: 70px;
-		padding-bottom: 100px;
+		padding-bottom: 25px;
 		padding-right: 0;
 		padding-left: 0;
 		margin-right: auto;
@@ -106,8 +92,7 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 100px;
-		padding-top: 10px;
+		height: 25px;
 	}
 	.footer-copyright {
 		background-color: #c0001a;

@@ -624,21 +624,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 exports.default = {
 	name: 'App',
@@ -659,7 +644,6 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
 //
 //
 //
@@ -692,6 +676,16 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -775,6 +769,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 console.log("hello from Contact.vue");
 exports.default = {
@@ -805,11 +802,68 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
 	name: 'VR-Map',
+	data: function data() {
+		return {
+			directionsService: "",
+			directionsDisplay: ""
+		};
+	},
+	ready: function ready() {
+		window.addEventListener('resize', this.handleResize);
+	},
+	mounted: function mounted() {
+		console.log("map: ", google.maps);
+		this.directionsService = new google.maps.DirectionsService();
+		this.directionsDisplay = new google.maps.DirectionsRenderer();
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 15,
+			center: { lat: 42.7285, lng: -73.677 }
+		});
+		this.directionsDisplay.setMap(map);
+	},
+
 	methods: {
-		vrView: function vrView(event) {},
-		mapView: function mapView(event) {}
+		calculateAndDisplayRoute: function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
+			directionsService.route({
+				origin: document.getElementById('start').value,
+				destination: document.getElementById('end').value,
+				travelMode: 'WALKING'
+			}, function (response, status) {
+				if (status == 'OK') {
+					// response if the directions result
+					console.log(response);
+					for (var i = 0; i < response.routes[0].overview_path.length; ++i) {
+						console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
+					}
+					// use following line for Google View
+					if (vr) {
+						findPath(locations, response.routes[0].overview_path);
+					} else {
+						directionsDisplay.setDirections(response);
+					}
+				} else {
+					window.alert('Directions request failed due to ' + status);
+				}
+			});
+		},
+		vrView: function vrView(event) {
+			calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+		},
+		mapView: function mapView(event) {
+			calculateAndDisplayRoute(directionsService, directionsDisplay, false);
+		},
+		handleResize: function handleResize() {
+			console.log("need to change map size!");
+			// change px in #map css
+		}
 	}
 }; //
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -14903,7 +14957,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.dropdown-menu {\n\tbackground-color: #d7001a;\n\tcolor: white;\n\tborder: none;\n}\n.dropdown-item {\n\tcolor: white;\n}\n.content {\n\tpadding-top: 70px;\n\tpadding-bottom: 100px;\n\tpadding-right: 0;\n\tpadding-left: 0;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100px;\n\tpadding-top: 10px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
+exports.push([module.i, "\na {\n\tcolor: white;\n}\n.red {\n\tbackground-color: #d7001a;\n\tcolor: white;\n}\n.navbar {\n\tposition: absolute;\n\tleft: 0;\n\twidth: 100%;\n}\n.navbar-brand {\n\tcolor: white;\n\tfont-size: 35px;\n}\n.nav-link {\n\tbackground-color: #d7001a; \n\tcolor: white;\n\tfont-size: 20px;\n}\n.dropdown-menu {\n\tbackground-color: #d7001a;\n\tcolor: white;\n\tborder: none;\n}\n.dropdown-item {\n\tcolor: white;\n}\n.content {\n\tpadding-top: 70px;\n\tpadding-bottom: 25px;\n\tpadding-right: 0;\n\tpadding-left: 0;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\twidth: 100%;\n\tposition: absolute;\n}\n.footer {\n\tposition: absolute;\n\tbottom: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 25px;\n}\n.footer-copyright {\n\tbackground-color: #c0001a;\n}\n", ""]);
 
 // exports
 
@@ -15091,33 +15145,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("footer", { staticClass: "footer red fixed-bottom" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-2 col-xs-6" }, [
-            _vm._v("Other links")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2 col-xs-6" }, [
-            _c("ul", { staticClass: "list-unstyled" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "https://rcos.io/" } }, [
-                  _vm._v("RCOS")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "http://www.rpi.edu/" } }, [
-                  _vm._v("RPI Homepage")
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "footer-copyright text-center fixed-bottom" }, [
-        _c("div", { staticClass: "container" }, [_vm._v("RCOS 2017")])
-      ])
+      _c("div", { staticClass: "container text-center" }, [_vm._v("RCOS 2018")])
     ])
   }
 ]
@@ -15226,7 +15254,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -15364,7 +15392,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\na[data-v-c226fde6] {\n\tcolor: gray;\n}\n.container-fluid[data-v-c226fde6] {\n\tposition: absolute;\n\t/*padding-top: 70px;*/\n\tpadding-bottom: 100px;\n\t/*padding-right: 0px;\n\tpadding-left: 0px;*/\n\t/*margin-right: auto;\n\tmargin-left: auto;*/\n\t/*left: 0;*/\n\t/*bottom: 0;*/\n\t/*top: 0;*/\n\theight: 100%;\n\t/*width: 100%;*/\n}\n", ""]);
+exports.push([module.i, "\na[data-v-c226fde6] {\n\tcolor: gray;\n}\n.container-fluid[data-v-c226fde6] {\n\tposition: absolute;\n\tpadding-top: 70px;\n\tpadding-bottom: 25px;\n\tpadding-right: 15px;\n\tpadding-left: 15px;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\tleft: 0;\n\tbottom: 0;\n\ttop: 0;\n\theight: 100%;\n\t/*overflow-y: auto;*/\n}\n.row[data-v-c226fde6] {\n\theight: 100%;\n\tpadding-bottom: 35px;\n}\n", ""]);
 
 // exports
 
@@ -15408,7 +15436,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-6 col-xs-12 info" }, [
-      _c("h2", [_c("b", [_vm._v("About Us")])]),
+      _c("h2", { staticClass: "text-md-left text-xs-center" }, [
+        _c("b", [_vm._v("About Us")])
+      ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
@@ -15421,11 +15451,46 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            attrs: { href: "https://github.com/ZiniuYu/GoogleCardboardVR-AR" }
+            attrs: {
+              href: "https://github.com/ZiniuYu/GoogleCardboardVR-AR",
+              target: "_blank"
+            }
           },
           [_vm._v("Github repository")]
         ),
         _vm._v(" and contribute.")
+      ]),
+      _vm._v(" "),
+      _c("h5", [_vm._v("Related Links")]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "list-unstyled" }, [
+        _c("li", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "https://rcos.io/projects/ziniuyu/googlecardboardvr-ar/blog",
+                target: "_blank"
+              }
+            },
+            [_vm._v("Blog")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "https://rcos.io/", target: "_blank" } }, [
+            _vm._v("RCOS")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            { attrs: { href: "http://www.rpi.edu/", target: "_blank" } },
+            [_vm._v("RPI Homepage")]
+          )
+        ])
       ])
     ])
   }
@@ -15535,7 +15600,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid[data-v-cf6573c0] {\n\twidth: 100%;\n\theight: 100%;\n\t/*background-position: center;\n\tbackground-repeat: no-repeat;\n\tbackground-size: cover;*/\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid[data-v-cf6573c0] {\n\twidth: 100%;\n\theight: 100%;\n}\n", ""]);
 
 // exports
 
@@ -15566,7 +15631,23 @@ var staticRenderFns = [
           _c("h2", [_c("b", [_vm._v("Contact")])]),
           _vm._v(" "),
           _c("p", [
-            _vm._v("You can contact Shoshana Malfatto at malfas@rpi.edu")
+            _vm._v("Submit your virtual and augmented reality videos!")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "If you have questions about submitting material or contributing to this project in other ways..."
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "list-unstyled" }, [
+            _c("li", [_vm._v("Shoshana Malfatto (malfas@rpi.edu)")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Ziyang Ji (jiz@rpi.edu)")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("Our Slack channel #google-cardboard-vr on the RCOS Slack")
+            ])
           ])
         ])
       ])
@@ -15678,7 +15759,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.container {\n\t/*padding-top: 20px;*/\n}\n", ""]);
+exports.push([module.i, "\n.container {\n\t\t/*padding-top: 20px;*/\n}\n#map {\n\t\theight: 500px;\n    \twidth: 500px;\n    \tmargin: 0 auto;\n}\n", ""]);
 
 // exports
 
@@ -15712,14 +15793,6 @@ function initMap() {
 	$("#submit2").on("click", function (e) {
 		calculateAndDisplayRoute(directionsService, directionsDisplay, false);
 	});
-
-	// function vrView() {
-	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, true);
-	// };
-
-	// function mapView() {
-	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, false);
-	// };
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
@@ -15767,25 +15840,27 @@ var render = function() {
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-default",
-          attrs: { id: "submitPath", value: "submit" },
-          on: { click: function($event) {} }
-        },
-        [_vm._v(" VR View ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-default",
-          attrs: { id: "submit2", value: "submit2" },
-          on: { click: function($event) {} }
-        },
-        [_vm._v(" Google View ")]
-      ),
+      _c("div", [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-default",
+            attrs: { id: "submitVR", value: "submit" },
+            on: { click: _vm.vrView }
+          },
+          [_vm._v(" VR View ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-default",
+            attrs: { id: "submitGoogle", value: "submit2" },
+            on: { click: _vm.mapView }
+          },
+          [_vm._v(" Google View ")]
+        )
+      ]),
       _vm._v(" "),
       _c("div", { attrs: { id: "map" } })
     ])

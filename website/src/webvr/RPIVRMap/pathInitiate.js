@@ -21,14 +21,6 @@ function initMap() {
 	$("#submit2").on("click", function(e) {
 		calculateAndDisplayRoute(directionsService, directionsDisplay, false);
 	});
-
-	// function vrView() {
-	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, true);
-	// };
-
-	// function mapView() {
-	// 	calculateAndDisplayRoute(directionsService, directionsDisplay, false);
-	// };
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {

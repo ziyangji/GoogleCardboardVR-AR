@@ -5,9 +5,15 @@
 		<br/>
 		<div class="row">
 			<div class="col-md-6 col-xs-12 info">
-				<h2><b>About Us</b></h2>
+				<h2 class="text-md-left text-xs-center"><b>About Us</b></h2>
 				<p>We are team of RPI students aiming to create virtual and augmented reality programs for the web that will be easily viewable with affordable platforms like Google Cardboard.</p>
-				<p>This project is open source, so feel welcome to fork our <a href="https://github.com/ZiniuYu/GoogleCardboardVR-AR">Github repository</a> and contribute.</p>
+				<p>This project is open source, so feel welcome to fork our <a href="https://github.com/ZiniuYu/GoogleCardboardVR-AR" target="_blank">Github repository</a> and contribute.</p>
+				<h5>Related Links</h5>
+				<ul class="list-unstyled">
+					<li><a href="https://rcos.io/projects/ziniuyu/googlecardboardvr-ar/blog" target="_blank">Blog</a></li>
+					<li><a href="https://rcos.io/" target="_blank">RCOS</a></li>
+					<li><a href="http://www.rpi.edu/" target="_blank">RPI Homepage</a></li>
+				</ul>
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<a-scene embedded>
@@ -24,17 +30,21 @@
 	}
 	.container-fluid {
 		position: absolute;
-		/*padding-top: 70px;*/
-		padding-bottom: 100px;
-		/*padding-right: 0px;
-		padding-left: 0px;*/
-		/*margin-right: auto;
-		margin-left: auto;*/
-		/*left: 0;*/
-		/*bottom: 0;*/
-		/*top: 0;*/
+		padding-top: 70px;
+		padding-bottom: 25px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		left: 0;
+		bottom: 0;
+		top: 0;
 		height: 100%;
-		/*width: 100%;*/
+		/*overflow-y: auto;*/
+	}
+	.row {
+		height: 100%;
+		padding-bottom: 35px;
 	}
 </style>
 
