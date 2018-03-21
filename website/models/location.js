@@ -9,6 +9,4 @@ var locationSchema = new mongoose.Schema({
 	outdoor: { type: Boolean, default: true }
 });
 
-var Location = mongoose.model('Location', locationSchema);
-
-module.exports = Location;
+module.exports = mongoose.model('Location', locationSchema);

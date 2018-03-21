@@ -1,33 +1,28 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const config = require('./config/db.js') // needed?
-const location = require('./models/location')
+const config = require('./config/db'); // needed?
+const Location = require('./models/location');
+const queries = require('./queries')
 
 var port = 3000;
 
-mongoose.connect('mongodb://localhost:27017/rpivrardb').then(
+mongoose.connect(config.db).then(
 	() => { console.log('Connected successfully to rpivrardb') },
 	err => { console.log('Can\'t connect to db') }
 );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-var Location = mongoose.model('Location', Location);
-// var query = Location.find({ 'building': { $ne : "" } });
-// query.select('id building');
-// query.exec(function (err, locations) {
-// 	if (err) throw err;
-// 	console.log(locations);
-// })
 
 var app = express();
 
-// this will probably need to be updated
-var dir = __dirname;
+var dir = __dirname; // this will probably need to be updated
 
 app.use(express.static(dir));
 
+
+/* website routes */
 app.get('/', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
@@ -40,10 +35,24 @@ app.get('/contact', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 
+
+/* WebVR program routes */
 app.get('/vr-map', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 
+
+/* Queries */
+app.get('/query/buildings', queries.buildings);
+
+app.get('/query/outdoor-locs', queries.outdoorLocs);
+
+
 const server = app.listen(port, function() {
 	console.log('listening on port ' + port);
 });
+
+// look up
+// - state management
+// - redux
+// - insomnia and postman

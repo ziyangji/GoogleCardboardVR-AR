@@ -422,7 +422,7 @@ var locations = [
 		address: "Pittsburgh Bldg, Troy, NY 12180",
 		url: "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/56.jpg",
 		outdoor: true
-	},
+	}
 ];
 
 

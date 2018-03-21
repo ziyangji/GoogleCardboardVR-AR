@@ -1,41 +1,21 @@
 var locations = [];
-$.ajax({
-	type: "GET",
-	url: "map.json",
-	dataType: "json",
-	success: function(data){
-		mybody = mySite(data);
-		locations = data.locations;
-	}, 
-	error: function(msg){
-		// error checking 
-		alert("Please Reload!");
-	}
-});
 
-function mySite(data){
+export default function appendBuildingNames(location) {
 	var select1 = document.getElementById("start");
 	var select2 = document.getElementById("end");
-	var added = new Set();
-	for (var i = 0; i < data.locations.length; i ++){
-		if (data.locations[i].building != "" && !added.has(data.locations[i].building)) { // && building not already in list
-			// create new options and attach them to the "start" and "end" selectors
-			var option1 = document.createElement("option");
-			var option2 = document.createElement("option");		
-			// parse the data read from data and store them into variables
-			var building = data.locations[i].building;
-			var x = data.locations[i].x;
-			var y = data.locations[i].y;
-			var address = data.locations[i].address;
-			var img = data.locations[i].url;
-			option1.text = building;
-			option2.text = building;
-			select1.add(option1, i+1);
-			select2.add(option2, i+1);
-			option1.value = address;
-			option2.value = address;
-			added.add(data.locations[i].building);
-		}
+
+	// I need to make sure locations are unique
+	for (var i = 0; i < location.length; ++i) {
+		var option1 = document.createElement("option");
+		var option2 = document.createElement("option");
+		var building = location[i].building;
+		option1.text = building;
+		option2.text = building;
+		var address = location[i].address;
+		option1.value = address;
+		option2.value = address;
+		select1.add(option1, i+1);
+		select2.add(option2, i+1);
 	}
 }
 

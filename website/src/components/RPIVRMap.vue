@@ -1,6 +1,6 @@
 <!-- should be similar to index.html in RPI map program -->
 <template>
-	<div class="container">
+	<div class="container" id="body">
 		<div class="form-group">
 			<br/>
 			<div>
@@ -35,7 +35,10 @@
 </style>
 
 <script>
-	import initMap from '../webvr/RPIVRMap/pathInitiate.js';
+	var axios = require('axios');
+	var showPath = require("../webvr/RPIVRMap/showPath.js");
+	// var directions = require("../webvr/RPIVRMap/directionsDb.js");
+	import appendBuildingNames from "../webvr/RPIVRMap/directionsDb.js";
 
 	export default {
 		name: 'VR-Map',
@@ -43,12 +46,12 @@
 			return {
 				directionsService: "",
 				directionsDisplay: "",
+				buildings: []
 			}
 		},
-		ready: function() {
-			window.addEventListener('resize', this.handleResize);
-		},
 		mounted() {
+			this.loadData(); // why is buildings not set when I try to print it?
+
 			console.log("map: ", google.maps);
 			this.directionsService = new google.maps.DirectionsService();
 			this.directionsDisplay = new google.maps.DirectionsRenderer();
@@ -57,6 +60,8 @@
 				center: {lat: 42.7285, lng: -73.677}
 			});
 			this.directionsDisplay.setMap(map);
+
+			window.addEventListener('resize', this.handleResize);
 		},
 		methods: {
 			calculateAndDisplayRoute : function(directionsService, directionsDisplay, vr) {
@@ -83,14 +88,26 @@
 				});
 			},
 			vrView : function(event) {
-				calculateAndDisplayRoute(directionsService, directionsDisplay, true);
+				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, true);
 			},
 			mapView: function(event) {
-				calculateAndDisplayRoute(directionsService, directionsDisplay, false);
+				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, false);
 			},
 			handleResize() {
 				console.log("need to change map size!");
 				// change px in #map css
+			},
+			loadData: function() {
+				var url = 'http://localhost:3000/query/buildings';
+				axios.get(url).then((response) => {
+					this.buildings = response.data;
+					console.log(this.buildings);
+					console.log("length: " + response.data.length);
+
+					appendBuildingNames(this.buildings);
+				}).catch(error => {
+					console.log(error);
+				})
 			}
 		}
 	};

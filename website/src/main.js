@@ -6,8 +6,6 @@ import About from './components/About.vue';
 import Contact from './components/Contact.vue';
 import VRMap from './components/RPIVRMap.vue';
 
-console.log("I am working!!!!! sort of")
-
 Vue.use(VueRouter);
 
 const routes = [

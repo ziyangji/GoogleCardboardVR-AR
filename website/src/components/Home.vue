@@ -11,6 +11,7 @@
 
 <script>
 	console.log("hello from Home.vue")
+
 	export default {
 		name: 'Home',
 		data() {

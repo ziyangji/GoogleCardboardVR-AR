@@ -20,9 +20,10 @@
 					<li>
 						<!-- WebVR programs menu -->
 						<div class="dropdown show nav-item nav-link">
-							<button class="btn btn-default dropdown-toggle red" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebVR <span class="caret"></span></button>
+							<button class="btn btn-default dropdown-toggle red" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenu">
 								<router-link class="dropdown-item" to="/vr-map">RPI VR Map</router-link>
+								<a class="dropdown-item" href="https://www.youtube.com/watch?v=OsOcbkqYh8s">Path to EMPAC</a>
 							</div>				
 						</div>
 					</li>
@@ -93,9 +94,6 @@
 		left: 0;
 		width: 100%;
 		height: 25px;
-	}
-	.footer-copyright {
-		background-color: #c0001a;
 	}
 </style>
 
