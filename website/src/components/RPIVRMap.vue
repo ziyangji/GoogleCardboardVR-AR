@@ -38,7 +38,7 @@
 	var axios = require('axios');
 	var showPath = require("../webvr/RPIVRMap/showPath.js");
 	// var directions = require("../webvr/RPIVRMap/directionsDb.js");
-	import appendBuildingNames from "../webvr/RPIVRMap/directionsDb.js";
+	import appendBuildingNames from "../webvr/RPIVRMap/directions.js";
 
 	export default {
 		name: 'VR-Map',
