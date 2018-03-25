@@ -4,7 +4,9 @@ import App from './App.vue';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
+
 import VRMap from './components/RPIVRMap.vue';
+import VRPath from './components/RPIVRPath.vue';
 
 Vue.use(VueRouter);
 
@@ -26,8 +28,13 @@ const routes = [
 	},
 	{
 		path: '/vr-map',
-		name: "VR-Map",
+		name: 'VR-Map',
 		component: VRMap
+	},
+	{
+		path: '/vr-path',
+		name: 'VR-Path',
+		component: VRPath
 	}
 ];
 

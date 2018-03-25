@@ -36,9 +36,10 @@
 
 <script>
 	var axios = require('axios');
-	var showPath = require("../webvr/RPIVRMap/showPath.js");
-	// var directions = require("../webvr/RPIVRMap/directionsDb.js");
-	import appendBuildingNames from "../webvr/RPIVRMap/directions.js";
+	// var directions = require("../webvr/RPIVRMap/directions.js");
+	import directions from "../webvr/RPIVRMap/directions.js";
+	// import appendBuildingNames from "../webvr/RPIVRMap/directions.js";
+	// import findPath from "../webvr/RPIVRMap/directions.js";
 
 	export default {
 		name: 'VR-Map',
@@ -46,13 +47,16 @@
 			return {
 				directionsService: "",
 				directionsDisplay: "",
-				buildings: []
+				buildings: [],
+				outdoorLocs: []
 			}
 		},
-		mounted() {
+		created() {
 			this.loadData(); // why is buildings not set when I try to print it?
+		},
+		mounted() {
+			// this.$router.push('/');
 
-			console.log("map: ", google.maps);
 			this.directionsService = new google.maps.DirectionsService();
 			this.directionsDisplay = new google.maps.DirectionsRenderer();
 			var map = new google.maps.Map(document.getElementById('map'), {
@@ -64,7 +68,7 @@
 			window.addEventListener('resize', this.handleResize);
 		},
 		methods: {
-			calculateAndDisplayRoute : function(directionsService, directionsDisplay, vr) {
+			calculateAndDisplayRoute : function(directionsService, directionsDisplay, locations, findPath) {
 				directionsService.route({
 					origin: document.getElementById('start').value,
 					destination: document.getElementById('end').value,
@@ -72,14 +76,13 @@
 				}, function(response, status) {
 					if (status == 'OK') {
 						// response if the directions result
-						console.log(response)
 						for (var i = 0; i < response.routes[0].overview_path.length; ++i) {
 							console.log("latitude: " + response.routes[0].overview_path[i].lat() + "  longitude: " + response.routes[0].overview_path[i].lng());
 						}
 						// use following line for Google View
-						if (vr) {
-							findPath(locations, response.routes[0].overview_path);
-						} else {
+						if (locations) { // vr
+								findPath(locations, response.routes[0].overview_path);
+						} else { // map
 							directionsDisplay.setDirections(response);
 						}
 					} else {
@@ -88,26 +91,70 @@
 				});
 			},
 			vrView : function(event) {
-				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, true);
+				console.log(this.outdoorLocs);
+				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, this.outdoorLocs, this.findPath);
 			},
-			mapView: function(event) {
-				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, false);
+			mapView : function(event) {
+				this.calculateAndDisplayRoute(this.directionsService, this.directionsDisplay, undefined, undefined);
 			},
-			handleResize() {
+			handleResize : function() {
 				console.log("need to change map size!");
 				// change px in #map css
 			},
-			loadData: function() {
-				var url = 'http://localhost:3000/query/buildings';
-				axios.get(url).then((response) => {
+			loadData : function() {
+				var url1 = 'http://localhost:3000/query/buildings';
+				axios.get(url1).then((response) => {
 					this.buildings = response.data;
-					console.log(this.buildings);
-					console.log("length: " + response.data.length);
 
-					appendBuildingNames(this.buildings);
-				}).catch(error => {
+					this.$nextTick(() => {
+						console.log("loadData: " + this.buildings.length);
+						console.log(this.buildings);
+
+						directions.appendBuildingNames(this.buildings);
+					})
+
+				}).catch((error) => {
 					console.log(error);
-				})
+				});
+
+				var url2 = 'http://localhost:3000/query/outdoor-locs';
+				axios.get(url2).then((response) => {
+					this.outdoorLocs = response.data;
+
+					this.$nextTick(() => {
+						console.log(this.outdoorLocs);
+					})
+
+				}).catch((error) => {
+					console.log(error);
+				});
+			},
+			findPath : function(locations, path) {
+				// think about making an efficient data structure?
+				console.log("path length: " + path.length);
+				console.log("locations length: " + locations.length);
+				var images = [];
+				for (var i = 0; i < path.length; ++i) {
+					// find the closest location
+					for (var j = 0; j < locations.length; ++j) {
+						// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
+						if (Math.abs(path[i].lat() - locations[j].point.lat) < 0.0003 && Math.abs(path[i].lng() - locations[j].point.long) < 0.0003) {
+							if (!images.includes(locations[j])) {
+								images.push(locations[j]);
+							}
+						}
+					}
+				}
+				// test output
+				console.log("Images:");
+				for (var i = 0; i < images.length; ++i) {
+					console.log(images[i]);
+				}
+
+				var imageData = JSON.stringify(images);
+				sessionStorage.setItem('images', images);
+				console.log(sessionStorage.getItem('images'));
+				this.$router.push('/vr-path');
 			}
 		}
 	};

@@ -14,7 +14,8 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<a-scene embedded>
-					<a-sky :src="image" rotation="5 -90 0"></a-sky>
+					<!-- <a-sky :src="image" rotation="5 -90 0"></a-sky> -->
+					<a-sky :src="image2" rotation="-10 0 0"></a-sky>
 				</a-scene>
 			</div>
 		</div>
@@ -38,7 +39,8 @@
 		name: 'Contact',
 		data() {
 			return {
-				image: "src/assets/empac.jpg"
+				image: "src/assets/empac.jpg",
+				image2: "src/assets/quad.JPG"
 			}
 		}
 	}

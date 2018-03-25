@@ -3,7 +3,11 @@ const path = require('path');
 const mongoose = require('mongoose');
 const config = require('./config/db'); // needed?
 const Location = require('./models/location');
-const queries = require('./queries')
+const Path = require('./models/path');
+const queries = require('./queries');
+
+const locations = require('./data/map.js');
+const pathData = require('./data/paths.js');
 
 var port = 3000;
 
@@ -38,6 +42,10 @@ app.get('/contact', function(req, res) {
 
 /* WebVR program routes */
 app.get('/vr-map', function(req, res) {
+	res.sendFile(path.join(dir + '/index.html'));
+})
+
+app.get('/vr-path', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 

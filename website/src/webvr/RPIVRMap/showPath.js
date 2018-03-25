@@ -6,7 +6,7 @@ var imagePath = [];
 
 var locs = [];
 
-window.onload = function() {
+export default function init() {
 	// it might be better to write to JSON file, which would be easier w/ node.js
 	var imageData = window.localStorage.getItem('images');
 	var imagePath = JSON.parse(imageData);
@@ -18,6 +18,10 @@ window.onload = function() {
 	addBuildingName();
 
 	function pushToAssets() {
+		for (var i = 0; i < imagePath.length; ++i) {
+			console.log(imagePath[i].url);
+		}
+
 		var assets = document.querySelector('a-assets');
 		console.log(assets);
 		for (var i = 0; i < imagePath.length; ++i) {

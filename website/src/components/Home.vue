@@ -1,6 +1,6 @@
 <template>
 	<a-scene embedded>
-		<a-sky :src="image" rotation="0 -90 0"></a-sky>
+		<a-sky :src="image3" rotation="0 -90 0"></a-sky>
 		<a-text value="Rensselaer\nPolytechnic\nInstitute\nin Virtual Reality" position="-1.5 2.5 -3"></a-text>
 	</a-scene>
 </template>
@@ -16,7 +16,9 @@
 		name: 'Home',
 		data() {
 			return {
-				image: 'src/assets/nearempacequirectangular.jpg'
+				image: 'src/assets/nearempacequirectangular.jpg',
+				image2: 'src/assets/parking_lot.jpg',
+				image3: 'src/assets/near_sage.JPG'
 			}
 		}
 	}

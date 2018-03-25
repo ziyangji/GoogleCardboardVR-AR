@@ -6,7 +6,8 @@ var locationSchema = new mongoose.Schema({
 	point: { lat: Number, long: Number },
 	address: String,
 	url: String, // could change
-	outdoor: { type: Boolean, default: true }
+	outdoor: { type: Boolean, default: true },
+	direction: { type: Number, default: 0 } // north
 });
 
 module.exports = mongoose.model('Location', locationSchema);
