@@ -24,9 +24,6 @@
 </template>
 
 <style>
-	.container {
-		/*padding-top: 20px;*/
-	}
 	#map {
 		height: 500px;
     	width: 500px;
@@ -38,8 +35,7 @@
 	var axios = require('axios');
 	// var directions = require("../webvr/RPIVRMap/directions.js");
 	import directions from "../webvr/RPIVRMap/directions.js";
-	// import appendBuildingNames from "../webvr/RPIVRMap/directions.js";
-	// import findPath from "../webvr/RPIVRMap/directions.js";
+	import bus from '../bus.js';
 
 	export default {
 		name: 'VR-Map',
@@ -52,11 +48,15 @@
 			}
 		},
 		created() {
+			// var script = document.createElement('script');
+			// script.setAttribute('src', "https://maps.googleapis.com/maps/api/js?key=AIzaSyAjiVKlrIvzWE8Tim4Zq7Sqfka4KLX1Bfg");
+			// document.head.appendChild(script);	
+
 			this.loadData(); // why is buildings not set when I try to print it?
 		},
 		mounted() {
-			// this.$router.push('/');
-
+			// when I load google maps here, I will need to check that google mpas
+			// has loaded first
 			this.directionsService = new google.maps.DirectionsService();
 			this.directionsDisplay = new google.maps.DirectionsRenderer();
 			var map = new google.maps.Map(document.getElementById('map'), {
@@ -145,16 +145,15 @@
 						}
 					}
 				}
-				// test output
-				console.log("Images:");
-				for (var i = 0; i < images.length; ++i) {
-					console.log(images[i]);
-				}
 
-				var imageData = JSON.stringify(images);
-				sessionStorage.setItem('images', images);
-				console.log(sessionStorage.getItem('images'));
-				this.$router.push('/vr-path');
+				axios.post('http://localhost:3000/imageData', images).then(response => {
+					console.log('success');
+				})
+				bus.$emit('images', images);
+
+				// this.$router.push('/vr-path');
+				this.$router.push('/src/webvr/RPIVRMap/showPath.html');
+				location.reload();
 			}
 		}
 	};

@@ -5,9 +5,7 @@ const config = require('./config/db'); // needed?
 const Location = require('./models/location');
 const Path = require('./models/path');
 const queries = require('./queries');
-
-const locations = require('./data/map.js');
-const pathData = require('./data/paths.js');
+const bodyParser = require('body-parser');
 
 var port = 3000;
 
@@ -25,6 +23,12 @@ var dir = __dirname; // this will probably need to be updated
 
 app.use(express.static(dir));
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// bad but I just neet things to work
+var imageData;
+
 
 /* website routes */
 app.get('/', function(req, res) {
@@ -39,6 +43,10 @@ app.get('/contact', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 
+app.get('/test', function(req, res) {
+	res.sendFile(path.join(dir + '/index.html'));
+})
+
 
 /* WebVR program routes */
 app.get('/vr-map', function(req, res) {
@@ -47,6 +55,16 @@ app.get('/vr-map', function(req, res) {
 
 app.get('/vr-path', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
+	res.sendFile(path.join(dir + 'src/webvr/RPIVRMapOld/showPath.html'));
+})
+
+app.get('/imageData', function(req, res) {
+	res.json(imageData);
+})
+
+app.post('/imageData', function(req, res) {
+	imageData = req.body;
+	res.send(req.body);
 })
 
 

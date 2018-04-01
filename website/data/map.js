@@ -171,7 +171,7 @@ var locations = [
 	},
 	{
 		id: 21,
-		building: "",
+		building: "West Hall",
 		point: { lat: 42.731483, long: -73.682683 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://s3.us-east-2.amazonaws.com/rpigooglecardboard/360Video2/21.jpg",
@@ -479,8 +479,8 @@ var locations = [
 		id: 57,
 		building: "",
 		point: { lat: 42.7316, long: -73.6819 },
-		address: "",
-		url: "pics/57.jpg",
+		address: "15t St, Troy, NY 12180",
+		url: "http://localhost:3000/data/pics/57.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -489,7 +489,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7321, long: -73.6658 },
 		address: "",
-		url: "pics/58.jpg",
+		url: "http://localhost:3000/data/pics/58.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -498,7 +498,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7324, long: -73.6653 },
 		address: "",
-		url: "pics/59.jpg",
+		url: "http://localhost:3000/data/pics/59.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -507,7 +507,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7326, long: -73.6651 },
 		address: "",
-		url: "pics/60.jpg",
+		url: "http://localhost:3000/data/pics/60.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -516,7 +516,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7327, long: -73.6652 },
 		address: "RPI Terminal, Troy, NY 12180",
-		url: "pics/61.jpg",
+		url: "http://localhost:3000/data/pics/61.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -525,7 +525,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7328, long: -73.6649 },
 		address: "",
-		url: "pics/62.jpg",
+		url: "http://localhost:3000/data/pics/62.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -534,7 +534,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.733, long: -73.6648 },
 		address: "",
-		url: "pics/63.jpg",
+		url: "http://localhost:3000/data/pics/63.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -543,7 +543,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7332, long: -73.6662 },
 		address: "",
-		url: "pics/64.jpg",
+		url: "http://localhost:3000/data/pics/64.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -552,7 +552,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7336, long: -73.6665 },
 		address: "Stadium Field, Troy, NY 12180",
-		url: "pics/65.jpg",
+		url: "http://localhost:3000/data/pics/65.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -561,7 +561,7 @@ var locations = [
 		building: "ECAV",
 		point: { lat: 42.7337, long: -73.6672 },
 		address: "Stadium Field, Troy, NY 12180",
-		url: "pics/66.jpg",
+		url: "http://localhost:3000/data/pics/66.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -570,7 +570,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7352, long: -73.6673 },
 		address: "",
-		url: "pics/67.jpg",
+		url: "http://localhost:3000/data/pics/67.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -579,7 +579,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7346, long: -73.6676 },
 		address: "",
-		url: "pics/68.jpg",
+		url: "http://localhost:3000/data/pics/68.jpg",
 		outdoor: true,
 		direction: 0
 	},
@@ -588,7 +588,7 @@ var locations = [
 		building: "",
 		point: { lat: 42.7339, long: -73.6677 },
 		address: "",
-		url: "pics/69.jpg",
+		url: "http://localhost:3000/pics/69.jpg",
 		outdoor: true,
 		direction: 0
 	}

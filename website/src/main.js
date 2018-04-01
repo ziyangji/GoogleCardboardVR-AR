@@ -6,7 +6,6 @@ import About from './components/About.vue';
 import Contact from './components/Contact.vue';
 
 import VRMap from './components/RPIVRMap.vue';
-import VRPath from './components/RPIVRPath.vue';
 
 Vue.use(VueRouter);
 
@@ -31,11 +30,23 @@ const routes = [
 		name: 'VR-Map',
 		component: VRMap
 	},
-	{
-		path: '/vr-path',
-		name: 'VR-Path',
-		component: VRPath
-	}
+	// {
+	// 	path: '/vr-path',
+	// 	name: 'VR-Path',
+	// 	component: VRPath
+	// },
+
+	// {		this might come in handy for making progams modular? (putting query in url)
+	// 	path: '/vr-path/:path',
+	// 	name: 'VR-Path-Data',
+	// 	component: VRPath,
+	// 	props: true
+	// }
+	// {
+	// 	path: '/vr-free-trip',
+	// 	name: 'VR-Free-Trip',
+	// 	component: VRFReeTrip
+	// }
 ];
 
 const router = new VueRouter({

@@ -6,22 +6,19 @@ var imagePath = [];
 
 var locs = [];
 
-export default function init() {
-	// it might be better to write to JSON file, which would be easier w/ node.js
-	var imageData = window.localStorage.getItem('images');
-	var imagePath = JSON.parse(imageData);
-
+window.onload = function() {
+	var imagePath;
 	var imageCounter = 1;
+	$.getJSON('http://localhost:3000/imageData', function(data) {
+		imagePath = data;
+		console.log(imagePath);
 
-	pushToAssets();
-	addButton();
-	addBuildingName();
+		pushToAssets();
+		addButton();
+		addBuildingName();
+	})
 
 	function pushToAssets() {
-		for (var i = 0; i < imagePath.length; ++i) {
-			console.log(imagePath[i].url);
-		}
-
 		var assets = document.querySelector('a-assets');
 		console.log(assets);
 		for (var i = 0; i < imagePath.length; ++i) {
@@ -142,7 +139,7 @@ export default function init() {
 			var el = this.el;
 			el.addEventListener(data.on, function() {
 				setTimeout(function() {
-					location.href = 'index.html';
+					location.href = '/vr-map';
 				}, data.dur);
 			});
 		}

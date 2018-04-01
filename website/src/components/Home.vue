@@ -17,7 +17,6 @@
 		data() {
 			return {
 				image: 'src/assets/nearempacequirectangular.jpg',
-				image2: 'src/assets/parking_lot.jpg',
 				image3: 'src/assets/near_sage.JPG'
 			}
 		}
