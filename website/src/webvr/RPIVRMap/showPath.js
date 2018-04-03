@@ -1,14 +1,8 @@
-// Possible idea: 
-// Can we link the directions.html file to this file
-// By doing this, I mean to have the directions.html file write to a json file 
-// we can get the data from the json file instead of doing this
 var imagePath = [];
-
-var locs = [];
+var imageCounter;
 
 window.onload = function() {
-	var imagePath;
-	var imageCounter = 1;
+	imageCounter = 1;
 	$.getJSON('http://localhost:3000/imageData', function(data) {
 		imagePath = data;
 		console.log(imagePath);
@@ -47,6 +41,8 @@ window.onload = function() {
 		var button = document.createElement('a-entity');
 		button.setAttribute('template', 'src: #button');
 		button.setAttribute('data-src', imagePath[1].url);
+		// button.setAttribute('color', 'red');
+		button.setAttribute('position', '0 20 0');
 		link.appendChild(button);
 	}
 

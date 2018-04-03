@@ -69,9 +69,20 @@
 		},
 		methods: {
 			calculateAndDisplayRoute : function(directionsService, directionsDisplay, locations, findPath) {
+				var originEl = document.getElementById('start');
+				var originLat = originEl.options[originEl.selectedIndex].getAttribute('lat');
+				var originLng = originEl.options[originEl.selectedIndex].getAttribute('lng');
+				var destEl = document.getElementById('end');
+				var destLat = destEl.options[destEl.selectedIndex].getAttribute('lat');
+				var destLng = destEl.options[destEl.selectedIndex].getAttribute('lng');
+				var originLoc = new google.maps.LatLng(originLat, originLng);
+				var destLoc = new google.maps.LatLng(destLat, destLng);
+				console.log(originLoc.lat() + " " + originLoc.lng());
+				console.log(destLoc.lat() + " " + destLoc.lng());
 				directionsService.route({
-					origin: document.getElementById('start').value,
-					destination: document.getElementById('end').value,
+					// I think this would be more accurate if I used coordinates
+					origin: new google.maps.LatLng(originLat, originLng),
+					destination: new google.maps.LatLng(destLat, destLng),
 					travelMode: 'WALKING'
 				}, function(response, status) {
 					if (status == 'OK') {
@@ -138,7 +149,7 @@
 					// find the closest location
 					for (var j = 0; j < locations.length; ++j) {
 						// I think coordinates of Darrin might be slightly off, showing up at weird spots in paths or not at all
-						if (Math.abs(path[i].lat() - locations[j].point.lat) < 0.0003 && Math.abs(path[i].lng() - locations[j].point.long) < 0.0003) {
+						if (Math.abs(path[i].lat() - locations[j].point.lat) < 0.0002 && Math.abs(path[i].lng() - locations[j].point.long) < 0.0002) {
 							if (!images.includes(locations[j])) {
 								images.push(locations[j]);
 							}

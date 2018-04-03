@@ -588,7 +588,79 @@ var locations = [
 		building: "",
 		point: { lat: 42.7339, long: -73.6677 },
 		address: "",
-		url: "http://localhost:3000/pics/69.jpg",
+		url: "http://localhost:3000/data/pics/69.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 70,
+		building: "",
+		point: { lat: 42.7298, long: -73.6808 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_112612_0.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 71,
+		building: "Jonsson Engineering Center",
+		point: { lat: 42.7297, long: -73.6802 },
+		address: "Jonsson Engineering Center, Troy, NY 12180",
+		url: "http://localhost:3000/data/pics/PANO_20180402_112838_1.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 72,
+		building: "",
+		point: { lat: 42.7297, long: -73.6793 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_113209_2.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 73,
+		building: "",
+		point: { lat: 42.7294, long: -73.6779 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_113447_3.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 74,
+		building: "Mueller Center",
+		point: { lat: 42.7290, long: -73.6770 },
+		address: "Mueller Center, Troy, NY 12180",
+		url: "http://localhost:3000/data/pics/PANO_20180402_113715_5.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 75,
+		building: "",
+		point: { lat: 42.7293, long: -73.6768 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_113857_6.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 76,
+		building: "",
+		point: { lat: 42.7290, long: -73.6758 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_114107_7.jpg",
+		outdoor: true,
+		direction: 0
+	},
+	{
+		id: 77,
+		building: "",
+		point: { lat: 42.7284, long: -73.6748 },
+		address: "",
+		url: "http://localhost:3000/data/pics/PANO_20180402_114247_8.jpg",
 		outdoor: true,
 		direction: 0
 	}

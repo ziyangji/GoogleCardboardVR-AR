@@ -13,8 +13,14 @@ var directions = {
 				// parse the data read from data and store them into variables
 				var building = locations[i].building;
 				var address = locations[i].address;
+				var lat = locations[i].point.lat;
+				var long = locations[i].point.long;
 				option1.text = building;
 				option2.text = building;
+				option1.setAttribute('lat', lat);
+				option1.setAttribute('lng', long);
+				option2.setAttribute('lat', lat);
+				option2.setAttribute('lng', long);
 				select1.add(option1, i+1);
 				select2.add(option2, i+1);
 				option1.value = address;
