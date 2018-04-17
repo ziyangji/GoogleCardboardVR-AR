@@ -7,6 +7,8 @@ const Path = require('./models/path');
 const queries = require('./queries');
 const bodyParser = require('body-parser');
 
+// const newtuples = require('./data/map_new.js')
+
 var port = 3000;
 
 mongoose.connect(config.db).then(
@@ -26,7 +28,14 @@ app.use(express.static(dir));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// bad but I just neet things to work
+app.use(function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Methods", "GET");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	next();
+})
+
+// bad but I just need things to work
 var imageData;
 
 
@@ -40,10 +49,6 @@ app.get('/about', function(req, res) {
 })
 
 app.get('/contact', function(req, res) {
-	res.sendFile(path.join(dir + '/index.html'));
-})
-
-app.get('/test', function(req, res) {
 	res.sendFile(path.join(dir + '/index.html'));
 })
 

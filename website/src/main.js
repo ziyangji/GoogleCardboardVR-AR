@@ -4,7 +4,6 @@ import App from './App.vue';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
-import Test from './components/Test.vue';
 
 import VRMap from './components/RPIVRMap.vue';
 
@@ -31,11 +30,6 @@ const routes = [
 		name: 'VR-Map',
 		component: VRMap
 	},
-	{
-		path: '/test',
-		name: 'Test',
-		component: Test
-	}
 	// {
 	// 	path: '/vr-path',
 	// 	name: 'VR-Path',
