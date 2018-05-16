@@ -7,7 +7,7 @@ const Path = require('./models/path');
 const queries = require('./queries');
 const bodyParser = require('body-parser');
 
-// const newtuples = require('./data/map_new.js')
+const newtuples = require('./data/map_new.js')
 
 var port = 3000;
 
@@ -28,6 +28,7 @@ app.use(express.static(dir));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// I don't think this is actually needed since this isn't the image server
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header("Access-Control-Allow-Methods", "GET");

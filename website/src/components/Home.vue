@@ -16,7 +16,7 @@
 		name: 'Home',
 		data() {
 			return {
-				image: 'src/assets/nearempacequirectangular.jpg',
+				// image: 'src/assets/nearempacequirectangular.jpg',
 				image3: 'src/assets/near_sage.JPG'
 			}
 		}

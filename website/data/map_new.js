@@ -2,41 +2,41 @@ var locations = [
 	{
 		id: 1,
 		building: "Darrin Communications Center",
-		point: { lat: 42.7293, long: -73.6798 },
+		point: { lat: 42.729650, long: -73.679522 },
 		address: "Darrin Communications Center, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/1.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 2,
 		building: "",
-		point: { lat: 42.730406, long: -73.681211 },
+		point: { lat: 42.730405, long: -73.681859 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/2.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 225.00,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 3,
 		building: "Russell Sage Laboratory",
-		point: { lat: 0.0, long: 0.0 }, // needs to be finished
+		point: { lat: 42.730812, long: -73.681680 },
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/3.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 4,
 		building: "Quadrangle Complex",
-		point: { lat: 42.730501, long: -73.678056 },
+		point: { lat: 42.730515, long: -73.678066 },
 		address: "Quad, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/4.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -46,7 +46,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/5.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -56,7 +56,7 @@ var locations = [
 		address: "Ricketts Building, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/6.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -66,7 +66,7 @@ var locations = [
 		address: "Quad, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/7.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -76,27 +76,27 @@ var locations = [
 		address: "Russell Sage Laboratory, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/8.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 9,
 		building: "",
-		point: { lat: 42.729643, long: -73.678917 },
+		point: { lat: 42.729659, long: -73.678679 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/9.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 10,
 		building: "Walker Laboratory",
-		point: { lat: 42.730609, long: -73.682814 },
+		point: { lat: 42.730626, long: -73.682776 },
 		address: "Walker Laboratory, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/10.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -106,56 +106,57 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/11.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 0, // not done
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 12,
 		building: "",
-		point: { lat: 42.730472, long: -73.682599 },
+		point: { lat: 42.730479, long: -73.682617 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/12.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 13,
 		building: "",
-		point: { lat: 42.729492, long: -73.678365 },
+		point: { lat: 42.729426, long: -73.678401 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/13.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 112.50,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 14,
 		building: "",
-		point: { lat: 42.728609, long: -73.679085 },
+		point: { lat: 42.728801, long: -73.679810 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/14.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 15,
 		building: "",
-		point: { lat: 42.730493, long: -73.678538 },
+		point: { lat: 42.730511, long: -73.678549 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/15.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 16,
-		building: "",
-		point: { lat: 42.7308, long: -73.6817 }, // is this accurate?
+		building: "Russell Sage Laboratory",
+		point: { lat: 42.730859, long: -73.681667 }, // is this accurate?
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/16.jpg",
 		outdoor: false,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -165,7 +166,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/17.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -175,7 +176,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/18.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -185,7 +186,7 @@ var locations = [
 		address: "Carnegie Building, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/19.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 112.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -195,7 +196,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/20.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 112.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -205,17 +206,17 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/21.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
 		id: 22,
 		building: "Darrin Communications Center",
-		point: { lat: 0.0, long: 0.0 },
+		point: { lat: 42.729514, long: -73.679109 },
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/22.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 0, // not done
 		date: new Date("2017-11-04")
 	},
 	{
@@ -225,7 +226,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/23.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 112.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -235,7 +236,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/24.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.50,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -245,7 +246,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/25.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -255,7 +256,7 @@ var locations = [
 		address: "Jonsson-Rowland Science Center, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/26.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -265,7 +266,7 @@ var locations = [
 		address: "Amos Eaton Hall, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/27.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -275,7 +276,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/28.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -285,7 +286,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/29.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 0, // I'm not totally sure where this is
 		date: new Date("2017-11-04")
 	},
 	{
@@ -295,7 +296,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/30.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 258.75,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -305,7 +306,7 @@ var locations = [
 		address: "Greene Bldg, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/31.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -315,7 +316,7 @@ var locations = [
 		address: "Troy Building, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/32.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -325,7 +326,7 @@ var locations = [
 		address: "Troy Building, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/33.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -335,7 +336,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/34.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -345,7 +346,7 @@ var locations = [
 		address: "Carnegie Building, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/35.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 292.5,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -355,7 +356,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/36.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -365,7 +366,7 @@ var locations = [
 		address: "Rensselaer Lally School of Management, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/37.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -375,7 +376,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/38.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -385,7 +386,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/39.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 0, // not sure what road this is pointing down
 		date: new Date("2017-11-04")
 	},
 	{
@@ -395,7 +396,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/40.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 292.5,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -405,7 +406,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/41.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 50.62,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -415,7 +416,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/42.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 0, // not sure where this is yet
 		date: new Date("2017-11-04")
 	},
 	{
@@ -425,7 +426,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/43.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -435,7 +436,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/44.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 292.5,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -445,7 +446,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/45.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.5,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -455,7 +456,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/46.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -465,7 +466,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/47.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -475,7 +476,7 @@ var locations = [
 		address: "RPI Playhouse, Troy, NY 12180",
 		url: "hhttps://cardboard.cs.rpi.edu/2017_11_04/48.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -485,7 +486,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/49.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -495,7 +496,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/50.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -505,7 +506,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/51.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -515,7 +516,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/52.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -525,7 +526,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/53.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -535,7 +536,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/54.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -545,7 +546,7 @@ var locations = [
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/55.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -555,7 +556,7 @@ var locations = [
 		address: "Pittsburgh Bldg, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/56.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-11-04")
 	},
 	{
@@ -565,7 +566,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArena2ndOutFront.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 303.75,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -575,7 +576,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn1.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -585,7 +586,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn2.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 0, // not sure
 		date: new Date("2017-10-28")
 	},
 	{
@@ -595,7 +596,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn4.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 0, // not sure
 		date: new Date("2017-10-28")
 	},
 	{
@@ -605,7 +606,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVFootballCourt.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 281.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -615,7 +616,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVOverview1.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 101.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -625,7 +626,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVPlaygroundSouthEastCorner.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -635,7 +636,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/HockeyCourtDownstairs2.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 11.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -645,7 +646,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/HockeyCourtUpstairs1.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 191.25,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -655,7 +656,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/MullerCenterGym.jpg",
 		outdoor: false,
-		direction: 0,
+		direction: 106.87,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -665,7 +666,7 @@ var locations = [
 		address: "",
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/PavilionNearHallHall.jpg",
 		outdoor: true,
-		direction: 0,
+		direction: 22.5,
 		date: new Date("2017-10-28")
 	},
 	{
@@ -673,7 +674,7 @@ var locations = [
 		building: "",
 		point: { lat: 0.0, long: 0.0 },
 		address: "",
-		url: "https://cardboard.cs.rpi.edu/2017_10_28/PavilionNearHallHall.jpg",
+		url: "https://cardboard.cs.rpi.edu/2017_10_28/PavilionNearHallHall.jpg", // this a repeat... what??
 		outdoor: true,
 		direction: 0,
 		date: new Date("2017-10-28")
@@ -738,195 +739,216 @@ var locations = [
 		direction: 0,
 		date: new Date("2017-10-28")
 	},
-	// {
-	// 	id: 57,
-	// 	building: "",
-	// 	point: { lat: 42.7316, long: -73.6819 },
-	// 	address: "15t St, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/57.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 58,
-	// 	building: "",
-	// 	point: { lat: 42.7321, long: -73.6658 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/58.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 59,
-	// 	building: "",
-	// 	point: { lat: 42.7324, long: -73.6653 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/59.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 60,
-	// 	building: "",
-	// 	point: { lat: 42.7326, long: -73.6651 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/60.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 61,
-	// 	building: "",
-	// 	point: { lat: 42.7327, long: -73.6652 },
-	// 	address: "RPI Terminal, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/61.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 62,
-	// 	building: "",
-	// 	point: { lat: 42.7328, long: -73.6649 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/62.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 63,
-	// 	building: "",
-	// 	point: { lat: 42.733, long: -73.6648 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/63.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 64,
-	// 	building: "",
-	// 	point: { lat: 42.7332, long: -73.6662 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/64.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 65,
-	// 	building: "",
-	// 	point: { lat: 42.7336, long: -73.6665 },
-	// 	address: "Stadium Field, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/65.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 66,
-	// 	building: "ECAV",
-	// 	point: { lat: 42.7337, long: -73.6672 },
-	// 	address: "Stadium Field, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/66.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 67,
-	// 	building: "",
-	// 	point: { lat: 42.7352, long: -73.6673 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/67.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 68,
-	// 	building: "",
-	// 	point: { lat: 42.7346, long: -73.6676 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/68.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 69,
-	// 	building: "",
-	// 	point: { lat: 42.7339, long: -73.6677 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/69.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 70,
-	// 	building: "",
-	// 	point: { lat: 42.7298, long: -73.6808 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_112612_0.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 71,
-	// 	building: "Jonsson Engineering Center",
-	// 	point: { lat: 42.7297, long: -73.6802 },
-	// 	address: "Jonsson Engineering Center, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_112838_1.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 72,
-	// 	building: "",
-	// 	point: { lat: 42.7297, long: -73.6793 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_113209_2.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 73,
-	// 	building: "",
-	// 	point: { lat: 42.7294, long: -73.6779 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_113447_3.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 74,
-	// 	building: "Mueller Center",
-	// 	point: { lat: 42.7290, long: -73.6770 },
-	// 	address: "Mueller Center, Troy, NY 12180",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_113715_5.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 75,
-	// 	building: "",
-	// 	point: { lat: 42.7293, long: -73.6768 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_113857_6.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 76,
-	// 	building: "",
-	// 	point: { lat: 42.7290, long: -73.6758 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_114107_7.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// },
-	// {
-	// 	id: 77,
-	// 	building: "",
-	// 	point: { lat: 42.7284, long: -73.6748 },
-	// 	address: "",
-	// 	url: "http://localhost:3000/data/pics/PANO_20180402_114247_8.jpg",
-	// 	outdoor: true,
-	// 	direction: 0
-	// }
+	{
+		id: 75,
+		building: "",
+		point: { lat: 42.7316, long: -73.6819 },
+		address: "15t St, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/1.jpg",
+		outdoor: true,
+		direction: 180.0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 76,
+		building: "",
+		point: { lat: 42.7321, long: -73.6658 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/2.jpg",
+		outdoor: true,
+		direction: 303.75,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 77,
+		building: "",
+		point: { lat: 42.7324, long: -73.6653 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/3.jpg",
+		outdoor: true,
+		direction: 123.75,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 78,
+		building: "",
+		point: { lat: 42.7326, long: -73.6651 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/4.jpg",
+		outdoor: true,
+		direction: 135.0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 79,
+		building: "",
+		point: { lat: 42.7327, long: -73.6652 },
+		address: "RPI Terminal, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/5.jpg",
+		outdoor: true,
+		direction: 303.75,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 80,
+		building: "",
+		point: { lat: 42.7328, long: -73.6649 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/6.jpg",
+		outdoor: true,
+		direction: 303.75,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 81,
+		building: "",
+		point: { lat: 42.733, long: -73.6648 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/7.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 82,
+		building: "",
+		point: { lat: 42.7332, long: -73.6662 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/8.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 83,
+		building: "",
+		point: { lat: 42.7336, long: -73.6665 },
+		address: "Stadium Field, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/9.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 84,
+		building: "ECAV",
+		point: { lat: 42.7337, long: -73.6672 },
+		address: "Stadium Field, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/10.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 85,
+		building: "",
+		point: { lat: 42.7352, long: -73.6673 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/11.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 86,
+		building: "",
+		point: { lat: 42.7346, long: -73.6676 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/12.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 87,
+		building: "",
+		point: { lat: 42.7339, long: -73.6677 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_03_18/13.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-03-18")
+	},
+	{
+		id: 88,
+		building: "",
+		point: { lat: 42.7298, long: -73.6808 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/1.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 89,
+		building: "Jonsson Engineering Center",
+		point: { lat: 42.7297, long: -73.6802 },
+		address: "Jonsson Engineering Center, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/2.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 90,
+		building: "",
+		point: { lat: 42.7297, long: -73.6793 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/3.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 91,
+		building: "",
+		point: { lat: 42.7294, long: -73.6779 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/4.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 92,
+		building: "Mueller Center",
+		point: { lat: 42.7290, long: -73.6770 },
+		address: "Mueller Center, Troy, NY 12180",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/5.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 93,
+		building: "",
+		point: { lat: 42.7293, long: -73.6768 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/6.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 94,
+		building: "",
+		point: { lat: 42.7290, long: -73.6758 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/7.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	},
+	{
+		id: 95,
+		building: "",
+		point: { lat: 42.7284, long: -73.6748 },
+		address: "",
+		url: "https://cardboard.cs.rpi.edu/2018_04_02/8.jpg",
+		outdoor: true,
+		direction: 0,
+		date: new Date("2018-04-02")
+	}
 ];
 
 
