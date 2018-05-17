@@ -8,7 +8,8 @@ var locationSchema = new mongoose.Schema({
 	url: String, // could change
 	outdoor: { type: Boolean, default: true },
 	direction: { type: Number, default: 0.0 }, // north
-	date: { type: Date, default: Date.now }
+	date: { type: Date, default: Date.now },
+	neighbors: { type: Array, "default": [Number] }
 });
 
 module.exports = mongoose.model('Location', locationSchema);

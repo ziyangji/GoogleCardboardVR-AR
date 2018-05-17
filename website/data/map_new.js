@@ -7,7 +7,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/1.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [34]
 	},
 	{
 		id: 2,
@@ -17,7 +18,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/2.jpg",
 		outdoor: true,
 		direction: 225.00,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 3,
@@ -27,7 +29,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/3.jpg",
 		outdoor: false,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 4,
@@ -37,7 +40,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/4.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 5,
@@ -47,7 +51,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/5.jpg",
 		outdoor: true,
 		direction: 22.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 6,
@@ -57,7 +62,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/6.jpg",
 		outdoor: true,
 		direction: 22.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [17, 49]
 	},
 	{
 		id: 7,
@@ -67,7 +73,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/7.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 8,
@@ -77,7 +84,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/8.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [24]
 	},
 	{
 		id: 9,
@@ -87,7 +95,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/9.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [34, 51]
 	},
 	{
 		id: 10,
@@ -97,7 +106,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/10.jpg",
 		outdoor: true,
 		direction: 22.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [12, 19, 20, 36]
 	},
 	{
 		id: 11,
@@ -107,7 +117,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/11.jpg",
 		outdoor: true,
 		direction: 202.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 12,
@@ -117,7 +128,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/12.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [10]
 	},
 	{
 		id: 13,
@@ -127,7 +139,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/13.jpg",
 		outdoor: true,
 		direction: 112.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 14,
@@ -137,7 +150,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/14.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 15,
@@ -147,17 +161,19 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/15.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [46]
 	},
 	{
 		id: 16,
 		building: "Russell Sage Laboratory",
-		point: { lat: 42.730859, long: -73.681667 }, // is this accurate?
+		point: { lat: 42.730859, long: -73.681667 },
 		address: "15t St, Troy, NY 12180",
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/16.jpg",
 		outdoor: false,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 17,
@@ -167,7 +183,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/17.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [6, 33]
 	},
 	{
 		id: 18,
@@ -177,7 +194,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/18.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [87]
 	},
 	{
 		id: 19,
@@ -187,7 +205,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/19.jpg",
 		outdoor: true,
 		direction: 112.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [10]
 	},
 	{
 		id: 20,
@@ -197,7 +216,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/20.jpg",
 		outdoor: true,
 		direction: 112.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [10, 36]
 	},
 	{
 		id: 21,
@@ -207,7 +227,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/21.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 22,
@@ -217,7 +238,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/22.jpg",
 		outdoor: false,
 		direction: 123.75,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 23,
@@ -227,7 +249,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/23.jpg",
 		outdoor: true,
 		direction: 112.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 24,
@@ -237,7 +260,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/24.jpg",
 		outdoor: true,
 		direction: 22.50,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [8, 32]
 	},
 	{
 		id: 25,
@@ -247,7 +271,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/25.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 26,
@@ -257,7 +282,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/26.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 27,
@@ -267,7 +293,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/27.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [44]
 	},
 	{
 		id: 28,
@@ -277,7 +304,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/28.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 29,
@@ -287,7 +315,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/29.jpg",
 		outdoor: true,
 		direction: 202.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 30,
@@ -297,7 +326,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/30.jpg",
 		outdoor: true,
 		direction: 258.75,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 31,
@@ -307,7 +337,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/31.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 32,
@@ -317,7 +348,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/32.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [24, 33]
 	},
 	{
 		id: 33,
@@ -327,7 +359,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/33.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [17, 32]
 	},
 	{
 		id: 34,
@@ -337,7 +370,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/34.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [1, 9]
 	},
 	{
 		id: 35,
@@ -347,7 +381,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/35.jpg",
 		outdoor: true,
 		direction: 292.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 36,
@@ -357,7 +392,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/36.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [10, 20]
 	},
 	{
 		id: 37,
@@ -367,7 +403,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/37.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 38,
@@ -377,7 +414,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/38.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 39,
@@ -387,7 +425,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/39.jpg",
 		outdoor: true,
 		direction: 33.75,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 40,
@@ -397,7 +436,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/40.jpg",
 		outdoor: true,
 		direction: 292.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [44]
 	},
 	{
 		id: 41,
@@ -407,7 +447,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/41.jpg",
 		outdoor: true,
 		direction: 50.62,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 42,
@@ -417,7 +458,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/42.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 43,
@@ -427,7 +469,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/43.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 44,
@@ -437,7 +480,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/44.jpg",
 		outdoor: true,
 		direction: 292.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [27, 40]
 	},
 	{
 		id: 45,
@@ -447,7 +491,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/45.jpg",
 		outdoor: true,
 		direction: 22.5,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 46,
@@ -457,7 +502,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/46.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [15, 49]
 	},
 	{
 		id: 47,
@@ -467,7 +513,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/47.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 48,
@@ -477,7 +524,8 @@ var locations = [
 		url: "hhttps://cardboard.cs.rpi.edu/2017_11_04/48.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 49,
@@ -487,7 +535,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/49.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [6, 46]
 	},
 	{
 		id: 50,
@@ -497,7 +546,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/50.jpg",
 		outdoor: false,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 51,
@@ -507,7 +557,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/51.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: [9]
 	},
 	{
 		id: 52,
@@ -517,7 +568,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/52.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 53,
@@ -527,7 +579,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/53.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 54,
@@ -537,7 +590,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/54.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 55,
@@ -547,7 +601,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/55.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 56,
@@ -557,7 +612,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_11_04/56.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-11-04")
+		date: new Date("2017-11-04"),
+		neighbors: []
 	},
 	{
 		id: 57,
@@ -567,7 +623,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArena2ndOutFront.jpg",
 		outdoor: true,
 		direction: 303.75,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 58,
@@ -577,7 +634,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn1.jpg",
 		outdoor: false,
 		direction: 281.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 59,
@@ -587,7 +645,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn2.jpg",
 		outdoor: false,
 		direction: 281.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 60,
@@ -597,7 +656,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVArenaIn4.jpg",
 		outdoor: false,
 		direction: 0, // not sure
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 61,
@@ -607,7 +667,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVFootballCourt.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 62,
@@ -617,7 +678,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVOverview1.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 63,
@@ -627,7 +689,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/ECAVPlaygroundSouthEastCorner.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 64,
@@ -637,7 +700,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/HockeyCourtDownstairs2.jpg",
 		outdoor: false,
 		direction: 11.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 65,
@@ -647,7 +711,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/HockeyCourtUpstairs1.jpg",
 		outdoor: false,
 		direction: 191.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 66,
@@ -657,7 +722,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/MullerCenterGym.jpg",
 		outdoor: false,
 		direction: 106.87,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 67,
@@ -667,7 +733,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/PavilionNearHallHall.jpg",
 		outdoor: true,
 		direction: 22.5,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 68,
@@ -677,7 +744,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StairsFromCommonsToUnion.jpg",
 		outdoor: true,
 		direction: 135.0,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 69,
@@ -687,7 +755,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StudentUnion1st.jpg",
 		outdoor: false,
 		direction: 202.5,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 70,
@@ -697,7 +766,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StudentUnion2ndHallFamilyWeekend.jpg",
 		outdoor: false,
 		direction: 11.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 71,
@@ -707,7 +777,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StudentUnion3rdBalcony.jpg",
 		outdoor: true,
 		direction: 202.5,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 72,
@@ -717,7 +788,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StudentUnionFrontDesk.jpg",
 		outdoor: false,
 		direction: 202.5,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 73,
@@ -727,7 +799,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2017_10_28/StudentUnionFrontDoor.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2017-10-28")
+		date: new Date("2017-10-28"),
+		neighbors: []
 	},
 	{
 		id: 74,
@@ -737,7 +810,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/1.jpg",
 		outdoor: true,
 		direction: 180.0,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 75,
@@ -747,7 +821,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/2.jpg",
 		outdoor: true,
 		direction: 303.75,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 76,
@@ -757,7 +832,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/3.jpg",
 		outdoor: true,
 		direction: 123.75,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 77,
@@ -767,7 +843,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/4.jpg",
 		outdoor: true,
 		direction: 135.0,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 78,
@@ -777,7 +854,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/5.jpg",
 		outdoor: true,
 		direction: 303.75,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 79,
@@ -787,7 +865,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/6.jpg",
 		outdoor: true,
 		direction: 303.75,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 80,
@@ -797,7 +876,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/7.jpg",
 		outdoor: true,
 		direction: 247.5,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 81,
@@ -807,7 +887,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/8.jpg",
 		outdoor: true,
 		direction: 73.13,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 82,
@@ -817,7 +898,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/9.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 83,
@@ -827,7 +909,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/10.jpg",
 		outdoor: true,
 		direction: 191.25,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 84,
@@ -837,7 +920,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/11.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 85,
@@ -847,7 +931,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/12.jpg",
 		outdoor: true,
 		direction: 22.5,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 86,
@@ -857,7 +942,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_03_18/13.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2018-03-18")
+		date: new Date("2018-03-18"),
+		neighbors: []
 	},
 	{
 		id: 87,
@@ -867,7 +953,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/1.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: [18]
 	},
 	{
 		id: 88,
@@ -877,7 +964,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/2.jpg",
 		outdoor: true,
 		direction: 11.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 89,
@@ -887,7 +975,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/3.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 90,
@@ -897,7 +986,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/4.jpg",
 		outdoor: true,
 		direction: 101.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 91,
@@ -907,7 +997,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/5.jpg",
 		outdoor: true,
 		direction: 281.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 92,
@@ -917,7 +1008,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/6.jpg",
 		outdoor: true,
 		direction: 326.25,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 93,
@@ -927,7 +1019,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/7.jpg",
 		outdoor: true,
 		direction: 135.0,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	},
 	{
 		id: 94,
@@ -937,7 +1030,8 @@ var locations = [
 		url: "https://cardboard.cs.rpi.edu/2018_04_02/8.jpg",
 		outdoor: true,
 		direction: 112.5,
-		date: new Date("2018-04-02")
+		date: new Date("2018-04-02"),
+		neighbors: []
 	}
 ];
 
