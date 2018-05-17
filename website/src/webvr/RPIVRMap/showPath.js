@@ -1,9 +1,12 @@
 var imagePath = [];
 var imageCounter;
+var imageData = 'http://localhost:3000/imageData';
+var homePath = '/vr-map';
+var nextAngle;
 
 window.onload = function() {
 	imageCounter = 1;
-	$.getJSON('http://localhost:3000/imageData', function(data) {
+	$.getJSON(imageData, function(data) {
 		imagePath = data;
 		console.log(imagePath);
 
@@ -30,7 +33,9 @@ window.onload = function() {
 		// ideally rotation would depend on direction of next location
 		// or maybe the cursor should depend on direction of next location
 		// current rotation is the same as the last rotation since that's where you walked from
-		sky.setAttribute('rotation', '0 -90 0'); // will need to change to new rotation for each image
+		setAngle(imageCounter);
+		console.log("nextAngle: " +  nextAngle);
+		sky.setAttribute('rotation', '0 ' + nextAngle + ' 0'); // will need to change to new rotation for each image
 		sky.setAttribute('data-set-image-fade-setup', 'true');
 		var world = document.querySelector('a-scene');
 		world.appendChild(sky);
@@ -93,6 +98,8 @@ window.onload = function() {
 					if (imageCounter >= imagePath.length) {
 						reachedEnd();
 					} else {
+						setAngle(imageCounter+1);
+						data.target.setAttribute('rotation', '0 ' + nextAngle + ' 0'); // how do I make this rotate
 						data.target.setAttribute('material', 'src', data.src);
 
 						data.src = imagePath[++imageCounter].url;
@@ -135,7 +142,7 @@ window.onload = function() {
 			var el = this.el;
 			el.addEventListener(data.on, function() {
 				setTimeout(function() {
-					location.href = '/vr-map';
+					location.href = homePath;
 				}, data.dur);
 			});
 		}
@@ -170,13 +177,21 @@ window.onload = function() {
 
 	// I don't think this will work since not all images are facing the same direction
 	// I would need another attribute to say where north is on the image, or something
-	function calculateRotation(loc1, loc2) {
-		var x1 = 0; // will be extracted from json
-		var y1 = 0; // ^
-		var x2 = 0; // ^
-		var y2 = 0; // ^
-		// use inverse tangent?
-		var angle = Math.atan((y2-y1)/(x2-x1)) * 180 / Math.PI;
-		return angle; // plus whatever I need to make it right in aframe
+	// function calculateRotation(loc1, loc2) {
+	// 	var x1 = 0; // will be extracted from json
+	// 	var y1 = 0; // ^
+	// 	var x2 = 0; // ^
+	// 	var y2 = 0; // ^
+	// 	// use inverse tangent?
+	// 	var angle = Math.atan((y2-y1)/(x2-x1)) * 180 / Math.PI;
+	// 	return angle; // plus whatever I need to make it right in aframe
+	// }
+	function setAngle(counter) { // I think I need to combine this with the above function
+		if (imageCounter <= imagePath.length) {
+			nextAngle = imagePath[counter].direction - 90;
+		}
+		else {
+			nextAngle = -90;
+		}
 	}
 }

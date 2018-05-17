@@ -16,7 +16,7 @@ exports.buildings = function(req, res) {
 // to allow exploring outdoors
 exports.outdoorLocs = function(req, res) {
 	var query = Location.find({ 'outdoor': true });
-	query.select('building point address url');
+	query.select('building point address url direction');
 	query.exec(function (err, locations) {
 		if (err) throw err;
 		res.json(locations);

@@ -5,7 +5,7 @@ var locationSchema = new mongoose.Schema({
 	building: String,
 	point: { lat: Number, long: Number },
 	address: String,
-	url: String, // could change
+	url: String,
 	outdoor: { type: Boolean, default: true },
 	direction: { type: Number, default: 0.0 }, // north
 	date: { type: Date, default: Date.now },

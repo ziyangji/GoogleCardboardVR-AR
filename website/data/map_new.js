@@ -118,7 +118,7 @@ var locations = [
 		outdoor: true,
 		direction: 202.5,
 		date: new Date("2017-11-04"),
-		neighbors: []
+		neighbors: [25]
 	},
 	{
 		id: 12,
@@ -228,7 +228,7 @@ var locations = [
 		outdoor: true,
 		direction: 101.25,
 		date: new Date("2017-11-04"),
-		neighbors: []
+		neighbors: [25]
 	},
 	{
 		id: 22,
@@ -272,7 +272,7 @@ var locations = [
 		outdoor: true,
 		direction: 191.25,
 		date: new Date("2017-11-04"),
-		neighbors: []
+		neighbors: [11, 21]
 	},
 	{
 		id: 26,
