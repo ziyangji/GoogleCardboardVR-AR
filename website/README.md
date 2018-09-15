@@ -20,3 +20,9 @@ Use the following commands to stop and start MongoDB:
 sudo service mongod start
 sudo service mongod stop
 ```
+
+To run the code:
+```
+node server.js
+```
+and head to localhost:3000 in a browser to view the website.
