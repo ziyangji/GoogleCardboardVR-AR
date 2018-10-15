@@ -14,6 +14,8 @@ Shoshana Malfatto: malfas@rpi.edu  Github: shanalily
 
 Ziyang Ji: jiz@rpi.edu  Github: ziyangji
 
+Donglin Liu: liud3@rpi.edu Github: SpaceDandy13
+
 Samvit Thakur: thakus2@rpi.edu  Github: s-thakur
 
 ## Past Team Members
