@@ -1,0 +1,508 @@
+{
+	"locations": [
+		{
+			"building": "Darrin Communications Center",
+			"x": "42.7293",
+			"y": "-73.6798",
+			"address": "Darrin Communications Center, Troy, NY 12180",
+			"nodeNum": "1",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/0.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730406",
+			"y": "-73.681211",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "2",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/1.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Quadrangle Complex",
+			"x": "42.730501",
+			"y": "-73.678056",
+			"address": "Quad, Troy, NY 12180",
+			"nodeNum": "4",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/2.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729932",
+			"y": "-73.680786",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "5",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/3.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Ricketts Building",
+			"x": "42.730731",
+			"y": "-73.679784",
+			"address": "Ricketts Building, Troy, NY 12180",
+			"nodeNum": "6",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/4.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730129",
+			"y": "-73.677750",
+			"address": "Quad, Troy, NY 12180",
+			"nodeNum": "7",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/5.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Russell Sage Laboratory",
+			"x": "42.730696",
+			"y": "-73.681698",
+			"address": "Russell Sage Laboratory, Troy, NY 12180",
+			"nodeNum": "8",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/6.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729643",
+			"y": "-73.678917",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "9",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/7.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Walker Laboratory",
+			"x": "42.730609",
+			"y": "-73.682814",
+			"address": "Walker Laboratory, Troy, NY 12180",
+			"nodeNum": "10",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/8.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.731020",
+			"y": "-73.682303",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "11",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/9.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730472",
+			"y": "-73.682599",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "12",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/10.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729492",
+			"y": "-73.678365",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "13",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/11.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.728609",
+			"y": "-73.679085",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "14",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/12.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730493",
+			"y": "-73.678538",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "15",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/13.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.7308",
+			"y": "-73.6817",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "16",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/14.jpg",
+			"outdoor": "false"
+		},
+		{
+			"building": "",
+			"x": "42.730730",
+			"y": "-73.680318",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "17",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/15.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729864",
+			"y": "-73.680884",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "18",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/16.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Carnegie Building",
+			"x": "42.730580",
+			"y": "-73.682871",
+			"address": "Carnegie Building, Troy, NY 12180",
+			"nodeNum": "19",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/17.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730782",
+			"y": "-73.682255",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "20",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/18.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.731483",
+			"y": "-73.682683",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "21",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/19.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729805",
+			"y": "-73.681397",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "23",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/20.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730629",
+			"y": "-73.681115",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "24",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/21.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.731271",
+			"y": "-73.682464",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "25",
+			"url": "Access-Control-Allow-Origin: https://cardboard.cs.rpi.edu/2018_03_18/22.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Jonsson-Rowland Science Center",
+			"x": "42.728879",
+			"y": "-73.680108",
+			"address": "Jonsson-Rowland Science Center, Troy, NY 12180",
+			"nodeNum": "26",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/23.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Amos Eaton Hall",
+			"x": "42.730148",
+			"y": "-73.682194",
+			"address": "Amos Eaton Hall, Troy, NY 12180",
+			"nodeNum": "27",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/24.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729705",
+			"y": "-73.679747",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "28",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/25.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.728594",
+			"y": "-73.678926",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "29",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/26.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729873",
+			"y": "-73.682694",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "30",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/27.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Greene Building",
+			"x": "42.730152",
+			"y": "-73.681179",
+			"address": "Greene Bldg, Troy, NY 12180",
+			"nodeNum": "31",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/28.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "President's Parking Place",
+			"x": "42.730936",
+			"y": "-73.680886",
+			"address": "Troy Building, Troy, NY 12180",
+			"nodeNum": "32",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/29.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Troy Building",
+			"x": "42.730852",
+			"y": "-73.680558",
+			"address": "Troy Building, Troy, NY 12180",
+			"nodeNum": "33",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/30.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729650",
+			"y": "-73.678936",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "34",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/31.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730674",
+			"y": "-73.683443",
+			"address": "Carnegie Building, Troy, NY 12180",
+			"nodeNum": "35",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/32.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730728",
+			"y": "-73.682168",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "36",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/33.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Rensselaer Lally School of Management",
+			"x": "42.730194",
+			"y": "-73.681866",
+			"address": "Rensselaer Lally School of Management, Troy, NY 12180",
+			"nodeNum": "37",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/34.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730219",
+			"y": "-73.678155",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "38",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/35.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730188",
+			"y": "-73.681559",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "39",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/36.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729959",
+			"y": "-73.682207",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "40",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/37.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730186",
+			"y": "-73.682851",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "41",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/38.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.728625",
+			"y": "-73.679544",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "42",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/39.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730097",
+			"y": "-73.677508",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "43",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/40.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729962",
+			"y": "-73.682230",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "44",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/41.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.728887",
+			"y": "-73.678129",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "45",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/42.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "'87 Gymnasium",
+			"x": "42.730550",
+			"y": "-73.679018",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "46",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/43.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729581",
+			"y": "-73.679540",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "47",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/44.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "RPI Playhouse",
+			"x": "42.729162",
+			"y": "-73.677935",
+			"address": "RPI Playhouse, Troy, NY 12180",
+			"nodeNum": "48",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/45.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730607",
+			"y": "-73.679365",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "49",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/46.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729745",
+			"y": "-73.678535",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "51",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/47.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729758",
+			"y": "-73.678800",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "52",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/48.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.729092",
+			"y": "-73.680047",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "53",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/49.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730140",
+			"y": "-73.677801",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "54",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/50.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "",
+			"x": "42.730573",
+			"y": "-73.680634",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "55",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/51.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "Pittsburgh Building",
+			"x": "42.730949",
+			"y": "-73.683374",
+			"address": "Pittsburgh Bldg, Troy, NY 12180",
+			"nodeNum": "56",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/52.jpg",
+			"outdoor": "true"
+		},
+		{
+			"building": "su1",
+			"x": "42.730573",
+			"y": "-73.680634",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "55",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/53.jpg",
+			"outdoor": "false"
+		},
+		{
+			"building": "su2",
+			"x": "42.730573",
+			"y": "-73.680634",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "55",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/54.jpg",
+			"outdoor": "false"
+		},
+		{
+			"building": "su3",
+			"x": "42.730573",
+			"y": "-73.680634",
+			"address": "15t St, Troy, NY 12180",
+			"nodeNum": "55",
+			"url": "https://cardboard.cs.rpi.edu/2018_03_18/55.jpg",
+			"outdoor": "false"
+		}
+	]
+}
