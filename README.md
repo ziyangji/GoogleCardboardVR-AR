@@ -12,8 +12,6 @@ Prof. Mukkai Krishnamoorthy: Github: mskmoorthy
 
 Shoshana Malfatto: malfas@rpi.edu  Github: shanalily
 
-Ziyang Ji: jiz@rpi.edu  Github: ziyangji
-
 Samvit Thakur: thakus2@rpi.edu  Github: s-thakur
 
 ## Past Team Members
@@ -29,3 +27,5 @@ Xiuqi (Michael) Li: lix23@rpi.edu Github: RioMichael
 Junhao (Harry) Xu: xuj10@rpi.edu Github: HarryXu12138
 
 Carlos Power: powerc2@rpi.edu Github: redysp
+
+Ziyang Ji: jiz@rpi.edu  Github: ziyangji
